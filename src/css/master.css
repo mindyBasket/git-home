@@ -5,11 +5,22 @@ body, html {
   color: #404265;
 }
 
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   background-color: #c6c7e1;
   height: 50px;
+  color: #556cff;
 }
 
 .portfolio_wrapper {
@@ -23,7 +34,7 @@ body, html {
   color: #5b659b;
 }
 .block .content {
-  width: 800px;
+  width: 900px;
   margin: 0 auto;
 }
 
@@ -34,8 +45,9 @@ body, html {
   justify-content: center;
   height: 450px;
 }
+
 .block#aboutme {
-  background-color: #556cff;
+  background-color: white;
 }
 
 /*# sourceMappingURL=master.css.map */
