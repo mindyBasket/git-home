@@ -74,7 +74,7 @@ body, html {
   height: 200px;
   margin: 10px;
   cursor: pointer;
-  transition-property: border;
+  transition-property: height, border;
   transition-duration: 0.5s;
 }
 .card .title {
@@ -99,7 +99,8 @@ body, html {
   font-size: 0.7em;
 }
 .card .long_summary {
-  display: none;
+  display: block;
+  height: 0px;
 }
 
 .card:hover {
@@ -108,26 +109,23 @@ body, html {
 
 .card.active {
   animation-name: open-card;
-  animation-duration: 0.6s;
+  animation-duration: 0.3s;
   animation-delay: 0.4s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 .card.active .short_summary {
   opacity: 0;
+}
+.card.active .long_summary {
+  height: 100%;
 }
 
 @keyframes open-card {
   0% {
     width: 41%;
-    height: 200px;
-  }
-  50% {
-    width: 90%;
-    height: 200px;
   }
   100% {
-    width: 90%;
-    height: 300px;
+    width: 89%;
   }
 }
 .card.filler {
@@ -136,12 +134,14 @@ body, html {
   pointer-events: none;
   overflow: hidden;
   opacity: 0;
+  /* for shrinking */
   transition-property: width;
   transition-duration: 0.3s;
 }
 
 .card.filler.shrink {
   width: 0%;
+  height: 10px;
 }
 
 .shift-card-move {
@@ -155,6 +155,16 @@ body, html {
 
 .shift-card-leave-active {
   position: absolute;
+}
+
+.show-long-summary-enter-active, .show-long-summary-leave-active {
+  transition-property: opacity, height;
+  transition-duration: 0.4s;
+}
+
+.show-long-summary-enter, .show-long-summary-leave-to {
+  opacity: 0;
+  height: 0px;
 }
 
 /*# sourceMappingURL=master.css.map */
