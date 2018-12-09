@@ -20,13 +20,17 @@ Vue.component('project-card', {
 	},
   	methods: {
 	  	openCard: function(){
+	  		
+	  		if (this.isActive){
+	  			vm.removeCard();
+	  		} else { vm.addCard();}
 	  		this.isActive = !this.isActive;
 	  	}
 	},
   	template: `
 		<div class="card project" 
 			 v-on:click="openCard"
-			 v-bind:class="{ 'active': isActive }">
+			 v-bind:class = "{ 'active': isActive, 'filler' : proj.hasOwnProperty('isFiller') ? proj.isFiller : false}">
 
 			<div class="thumbnail">
 				<img src=""/>
@@ -55,9 +59,19 @@ var vm = new Vue({
   },
 
   methods: {
-  	openCard: function(){
-  		this.isActive = !this.isActive;
-  	}
+  	duplicateProjObj: function(ind){
+  		const copyProj = JSON.parse(JSON.stringify(this.projectData.projects[ind]));
+  			  copyProj.title=copyProj.title+copyProj.title;
+  			  copyProj.isFiller=true;
+  		return copyProj;
+  	},
+  	addCard: function () {
+      this.projectData.projects.splice(1, 0, this.duplicateProjObj(1) );
+    },
+    removeCard: function () {
+      this.projectData.projects.splice(1, 1);
+    }
   }
 
 });
+

@@ -1,0 +1,14 @@
+.shift-card-move {
+  transition: transform 0.6s;
+}
+
+.shift-card-move-complete-enter, .shift-card-move-complete-leave-to
+/* .list-complete-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+
+.shift-card-leave-active {
+  position: absolute;
+}

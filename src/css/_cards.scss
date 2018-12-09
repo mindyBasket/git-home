@@ -48,8 +48,12 @@
 	border:1px solid #d5a958;
 }
 
-
+.card.filler{
+	pointer-events: none;
+	opacity:0;
+}
+/*
 .card.active{
 	width: 100%;
 	height: 250px;
-}
+}*/

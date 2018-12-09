@@ -85,12 +85,14 @@
 					<p>
 						List of projects mixed personal and professional
 					</p>
-					<div class="cardlist flex_row wrap" 
-						 id="projects1">
-
-						<project-card v-for="proj in projectData.projects"
-									  v-bind:proj="proj">
-					</div> <!-- end: cardlist -->
+					<transition-group name="shift-card"
+									  class="cardlist flex_row wrap" 
+						 			  id="projects1">
+							<project-card v-for="(proj, ind) in projectData.projects"
+										  v-bind:proj="proj"
+										  v-bind:key="proj.title"/>
+					</transition-group>
+					<!-- end: cardlist -->
 
 	
 
