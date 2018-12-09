@@ -17,11 +17,21 @@ body, html{
 	display:flex;
 	flex-direction:row;
 }
-
+.flex_row.wrap{
+	flex-wrap: wrap;
+}
+.flex_row.centered{
+	justify-content: center;
+}
 .flex_column{
 	display:flex;
 	flex-direction:column;
 }
+.flex_column.wrap{
+	flex-wrap: wrap;
+}
+
+
 
 .header{
 	display:flex;

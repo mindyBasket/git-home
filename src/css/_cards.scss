@@ -1,9 +1,10 @@
 .card{
 	padding: 20px;
-	border:1px solid #3e225421;
+	border:1px solid #3e225433;
 	border-radius: 10px;
+	width: 41%;
 
-	margin: 0px 10px;
+	margin: 10px;
 
 	.title{
 		text-transform: uppercase;
@@ -21,9 +22,10 @@
 		.tags{
 
 			span{
-				border:1px solid black;
+				border:1px solid blue;
 				border-radius: 5px;
 				padding: 3px 6px;
+				margin: 0px 5px 5px 0;
 				color: blue;
 				font-size: 0.7em;
 

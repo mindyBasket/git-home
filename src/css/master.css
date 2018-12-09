@@ -11,9 +11,21 @@ body, html {
   flex-direction: row;
 }
 
+.flex_row.wrap {
+  flex-wrap: wrap;
+}
+
+.flex_row.centered {
+  justify-content: center;
+}
+
 .flex_column {
   display: flex;
   flex-direction: column;
+}
+
+.flex_column.wrap {
+  flex-wrap: wrap;
 }
 
 .header {
@@ -53,9 +65,10 @@ body, html {
 
 .card {
   padding: 20px;
-  border: 1px solid #3e225421;
+  border: 1px solid #3e225433;
   border-radius: 10px;
-  margin: 0px 10px;
+  width: 41%;
+  margin: 10px;
 }
 .card .title {
   text-transform: uppercase;
@@ -66,9 +79,10 @@ body, html {
   margin-bottom: 5px;
 }
 .card .short_summary .tags span {
-  border: 1px solid black;
+  border: 1px solid blue;
   border-radius: 5px;
   padding: 3px 6px;
+  margin: 0px 5px 5px 0;
   color: blue;
   font-size: 0.7em;
 }
