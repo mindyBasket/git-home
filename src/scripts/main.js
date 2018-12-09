@@ -17,17 +17,21 @@ Vue.component('project-card', {
   	data() {
 	    return {
 	      	isActive: false,
-          isOpened: false
+          isOpened: false,
+
+          to_showSummary: null,
 	    }
 	 },
   	methods: {
 	  	openCard: function(){
 	  		if (this.isActive){
 	  			vm.removeCurrFiller();
+          clearTimeout(this.to_showSummary);
           this.isOpened=false;
+
 	  		} else { 
 	  			vm.addFiller(this.index);
-          setTimeout(()=>{ console.log("show summary"); this.isOpened = true; }, 800);
+          this.to_showSummary = setTimeout(()=>{ console.log("show summary"); this.isOpened = true; }, 800);
 	  		}
 	  		this.isActive = !this.isActive;
 	  	}
@@ -42,11 +46,11 @@ Vue.component('project-card', {
 			</div>
 			<div class="title">{{proj.title}}</div>
 
+      <div class="tags flex_row wrap">
+          <span v-for="tag in proj.tags">{{tag}}</span>
+        </div>
 			<div class="short_summary">
 				<div class="summary">{{proj.shortSummary}}</div>
-				<div class="tags flex_row wrap">
-					<span v-for="tag in proj.tags">{{tag}}</span>
-				</div>
 			</div>
 
       <transition name="show-long-summary">

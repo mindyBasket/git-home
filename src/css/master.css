@@ -71,7 +71,7 @@ body, html {
   border: 1px solid #ff966e2b;
   border-radius: 10px;
   width: 41%;
-  height: 200px;
+  min-height: 200px;
   margin: 10px;
   cursor: pointer;
   transition-property: height, border;
@@ -82,6 +82,14 @@ body, html {
   font-weight: bold;
   margin: 5px 0;
 }
+.card .tags span {
+  border: 1px solid #99cfb9;
+  border-radius: 5px;
+  padding: 3px 6px;
+  margin: 0px 5px 5px 0;
+  color: #99cfb9;
+  font-size: 0.7em;
+}
 .card .short_summary {
   transition-property: opacity;
   transition-duration: 0.4s;
@@ -89,14 +97,6 @@ body, html {
 }
 .card .short_summary .summary {
   margin-bottom: 5px;
-}
-.card .short_summary .tags span {
-  border: 1px solid #99cfb9;
-  border-radius: 5px;
-  padding: 3px 6px;
-  margin: 0px 5px 5px 0;
-  color: #99cfb9;
-  font-size: 0.7em;
 }
 .card .long_summary {
   display: block;
@@ -159,7 +159,8 @@ body, html {
 
 .show-long-summary-enter-active, .show-long-summary-leave-active {
   transition-property: opacity, height;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
+  position: absolute;
 }
 
 .show-long-summary-enter, .show-long-summary-leave-to {

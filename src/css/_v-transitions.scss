@@ -18,8 +18,8 @@
 
 .show-long-summary-enter-active, .show-long-summary-leave-active{
 	transition-property: opacity, height;
-	transition-duration:0.4s;
-
+	transition-duration:0.3s;
+	position: absolute;
 }
 
 .show-long-summary-enter, .show-long-summary-leave-to /* .fade-leave-active below version 2.1.8 */ {

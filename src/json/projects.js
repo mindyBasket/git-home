@@ -7,7 +7,6 @@ var projectData = {
   			shortSummary: "Building a mobile app that uses visual programming language to introduce children to robotics hardware and software",
   			tags: [
   				"ReactJS",
-  				"Sass",
 				"Unity",
 				"Blockly"
   			],
@@ -35,7 +34,6 @@ var projectData = {
   			shortSummary: "Personal portfolio site. A simple version. This project should be in SideTrack",
   			tags: [
   				"Vue.js",
-  				"Sass"
   			],
   			longSummary: `
 				<div>
@@ -58,7 +56,6 @@ var projectData = {
   				"Django",
   				"RESTful framework",
   				"Node.js",
-  				"Sass",
   				"AWS S3",
   				"Heroku"
   			],
