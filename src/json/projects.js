@@ -1,4 +1,4 @@
-var projects = {
+var projectData = {
 
   	projects: [
   		{

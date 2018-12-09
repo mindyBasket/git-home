@@ -77,33 +77,14 @@
 					<p>
 						List of projects mixed personal and professional
 					</p>
-
 					<div class="cardlist flex_row wrap" 
 						 id="projects1">
 
-						<div class="card project" 
-							 v-on:click="openCard"
-							 v-bind:class="{ 'active': isActive }"
-							 v-for="proj in projects.projects">
-
-							<div class="thumbnail">
-								<img src=""/>
-							</div>
-							<div class="title">{{proj.title}}</div>
-
-							<div class="short_summary">
-								<div class="summary">{{proj.shortSummary}}</div>
-								<div class="tags flex_row wrap">
-									<span v-for="tag in proj.tags">{{tag}}</span>
-								</div>
-							</div>
-							<div class="long_summary">{{proj.longSummary}}</div>
-						</div>
-
+						<project-card v-for="proj in projectData.projects"
+									  v-bind:proj="proj">
 					</div> <!-- end: cardlist -->
 
 	
-					<br/>		
 
 				</div> <!-- end content -->
 			</div>

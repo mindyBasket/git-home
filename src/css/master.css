@@ -70,9 +70,10 @@ body, html {
   border: 1px solid #ffbd012b;
   border-radius: 10px;
   width: 41%;
+  height: 200px;
   margin: 10px;
   cursor: pointer;
-  transition-property: width, heigh, position, border;
+  transition-property: width, height, position, border;
   transition-duration: 0.5s;
 }
 .card .title {
@@ -101,7 +102,7 @@ body, html {
 
 .card.active {
   width: 100%;
-  height: max-content;
+  height: 250px;
 }
 
 /*# sourceMappingURL=master.css.map */
