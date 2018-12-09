@@ -34,6 +34,7 @@ Vue.component('project-card', {
     }
     ,
   	methods: {
+      
       // transition hooks
       longSum_enter: function(el, done){
 
@@ -66,7 +67,11 @@ Vue.component('project-card', {
 
 	  		} else { 
 	  			vm.addFiller(this.index);
-          this.to_showSummary = setTimeout(()=>{ console.log("show summary"); this.isOpened = true; }, 800);
+          //clearTimeout(this.to_showSummary);
+          const delay = 800; // $v-tran-dur + $el's duration
+          // Note: I wanted the delay to be a bit shorter, but the height
+          //       translation something do not occur. When it is exact match, it is okay.
+          this.to_showSummary = setTimeout(()=>{ console.log("show summary"); this.isOpened = true; }, delay);
 	  		}
 	  		this.isActive = !this.isActive;
 	  	}
@@ -111,16 +116,22 @@ var vm = new Vue({
   	isActive: false
   },
 
-
-
   methods: {
-  	afterEnter: function(el){
+    getRandBase64: function(length){
+        const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+        let resultCode = '';
+        for(let i=0; i<length; i++){
+            resultCode+=chars[Math.floor(Math.random() * chars.length)];
+        }
+      return resultCode
+    },
+  	filler_afterEnter: function(el){
       /* shrink filler card after being inserted */
   		el.className += " shrink";
   	},
   	duplicateProjObj: function(ind){
   		const copyProj = JSON.parse(JSON.stringify(this.projectData.projects[ind]));
-  			  copyProj.title=copyProj.title+copyProj.title;
+  			  copyProj.title=this.getRandBase64(20);
   			  copyProj.isFiller=true;
   		return copyProj;
   	},
@@ -130,7 +141,7 @@ var vm = new Vue({
     },
     removeCurrFiller: function () {
     	const targetInd = Number(document.querySelector(".project.filler").getAttribute("index"));
-    	console.log(targetInd);
+    	//console.log(targetInd);
     	if (targetInd != null || targetInd === undefined){
     		//console.log(`Remove filler at ${targetInd}`);
     		this.projectData.projects.splice(targetInd, 1);

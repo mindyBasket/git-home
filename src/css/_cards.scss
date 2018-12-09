@@ -14,7 +14,7 @@ $card-width: 41%;
 	cursor: pointer;
 
 	transition-property: height, border, background-color;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 
 	.title{
 		text-transform: uppercase;
@@ -44,16 +44,12 @@ $card-width: 41%;
 		.summary{
 			margin-bottom: 5px;
 		}
-		
-
-		
+	
 	}
 
 	.long_summary{
 		transition-property: opacity;;
 	}
-
-	
 
 }
 
@@ -61,13 +57,13 @@ $card-width: 41%;
 	border:1px solid #d4a989;
 }
 
-
+$width-expand-dur: 0.3s;
 
 .card.active{
 	background-color: #ffbb750a;
 
 	animation-name: open-card;
-	animation-duration: 0.3s;
+	animation-duration: $width-expand-dur;
 	animation-delay: $v-tran-dur;
 	animation-fill-mode: both;
 
@@ -92,13 +88,13 @@ $card-width: 41%;
 	margin: 0;
 	pointer-events: none;
 	overflow:hidden;
-	opacity:0.3;
+	opacity:0.2;
 
 	/* for shrinking */
 	transition-property: width;
-	transition-duration: 0.3s;
+	transition-duration: $width-expand-dur;
 }
 .card.filler.shrink{
+	/* this class is applied in fillerEnter() */
 	width:0%;
-
 }

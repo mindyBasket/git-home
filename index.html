@@ -92,7 +92,7 @@
 					<transition-group name="shift-card"
 									  class="cardlist flex_row wrap" 
 						 			  id="projects1"
-						 			  v-on:after-enter="afterEnter">
+						 			  v-on:after-enter="filler_afterEnter">
 							<project-card v-for="(proj, ind) in projectData.projects"
 										  v-bind:proj="proj"
 										  v-bind:index="ind"

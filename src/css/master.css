@@ -76,7 +76,7 @@ body, html {
   margin: 10px;
   cursor: pointer;
   transition-property: height, border, background-color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 .card .title {
   text-transform: uppercase;
@@ -131,13 +131,14 @@ body, html {
   margin: 0;
   pointer-events: none;
   overflow: hidden;
-  opacity: 0.3;
+  opacity: 0.2;
   /* for shrinking */
   transition-property: width;
   transition-duration: 0.3s;
 }
 
 .card.filler.shrink {
+  /* this class is applied in fillerEnter() */
   width: 0%;
 }
 
