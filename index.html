@@ -26,8 +26,8 @@
 			<div class="block" id="intro">
 				<div class="content">
 					<h1>Hello, I am Mindy!</h1>
-					<h1>I am a Full Stack Web Developer in Pittsburgh (Currently)</h1>
-					<h1>How was your day?</h1>
+					<h1>I am a Software/Web Developer in East Coast.</h1>
+					<h1>Got a minute?</h1>
 				</div>
 
 				
@@ -39,7 +39,7 @@
 					<div class="flex_row">
 						<div class="box">
 							<p>
-								I am taught to be a mechanical engineer, self-taught to be a software developer, and keep my mind open to be an artist.
+								I was taught to be a mechanical engineer, self-taught to be a software developer, and keep my mind open to be an artist.
 							</p>
 							<p>
 								6+ year of work experience as a full stack web developer in companies and organization that focus on education and robotics. I am now dipping my toe in DevOps and Deep Learning. I've adopted agile development into my practice and is motivated by success of the product. It is important for me to stay humble, and constantly read and learn.  
@@ -83,13 +83,18 @@
 				<div class="content">
 					<h1>My Journey</h1>
 					<p>
-						Told by projects
+						As told by projects. (Oldest to Newest)
+						Switch (Newest to Oldest)
+					</p>
+					<p>
+						I do not have a traditional computer science degree. This is the journey I took.
 					</p>
 					<transition-group name="shift-card"
 									  class="cardlist flex_row wrap" 
 						 			  id="projects1">
 							<project-card v-for="(proj, ind) in projectData.projects"
 										  v-bind:proj="proj"
+										  v-bind:index="ind"
 										  v-bind:key="proj.title"/>
 					</transition-group>
 					<!-- end: cardlist -->
@@ -102,10 +107,13 @@
 
 
 
-			<div class="block" id="fun-projects">
+			<div class="block" id="small-projects">
 				<div class="content">
-					<h1>Smaller projects for fun</h1>
+					<h1>My Side Tracks</h1>
 
+					<p>
+						Smaller projects
+					</p>
 
 					div.project-item
 					div.thumb

@@ -11,7 +11,8 @@ console.log("Script loaded");
 Vue.component('project-card', {
 
     props:{
-    	proj: Object
+    	proj: Object,
+    	index: Number // order of project at the moment. This is NOT a key.
   	},
   	data() {
 	    return {
@@ -20,18 +21,19 @@ Vue.component('project-card', {
 	},
   	methods: {
 	  	openCard: function(){
-	  		
 	  		if (this.isActive){
-	  			vm.removeCard();
-	  		} else { vm.addCard();}
+	  			vm.removeCurrFiller();
+	  		} else { 
+	  			vm.addFiller(this.index);
+	  		}
 	  		this.isActive = !this.isActive;
 	  	}
 	},
   	template: `
 		<div class="card project" 
 			 v-on:click="openCard"
-			 v-bind:class = "{ 'active': isActive, 'filler' : proj.hasOwnProperty('isFiller') ? proj.isFiller : false}">
-
+			 v-bind:class = "{ 'active': isActive, 'filler' : proj.hasOwnProperty('isFiller') ? proj.isFiller : false}"
+			 v-bind:index = "index">
 			<div class="thumbnail">
 				<img src=""/>
 			</div>
@@ -65,11 +67,18 @@ var vm = new Vue({
   			  copyProj.isFiller=true;
   		return copyProj;
   	},
-  	addCard: function () {
-      this.projectData.projects.splice(1, 0, this.duplicateProjObj(1) );
+  	addFiller: function (ind) {
+  		console.log("Add filler");
+      	this.projectData.projects.splice(ind+1, 0, this.duplicateProjObj(0) );
     },
-    removeCard: function () {
-      this.projectData.projects.splice(1, 1);
+    removeCurrFiller: function () {
+    	const targetInd = Number(document.querySelector(".project.filler").getAttribute("index"));
+    	console.log(targetInd);
+    	if (targetInd != null || targetInd === undefined){
+    		console.log(`Remove filler at ${targetInd}`);
+    		this.projectData.projects.splice(targetInd, 1);
+    	}
+      	
     }
   }
 

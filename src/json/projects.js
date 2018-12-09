@@ -32,7 +32,7 @@ var projectData = {
   		{
   			img: "",
   			title: "MindyBox",
-  			shortSummary: "Personal portfolio site. A simple version",
+  			shortSummary: "Personal portfolio site. A simple version. This project should be in SideTrack",
   			tags: [
   				"Vue.js",
   				"Sass"
@@ -45,35 +45,6 @@ var projectData = {
   					Challenges:
   					- Must be fast
   					- Not overloaded with content
-  				</div>
-  			`
-  		}
-  		,
-  		{
-  			img: "",
-  			title: "VEX Education Portal",
-  			shortSummary: "Built a STEM course content delivery platform as well as the build script for content deployment",
-  			tags: [
-				"PHP",
-				"Node.js",
-				"Python",
-				"DevOps"
-  			],
-  			longSummary: `
-  				<div>
-  					Key Features I worked on:
-  					- Octobot. To ease process between content writer and developers
-  					- Page logic. Client needed multiple variations of versions with different theme and different content available.
-  					- Deployment script to reduce pain of converting external CDS's foramt to ours.
-  					- Precompiler to index our curriculum for search Feature
-  					- Login system
-  					- STEM Lab (Curriculum) development
-
-  					Challenges:
-  					- Quick developement, short schedule, rapid prototype 
-  					- Entire archive of content is not available local. It is fetched through another CDS.
-  					- Archive extremely huge (2-5 GB)
-  					- CDS format does not match with our custom delivery format
   				</div>
   			`
   		}
@@ -112,6 +83,60 @@ var projectData = {
   		}
   		,
   		{
+  			img: "",
+  			title: "VEX Education Portal",
+  			shortSummary: "Built a STEM course content delivery platform as well as the build script for content deployment",
+  			tags: [
+				"PHP",
+				"Node.js",
+				"Python",
+				"DevOps"
+  			],
+  			longSummary: `
+  				<div>
+  					Key Features I worked on:
+  					- Octobot. To ease process between content writer and developers
+  					- Page logic. Client needed multiple variations of versions with different theme and different content available.
+  					- Deployment script to reduce pain of converting external CDS's foramt to ours.
+  					- Precompiler to index our curriculum for search Feature
+  					- Login system
+  					- STEM Lab (Curriculum) development
+
+  					Challenges:
+  					- Quick developement, short schedule, rapid prototype 
+  					- Entire archive of content is not available local. It is fetched through another CDS.
+  					- Archive extremely huge (2-5 GB)
+  					- CDS format does not match with our custom delivery format
+  				</div>
+  			`
+  		}
+  		,
+  		{
+  			img: "",
+  			title: "Sandbloqs",
+  			shortSummary: "Worked on an app that utilizes Google's Blockly. Intended to teach object oriented programming language.",
+  			tags: [
+  				"Javascript",
+  				"Phaser",
+  				"NW.js",
+  				"Blockly",
+
+  			],
+  			longSummary: `
+  				<div>
+  					Key Features I worked on:
+  					- New blocks in Blockly that manipulate objects in Phaser instance
+  					- UI/UX
+
+  					Challenges:
+  					- Limited time, fast developement
+  					- Communication between Blockly and Phaser
+  					- Adding object-oriented programming whereas blockly does NOT support
+  				</div>
+  			`
+  		}
+  		,
+  		{
   			img: "/images/project_thumbs/cs2n_1.png",
   			title: "CS2N",
   			shortSummary: "Worked on the second iteration of the badge reward system, both back end and front end",
@@ -139,54 +164,6 @@ var projectData = {
   		}
   		,
   		{
-  			img: "/images/project_thumbs/cs2n_1.png",
-  			title: "RoboAcademy Curriculum Products",
-  			shortSummary: "Build a family of lightweight, standalone curriculum sites. Did everything for it, from web dev, interactive widgets, course video and graphics",
-  			tags: [
-  				"jQuery",
-  				"bootstrap",
-  				"Video Production"
-  			],
-  			longSummary: `
-  				<div>
-  					Key Features I worked on:
-  					- Everything except the curriculum content
-  					- Video Production
-  					- Widgets build for creating interactive quizzes
-  					- Math parser for our widget
-
-  					Challenges:
-  					- Cannot assume target environment (school computer lab) has internet.
-  					- Cannot assume target environment (school computer lab) has modern browsers.
-  				</div>
-  			`
-  		},
-  		{
-  			img: "",
-  			title: "Sandbloqs",
-  			shortSummary: "Built an app that utilizes Google's Blockly. Intended to teach object oriented programming language.",
-  			tags: [
-  				"Javascript",
-  				"Phaser",
-  				"NW.js",
-  				"Blockly",
-
-  			],
-  			longSummary: `
-  				<div>
-  					Key Features I worked on:
-  					- New blocks in Blockly that manipulate objects in Phaser instance
-  					- UI/UX
-
-  					Challenges:
-  					- Limited time, fast developement
-  					- Communication between Blockly and Phaser
-  					- Adding object-oriented programming whereas blockly does NOT support
-  				</div>
-  			`
-  		},
-
-  		{
   			img: "",
   			title: "Robomatter Curriculum Products",
   			shortSummary: "Assisted building course delivery platform by writing course content and making plugins and widgets that original software could not fill in",
@@ -205,19 +182,43 @@ var projectData = {
   					- Overcoming poor choice of tools
   				</div>
   			`
-  		},
+  		}
+  		,
   		{
-  			img: "",
-  			title: "HCII CTAT",
-  			shortSummary: "Worked as a research assistant creating interface to delivering content",
+  			img: "/images/project_thumbs/cs2n_1.png",
+  			title: "RoboAcademy Curriculum Products",
+  			shortSummary: "Build a family of lightweight, standalone curriculum sites. Did everything for it, from web dev, interactive widgets, course video and graphics",
   			tags: [
-  				"ActionScript 3",
-  				"Vector Art",
-  				"Svn"
+  				"jQuery",
+  				"Video Production"
   			],
   			longSummary: `
   				<div>
-  					Just a measly intern making flash interactives back when Animate was called Flash
+  					Key Features I worked on:
+  					- Everything except the curriculum content
+  					- Video Production
+  					- Widgets build for creating interactive quizzes
+  					- Math parser for our widget
+
+  					Challenges:
+  					- Cannot assume target environment (school computer lab) has internet.
+  					- Cannot assume target environment (school computer lab) has modern browsers.
+  				</div>
+  			`
+  		}
+  		,
+  		{
+  			img: "",
+  			title: "HCII Research",
+  			shortSummary: "Worked as a research assistant creating interface to delivering content",
+  			tags: [
+  				"ActionScript 3",
+  				"CTAT",
+  				"Vector Art",
+  			],
+  			longSummary: `
+  				<div>
+  					Worked as an intern making flash interactives back when Animate was called Flash. CMU HCII is researching better way to teach information, particularly math, using CTAT.
 
   					Key Features I worked on:
   					- UI/UX
