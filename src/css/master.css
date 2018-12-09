@@ -67,14 +67,15 @@ body, html {
 }
 
 .card {
+  position: relative;
   padding: 20px;
   border: 1px solid #ff966e2b;
   border-radius: 10px;
   width: 41%;
-  min-height: 200px;
+  height: 180px;
   margin: 10px;
   cursor: pointer;
-  transition-property: height, border;
+  transition-property: height, border, background-color;
   transition-duration: 0.5s;
 }
 .card .title {
@@ -99,15 +100,15 @@ body, html {
   margin-bottom: 5px;
 }
 .card .long_summary {
-  display: block;
-  height: 0px;
+  transition-property: opacity;
 }
 
 .card:hover {
-  border: 1px solid #d5a958;
+  border: 1px solid #d4a989;
 }
 
 .card.active {
+  background-color: #ffbb750a;
   animation-name: open-card;
   animation-duration: 0.3s;
   animation-delay: 0.4s;
@@ -115,9 +116,6 @@ body, html {
 }
 .card.active .short_summary {
   opacity: 0;
-}
-.card.active .long_summary {
-  height: 100%;
 }
 
 @keyframes open-card {
@@ -133,7 +131,7 @@ body, html {
   margin: 0;
   pointer-events: none;
   overflow: hidden;
-  opacity: 0;
+  opacity: 0.3;
   /* for shrinking */
   transition-property: width;
   transition-duration: 0.3s;
@@ -141,7 +139,6 @@ body, html {
 
 .card.filler.shrink {
   width: 0%;
-  height: 10px;
 }
 
 .shift-card-move {
@@ -160,7 +157,6 @@ body, html {
 .show-long-summary-enter-active, .show-long-summary-leave-active {
   transition-property: opacity, height;
   transition-duration: 0.3s;
-  position: absolute;
 }
 
 .show-long-summary-enter, .show-long-summary-leave-to {

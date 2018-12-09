@@ -1,18 +1,19 @@
-$card-height: 200px;
+$card-height: 180px;
 $card-width: 41%;
 
 .card{
+	position:relative;
 	padding: 20px;
 	border:1px solid #ff966e2b;
 	border-radius: 10px;
 	width: $card-width;
-	min-height: $card-height;
+	height: $card-height;
 
 	margin: 10px;
 
 	cursor: pointer;
 
-	transition-property: height, border;
+	transition-property: height, border, background-color;
 	transition-duration: 0.5s;
 
 	.title{
@@ -49,8 +50,7 @@ $card-width: 41%;
 	}
 
 	.long_summary{
-		display:block;
-		height: 0px;
+		transition-property: opacity;;
 	}
 
 	
@@ -58,12 +58,14 @@ $card-width: 41%;
 }
 
 .card:hover{
-	border:1px solid #d5a958;
+	border:1px solid #d4a989;
 }
 
 
 
 .card.active{
+	background-color: #ffbb750a;
+
 	animation-name: open-card;
 	animation-duration: 0.3s;
 	animation-delay: $v-tran-dur;
@@ -71,10 +73,6 @@ $card-width: 41%;
 
 	.short_summary{
 		opacity: 0;
-	}
-
-	.long_summary{
-		height: 100%;
 	}
 }
 
@@ -94,7 +92,7 @@ $card-width: 41%;
 	margin: 0;
 	pointer-events: none;
 	overflow:hidden;
-	opacity:0;
+	opacity:0.3;
 
 	/* for shrinking */
 	transition-property: width;
@@ -102,5 +100,5 @@ $card-width: 41%;
 }
 .card.filler.shrink{
 	width:0%;
-	height: 10px;
+
 }
