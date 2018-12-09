@@ -78,10 +78,14 @@
 						List of projects mixed personal and professional
 					</p>
 
-					<h2>Vue version</h2>
-					<div class="cardlist flex_row wrap centered" id="projects1">
+					<div class="cardlist flex_row wrap" 
+						 id="projects1">
 
-						<div class="card project" v-for="proj in projects">
+						<div class="card project" 
+							 v-on:click="openCard"
+							 v-bind:class="{ 'active': isActive }"
+							 v-for="proj in projects.projects">
+
 							<div class="thumbnail">
 								<img src=""/>
 							</div>

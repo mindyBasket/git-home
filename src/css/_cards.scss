@@ -6,6 +6,11 @@
 
 	margin: 10px;
 
+	cursor: pointer;
+
+	transition-property: width, heigh, position, border;
+	transition-duration: 0.5s;
+
 	.title{
 		text-transform: uppercase;
 		font-weight: bold;
@@ -36,4 +41,14 @@
 	.long_summary{
 		display:none;
 	}
+}
+
+.card:hover{
+	border:1px solid #d5a958;
+}
+
+
+.card.active{
+	width: 100%;
+	height: max-content;
 }

@@ -5,6 +5,15 @@ console.log("Script loaded");
 
 var vm = new Vue({
   el: '#projects1',
-  data: projects
+  data: {
+  	projects: projects,
+  	isActive: false
+  },
+
+  methods: {
+  	openCard: function(){
+  		this.isActive = !this.isActive;
+  	}
+  }
 
 })
