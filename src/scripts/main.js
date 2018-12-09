@@ -32,7 +32,7 @@ Vue.component('project-card', {
   	template: `
 		<div class="card project" 
 			 v-on:click="openCard"
-			 v-bind:class = "{ 'active': isActive, 'filler' : proj.hasOwnProperty('isFiller') ? proj.isFiller : false}"
+			 v-bind:class = "{'active': isActive, 'filler' : proj.hasOwnProperty('isFiller') ? proj.isFiller : false}"
 			 v-bind:index = "index">
 			<div class="thumbnail">
 				<img src=""/>
@@ -61,6 +61,9 @@ var vm = new Vue({
   },
 
   methods: {
+  	afterEnter: function(el){
+  		el.className += " shrink";
+  	},
   	duplicateProjObj: function(ind){
   		const copyProj = JSON.parse(JSON.stringify(this.projectData.projects[ind]));
   			  copyProj.title=copyProj.title+copyProj.title;
