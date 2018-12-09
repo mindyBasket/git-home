@@ -1,6 +1,6 @@
 .card{
 	padding: 20px;
-	border:1px solid #3e225433;
+	border:1px solid #ffbd012b;
 	border-radius: 10px;
 	width: 41%;
 
@@ -22,11 +22,11 @@
 		.tags{
 
 			span{
-				border:1px solid blue;
+				border:1px solid $hl-blue;
 				border-radius: 5px;
 				padding: 3px 6px;
 				margin: 0px 5px 5px 0;
-				color: blue;
+				color: $hl-blue;
 				font-size: 0.7em;
 
 			}

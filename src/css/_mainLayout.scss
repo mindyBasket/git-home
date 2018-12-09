@@ -1,7 +1,10 @@
-$hl1: #556cff;
+$hl-blue: #99cfb9;
 
-$base: #c6c7e1;
-$base-light:#eaecf1;
+$base: #3b3b36;
+$base-text: #b59e7a;
+
+$base-light: #eaf2df;
+$base-light-text: #57997e;
 
 
 body, html{
@@ -35,11 +38,14 @@ body, html{
 
 .header{
 	display:flex;
+	position: fixed;
 	flex-direction: row;
-	background-color: #c6c7e1;
+	width: 100%;
+
+	background-color: #00000030;
 	height: 50px;
 
-	color: $hl1;
+	color: #b89d81;
 }
 
 .portfolio_wrapper{
@@ -50,8 +56,8 @@ body, html{
 
 .block{
 	display:flex;
-	background-color:#eaecf1;
-	color: #5b659b;
+	background-color: $base;
+	color: $base-text;
 
 	.content{
 		width: 900px;
@@ -70,5 +76,5 @@ body, html{
 }
 
 .block#aboutme{
-	background-color: white;
+	background-color: #4c4b47;
 }

@@ -30,10 +30,12 @@ body, html {
 
 .header {
   display: flex;
+  position: fixed;
   flex-direction: row;
-  background-color: #c6c7e1;
+  width: 100%;
+  background-color: #00000030;
   height: 50px;
-  color: #556cff;
+  color: #b89d81;
 }
 
 .portfolio_wrapper {
@@ -43,8 +45,8 @@ body, html {
 
 .block {
   display: flex;
-  background-color: #eaecf1;
-  color: #5b659b;
+  background-color: #3b3b36;
+  color: #b59e7a;
 }
 .block .content {
   width: 900px;
@@ -60,12 +62,12 @@ body, html {
 }
 
 .block#aboutme {
-  background-color: white;
+  background-color: #4c4b47;
 }
 
 .card {
   padding: 20px;
-  border: 1px solid #3e225433;
+  border: 1px solid #ffbd012b;
   border-radius: 10px;
   width: 41%;
   margin: 10px;
@@ -79,11 +81,11 @@ body, html {
   margin-bottom: 5px;
 }
 .card .short_summary .tags span {
-  border: 1px solid blue;
+  border: 1px solid #99cfb9;
   border-radius: 5px;
   padding: 3px 6px;
   margin: 0px 5px 5px 0;
-  color: blue;
+  color: #99cfb9;
   font-size: 0.7em;
 }
 .card .long_summary {
