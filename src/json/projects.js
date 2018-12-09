@@ -7,24 +7,75 @@ var projectData = {
   			shortSummary: "Building a mobile app that uses visual programming language to introduce children to robotics hardware and software",
   			tags: [
   				"ReactJS",
+  				"Sass",
 				"Unity",
 				"Blockly"
   			],
-  			longSummary: "Long content Because long contents are unique to each project, I am not too sure how to store the information :(. Involved in second iteration of Badge system. Including system that reward different tiers of badge and ways to display and share. Logic parser for interpreting trigger rule."
+  			longSummary: `
+  				<div>
+  					Key Features I worked on:
+  					- Lead(?) ReactJS developer
+  					- Optimization for keeping high frame rate in mobile app
+  					- Flexible layout using all CSS tricks I can muster
+
+  					Challenges:
+  					- Compatible in iOS, Android, and ChromeOS
+  					- Limited time. Fast developement. 
+  					- App must be responsive
+  					- Child friendly app
+  					- keeping the same code base
+  					- Complex communication of Bluetooth <-> App <-> Unity
+  				</div>
+  			`
+  		}
+  		,
+  		{
+  			img: "",
+  			title: "MindyBox",
+  			shortSummary: "Personal portfolio site. A simple version",
+  			tags: [
+  				"Vue.js",
+  				"Sass"
+  			],
+  			longSummary: `
+				<div>
+  					Key Features I worked on:
+  					- Everything
+
+  					Challenges:
+  					- Must be fast
+  					- Not overloaded with content
+  				</div>
+  			`
   		}
   		,
   		{
   			img: "",
   			title: "VEX Education Portal",
-  			shortSummary: "Built a STEM course content delivery platform as well as the course content development and deployment",
+  			shortSummary: "Built a STEM course content delivery platform as well as the build script for content deployment",
   			tags: [
 				"PHP",
 				"Node.js",
-				"MySQL",
 				"Python",
 				"DevOps"
   			],
-  			longSummary: "Long content Because long contents are unique to each project, I am not too sure how to store the information :(. Involved in second iteration of Badge system. Including system that reward different tiers of badge and ways to display and share. Logic parser for interpreting trigger rule."
+  			longSummary: `
+  				<div>
+  					Key Features I worked on:
+  					- Octobot. To ease process between content writer and developers
+  					- Page logic. Client needed multiple variations of versions with different theme and different content available.
+  					- Deployment script to reduce pain of converting external CDS's foramt to ours.
+  					- Precompiler to index our curriculum for search Feature
+  					- Login system
+  					- STEM Lab (Curriculum) development
+
+  					Challenges:
+  					- Quick developement, short schedule, rapid prototype 
+  					- Entire archive of content is not available local. It is fetched through another CDS.
+  					- Archive extremely huge (2-5 GB)
+  					- CDS format does not match with our custom delivery format
+  				</div>
+  			`
   		}
   		,
   		{
@@ -36,13 +87,28 @@ var projectData = {
   				"Django",
   				"RESTful framework",
   				"Node.js",
+  				"Sass",
+  				"AWS S3",
   				"Heroku"
   			],
-  			longSummary: `A project started to teach myself Django and React. Started out as a Trello imitation but slowly found its purpose as an editor that creates an experimental form of media called "flipbook" (name subject to change)
+  			longSummary: `
+				<div>
+					I made this project to teach myself Django and React. Started out as a Trello imitation but slowly found its purpose as an editor that creates an experimental form of media called "flipbook" (name subject to change).
 
-									Flipbooks are intended to create something that appear scenamatic, but is low cost since it is not an actual movie. 
+					Flipbooks are intended to create something that appear scenamatic, but is low cost since it is not an actual movie. 
 
-									The app is still at its infancy so currently lacks any user data. `
+					The app is still at its infancy so currently lacks any user data.
+
+
+  					Key Features I worked on:
+  					- Everything, including deployment
+  					- Semi-single-page-app. RESTful.
+
+  					Challenges:
+  					- Must be designed to handling very large number of images in a single page.
+  					- Using AWS as CDS for speed
+  				</div>
+  			`
   		}
   		,
   		{
@@ -55,9 +121,21 @@ var projectData = {
   				"mySQL",
   			],
   			longSummary: `
-  				which rewards different tiers of badge and ways to display and share. Logic parser for interpreting trigger rule.
+  				<div>
+  					Badge system was waiting for big update where it rewards different tiers of badge and UI to show user their badges and its progress to the higher tier. 
 
-  				Morbi elementum facilisis hendrerit. Nam ullamcorper tristique nisi lobortis pulvinar. Proin eu sapien quis elit blandit tincidunt id eu arcu. Vestibulum vestibulum magna cursus ex luctus, ac efficitur felis porttitor. Mauris consectetur aliquet tortor ac sollicitudin. Proin nec tempor lorem. Nam a varius diam. Pellentesque feugiat dictum lacinia. Curabitur quis viverra sapien, sit amet accumsan lorem. Praesent orci ipsum, aliquam in lectus a, laoreet mattis mi. Morbi mollis dolor lacus, eu pulvinar dolor posuere non. `
+  					Key Features I worked on:
+  					- Logic parser for interpreting trigger rule.
+  					- UI/UX for badges for each user batch profile
+  					- Badge Tier system, and sub-badges
+  					- Badge design, and badge display design
+
+  					Challenges:
+  					- First iteration of badge system written without any proper comments
+  					- Minimizing querying for efficiency
+  					- Throttle Badge requests
+  				</div>
+  			`
   		}
   		,
   		{
@@ -65,10 +143,23 @@ var projectData = {
   			title: "RoboAcademy Curriculum Products",
   			shortSummary: "Build a family of lightweight, standalone curriculum sites. Did everything for it, from web dev, interactive widgets, course video and graphics",
   			tags: [
-  				"Javascript",
+  				"jQuery",
   				"bootstrap",
+  				"Video Production"
   			],
-  			longSummary: `Morbi elementum facilisis hendrerit. Nam ullamcorper tristique nisi lobortis pulvinar. Proin eu sapien quis elit blandit tincidunt id eu arcu. Vestibulum vestibulum magna cursus ex luctus, ac efficitur felis porttitor. Mauris consectetur aliquet tortor ac sollicitudin. Proin nec tempor lorem. Nam a varius diam. Pellentesque feugiat dictum lacinia. Curabitur quis viverra sapien, sit amet accumsan lorem. Praesent orci ipsum, aliquam in lectus a, laoreet mattis mi. Morbi mollis dolor lacus, eu pulvinar dolor posuere non. `
+  			longSummary: `
+  				<div>
+  					Key Features I worked on:
+  					- Everything except the curriculum content
+  					- Video Production
+  					- Widgets build for creating interactive quizzes
+  					- Math parser for our widget
+
+  					Challenges:
+  					- Cannot assume target environment (school computer lab) has internet.
+  					- Cannot assume target environment (school computer lab) has modern browsers.
+  				</div>
+  			`
   		},
   		{
   			img: "",
@@ -81,7 +172,18 @@ var projectData = {
   				"Blockly",
 
   			],
-  			longSummary: `Morbi elementum facilisis hendrerit. Nam ullamcorper tristique nisi lobortis pulvinar. Proin eu sapien quis elit blandit tincidunt id eu arcu. Vestibulum vestibulum magna cursus ex luctus, ac efficitur felis porttitor. Mauris consectetur aliquet tortor ac sollicitudin. Proin nec tempor lorem. Nam a varius diam. Pellentesque feugiat dictum lacinia. Curabitur quis viverra sapien, sit amet accumsan lorem. Praesent orci ipsum, aliquam in lectus a, laoreet mattis mi. Morbi mollis dolor lacus, eu pulvinar dolor posuere non. `
+  			longSummary: `
+  				<div>
+  					Key Features I worked on:
+  					- New blocks in Blockly that manipulate objects in Phaser instance
+  					- UI/UX
+
+  					Challenges:
+  					- Limited time, fast developement
+  					- Communication between Blockly and Phaser
+  					- Adding object-oriented programming whereas blockly does NOT support
+  				</div>
+  			`
   		},
 
   		{
@@ -91,7 +193,41 @@ var projectData = {
   			tags: [
   				"Javascript",
   			],
-  			longSummary: `Madcap is a documentation program that we extended its usage to behave like Moodle. Javascript was used to fill the gap between desired UI/UX functionality to what Madcap can offer. `
+  			longSummary: `
+  				<div>
+  					Madcap is a documentation program that we extended its usage to behave like Moodle. Javascript was used to fill the gap between desired UI/UX functionality to what Madcap can offer.
+
+  					Key Features I worked on:
+  					- Made plugin solution for various navigation shortcomings
+  					- Curriculum Content development
+
+  					Challenges:
+  					- Overcoming poor choice of tools
+  				</div>
+  			`
+  		},
+  		{
+  			img: "",
+  			title: "HCII CTAT",
+  			shortSummary: "Worked as a research assistant creating interface to delivering content",
+  			tags: [
+  				"ActionScript 3",
+  				"Vector Art",
+  				"Svn"
+  			],
+  			longSummary: `
+  				<div>
+  					Just a measly intern making flash interactives back when Animate was called Flash
+
+  					Key Features I worked on:
+  					- UI/UX
+  					- Hint System
+  					- Graphic assets
+
+  					Challenges:
+  					- Making coherent interface based on events being sent from CTAT
+  				</div>
+  			`
   		}
 
   	]
