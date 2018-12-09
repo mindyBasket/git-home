@@ -3,6 +3,7 @@ body, html {
   padding: 0;
   font-family: "Quicksand", sans-serif;
   color: #404265;
+  font-size: 12pt;
 }
 
 .flex_row {
@@ -48,6 +49,31 @@ body, html {
 
 .block#aboutme {
   background-color: white;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #3e225421;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+.card .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.card .short_summary .summary {
+  margin-bottom: 5px;
+}
+.card .short_summary .tags span {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px 6px;
+  color: blue;
+  font-size: 0.7em;
+}
+.card .long_summary {
+  display: none;
 }
 
 /*# sourceMappingURL=master.css.map */
