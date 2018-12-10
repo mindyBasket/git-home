@@ -4,26 +4,35 @@ var projectData = {
   		{
   			img: "",
   			title: "[Secret ongoing project]",
-  			shortSummary: "Building a mobile app that uses visual programming language to introduce children to robotics hardware and software",
+  			shortSummary: "Building a mobile app that uses visual programming language to introduce children to robotics hardware and programming",
   			tags: [
   				"ReactJS",
 				"Unity",
 				"Blockly"
   			],
   			longSummary: `
-  				<div>
-  					Key Features I worked on:
-  					- Lead(?) ReactJS developer
-  					- Optimization for keeping high frame rate in mobile app
-  					- Flexible layout using all CSS tricks I can muster
-
-  					Challenges:
-  					- Compatible in iOS, Android, and ChromeOS
-  					- Limited time. Fast developement. 
-  					- App must be responsive
-  					- Child friendly app
-  					- keeping the same code base
-  					- Complex communication of Bluetooth <-> App <-> Unity
+  				<div class="flex_row">
+  					<div class="box">
+  						<p>
+		  					Highlight of my role:
+		  					<ul>
+		  						<li>Lead ReactJS developer</li>
+		  						<li>Optimization for UX on Mobile</li>
+		  						<li>Flexible layout for cross platform compatibility<li>
+		  					</ul>
+		  				</p>
+		  				<p>
+		  					Notable Challenges:
+		  					<ul>
+		  						<li>Cross-platform compatibility: iOS, Android, and ChromeOS</li>
+		  						<li>Keeping the same code base</li>
+		  						<li>Building communication between Bluetooth <-> App <-> Unity</li>
+		  					</ul>
+		  				</p>
+  					</div>
+  					<div class="box">
+  						Image
+  					</div>
   				</div>
   			`
   		}
@@ -36,13 +45,24 @@ var projectData = {
   				"Vue.js",
   			],
   			longSummary: `
-				<div>
-  					Key Features I worked on:
-  					- Everything
-
-  					Challenges:
-  					- Must be fast
-  					- Not overloaded with content
+  				<div class="flex_row">
+  					<div class="box">
+  						<p>
+		  					Highlight of my role:
+		  					<ul>
+		  						<li>Build from scratch</li>
+		  					</ul>
+		  				</p>
+		  				<p>
+		  					Notable Challenges:
+		  					<ul>
+		  						<li>Learning Vue.js</li>
+		  					</ul>
+		  				</p>
+  					</div>
+  					<div class="box">
+  						Image
+  					</div>
   				</div>
   			`
   		}
@@ -56,25 +76,39 @@ var projectData = {
   				"Django",
   				"RESTful framework",
   				"Node.js",
-  				"AWS S3",
+  				"AWS",
   				"Heroku"
   			],
   			longSummary: `
-				<div>
-					I made this project to teach myself Django and React. Started out as a Trello imitation but slowly found its purpose as an editor that creates an experimental form of media called "flipbook" (name subject to change).
-
-					Flipbooks are intended to create something that appear scenamatic, but is low cost since it is not an actual movie. 
-
-					The app is still at its infancy so currently lacks any user data.
-
-
-  					Key Features I worked on:
-  					- Everything, including deployment
-  					- Semi-single-page-app. RESTful.
-
-  					Challenges:
-  					- Must be designed to handling very large number of images in a single page.
-  					- Using AWS as CDS for speed
+  				<div class="flex_row">
+  					<div class="box">
+  						<p>
+  							I made this project to teach myself Django and React. Started out as a Trello imitation but slowly found its purpose as an animation editor that creates an experimental form of media called "flipbook" (name subject to change).
+  							<br/>
+  							Flipbooks are intended to create something that appear scenamatic, but is low cost since it is not an actual movie. 
+  							<br/>
+							The app is still at its infancy. More features will be added.
+  						</p>
+  						<p>
+		  					Highlight of my role:
+		  					<ul>
+		  						<li>Both front-end and back-end</li>
+		  						<li>Using RESTful api to make single page app for certain objects</li>
+		  						<li>Building and deploying<li>
+		  					</ul>
+		  				</p>
+		  				<p>
+		  					Notable Challenges:
+		  					<ul>
+		  						<li>Creating a disposable demo instance</li>
+		  						<li>Optimization around rendering and animating large number of images</li>
+		  						<li>Fetching images from external CDS that has better storage</li>
+		  					</ul>
+		  				</p>
+  					</div>
+  					<div class="box">
+  						Image
+  					</div>
   				</div>
   			`
   		}
@@ -90,20 +124,33 @@ var projectData = {
 				"DevOps"
   			],
   			longSummary: `
-  				<div>
-  					Key Features I worked on:
-  					- Octobot. To ease process between content writer and developers
-  					- Page logic. Client needed multiple variations of versions with different theme and different content available.
-  					- Deployment script to reduce pain of converting external CDS's foramt to ours.
-  					- Precompiler to index our curriculum for search Feature
-  					- Login system
-  					- STEM Lab (Curriculum) development
-
-  					Challenges:
-  					- Quick developement, short schedule, rapid prototype 
-  					- Entire archive of content is not available local. It is fetched through another CDS.
-  					- Archive extremely huge (2-5 GB)
-  					- CDS format does not match with our custom delivery format
+  				<div class="flex_row">
+  					<div class="box">
+  						<p>
+		  					Highlight of my role:
+		  					<ul>
+		  						<li>Used Octobot for scheduled build and deployment</li>
+		  						<li>Keeping same code base, deploy multiple versions</li>
+		  						<li>Exporter script to reduce pain of converting external CDS's foramt to ours</li>
+		  						<li>Precompiler to index our curriculum for search Feature</li>
+		  						<li>Login system</li>
+		  						<li>STEM Lab (Curriculum) development</li>
+		  					</ul>
+		  				</p>
+		  				<p>
+		  					Notable Challenges:
+		  					<ul>
+		  						<li>Dynamic requirements from the client, because the website was built the same time as the hardware it represents</li>
+		  						<li>Rapid prototyping</li>
+		  						<li>Entire archive of content is not available local. It is fetched through another CDS.</li>
+		  						<li>Handling large archive (2-5 GB)</li>
+		  						<li>CDS format does not match with our custom delivery format</li>
+		  					</ul>
+		  				</p>
+  					</div>
+  					<div class="box">
+  						Image
+  					</div>
   				</div>
   			`
   		}

@@ -7,6 +7,27 @@ console.log("Script loaded");
 
 // Note: components must come first before "new Vue"
 
+Vue.component('long-summary', {
+
+    props:{
+      templt: String,
+    },
+    data() {
+      return {
+          isActive: false,
+      }
+    }
+    ,
+    mounted(){
+      console.log("Created");
+      console.log(this.templt);
+    }
+    ,
+    template: `<div v-html="templt"></div>`
+});
+
+
+
 
 Vue.component('project-card', {
 
@@ -38,6 +59,8 @@ Vue.component('project-card', {
       // transition hooks
       longSum_enter: function(el, done){
 
+        //el.style.opacity = 1;
+
         // Quickly turn card to height:auto to get the full height
         this.$el.style.height = 'auto';
         const expandHeight = getComputedStyle(this.$el).height; 
@@ -68,14 +91,14 @@ Vue.component('project-card', {
 	  		} else { 
 	  			vm.addFiller(this.index);
           //clearTimeout(this.to_showSummary);
-          const delay = 800; // $v-tran-dur + $el's duration
+          const delay = 680; // $v-tran-dur + $el's duration
           // Note: I wanted the delay to be a bit shorter, but the height
           //       translation something do not occur. When it is exact match, it is okay.
           this.to_showSummary = setTimeout(()=>{ console.log("show summary"); this.isOpened = true; }, delay);
 	  		}
 	  		this.isActive = !this.isActive;
 	  	}
-	},
+	  },
   	template: `
 		<div class="card project" 
 			 v-on:click="openCard"
@@ -93,12 +116,16 @@ Vue.component('project-card', {
 				<div class="summary">{{proj.shortSummary}}</div>
 			</div>
 
-      <transition v-on:enter="longSum_enter"
+      <transition name="toggle-long-summary"
+                  v-on:enter="longSum_enter"
                   v-on:leave="longSum_leave">
         <div class="long_summary"
              v-if="isOpened"
              >
-             {{proj.longSummary}}
+          <long-summary v-bind:templt="proj.longSummary">
+            {{proj.longSummary}}
+          </long-summary>
+
         </div>
       </transition>
 			
@@ -131,13 +158,13 @@ var vm = new Vue({
   	},
   	duplicateProjObj: function(ind){
   		const copyProj = JSON.parse(JSON.stringify(this.projectData.projects[ind]));
-  			  copyProj.title=this.getRandBase64(20);
-  			  copyProj.isFiller=true;
+  			    copyProj.title =copyProj.title+this.getRandBase64(10);
+  			    copyProj.isFiller=true;
   		return copyProj;
   	},
   	addFiller: function (ind) {
   		//console.log("Add filler");
-      this.projectData.projects.splice(ind+1, 0, this.duplicateProjObj(0) );
+      this.projectData.projects.splice(ind+1, 0, this.duplicateProjObj(ind) );
     },
     removeCurrFiller: function () {
     	const targetInd = Number(document.querySelector(".project.filler").getAttribute("index"));
