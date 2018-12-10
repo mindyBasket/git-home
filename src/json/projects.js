@@ -2,6 +2,24 @@ var projectData = {
 
   	projects: [
   		{
+  			isHidden: true,
+  			img: "",
+  			title: "na",
+  			shortSummary: "",
+  			tags: ["N/A"],
+  			longSummary: ""
+  		},
+  		{
+  			isHidden: true,
+  			img: "",
+  			title: "na",
+  			shortSummary: "",
+  			tags: ["N/A"],
+  			longSummary: ""
+  		}
+  		,
+  		{
+
   			img: "",
   			title: "[Secret ongoing project]",
   			shortSummary: "Building a mobile app that uses visual programming language to introduce children to robotics hardware and programming",

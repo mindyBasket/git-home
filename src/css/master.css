@@ -148,6 +148,19 @@ body, html {
   width: 0%;
 }
 
+.card.hidden {
+  /* bug?: v-transition 'shift-card' does not happen if the first 
+  		 clicked element is the first element in the list under the 
+  		 v-transition 'shift-card'. All transition by clicking subsequent
+  		 cards also fails. But if the first element clicked is 
+  		 NOT the first card, the v-transition renders okay */
+  height: 0px;
+  pointer-events: none;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+
 .shift-card-move {
   transition: transform 0.4s;
 }
@@ -155,10 +168,6 @@ body, html {
 .shift-card-move-complete-enter, .shift-card-move-complete-leave-to {
   opacity: 0;
   /*transform: translateY(30px);*/
-}
-
-.shift-card-leave-active {
-  position: absolute;
 }
 
 .toggle-long-summary-enter-active, .toggle-long-summary-leave-active {
