@@ -4,7 +4,7 @@ var projectData = {
   		{
   			isHidden: true,
   			img: "",
-  			title: "na",
+  			title: "na1",
   			shortSummary: "",
   			tags: ["N/A"],
   			longSummary: ""
@@ -12,7 +12,7 @@ var projectData = {
   		{
   			isHidden: true,
   			img: "",
-  			title: "na",
+  			title: "na2",
   			shortSummary: "",
   			tags: ["N/A"],
   			longSummary: ""
@@ -32,7 +32,7 @@ var projectData = {
   				<div class="flex_row">
   					<div class="box">
   						<p>
-		  					Highlight of my role:
+		  					Notable contributions by me:
 		  					<ul>
 		  						<li>Lead ReactJS developer</li>
 		  						<li>Optimization for UX on Mobile</li>
@@ -101,7 +101,7 @@ var projectData = {
   				<div class="flex_row">
   					<div class="box">
   						<p>
-  							I made this project to teach myself Django and React. Started out as a Trello imitation but slowly found its purpose as an animation editor that creates an experimental form of media called "flipbook" (name subject to change).
+  							This Started out as a Trello imitation of collecting and tagging images but changed its purpose as an animation editor that creates an experimental form of media called "flipbook" (name subject to change).
   							<br/>
   							Flipbooks are intended to create something that appear scenamatic, but is low cost since it is not an actual movie. 
   							<br/>
@@ -185,15 +185,27 @@ var projectData = {
 
   			],
   			longSummary: `
-  				<div>
-  					Key Features I worked on:
-  					- New blocks in Blockly that manipulate objects in Phaser instance
-  					- UI/UX
-
-  					Challenges:
-  					- Limited time, fast developement
-  					- Communication between Blockly and Phaser
-  					- Adding object-oriented programming whereas blockly does NOT support
+  				<div class="flex_row">
+  					<div class="box">
+  						<p>
+		  					Highlight of my role:
+		  					<ul>
+		  						<li>Block extension to manipulate Phaser objects</li>
+		  						<li>UI</li>
+		  					</ul>
+		  				</p>
+		  				<p>
+		  					Notable Challenges:
+		  					<ul>
+		  						<li>Limited time, fast developement</li>
+		  						<li>Adding object-oriented programming whereas blockly does NOT support</li>
+		  						<li>Communication between Blockly and Phaser</li>
+		  					</ul>
+		  				</p>
+  					</div>
+  					<div class="box">
+  						Image
+  					</div>
   				</div>
   			`
   		}
@@ -213,7 +225,7 @@ var projectData = {
 
   					Key Features I worked on:
   					- Logic parser for interpreting trigger rule.
-  					- UI/UX for badges for each user batch profile
+  					- UI+UX for badges for each user batch profile
   					- Badge Tier system, and sub-badges
   					- Badge design, and badge display design
 

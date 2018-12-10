@@ -19,8 +19,7 @@ Vue.component('long-summary', {
     }
     ,
     mounted(){
-      console.log("Created");
-      console.log(this.templt);
+
     }
     ,
     template: `<div v-html="templt"></div>`
@@ -163,8 +162,15 @@ var vm = new Vue({
   		return copyProj;
   	},
   	addFiller: function (ind) {
-  		//console.log("Add filler");
-      this.projectData.projects.splice(ind+1, 0, this.duplicateProjObj(ind) );
+      // check if card is even
+      console.log( (ind+1)%2 );
+      if ( (ind+1)%2 == 0){
+        console.log("EVENs");
+        this.projectData.projects.splice(ind, 0, this.duplicateProjObj(ind) );
+        
+      } else {
+        this.projectData.projects.splice(ind+1, 0, this.duplicateProjObj(ind) );
+      }
     },
     removeCurrFiller: function () {
     	const targetInd = Number(document.querySelector(".project.filler").getAttribute("index"));
