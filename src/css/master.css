@@ -28,6 +28,10 @@ body, html {
   flex-wrap: wrap;
 }
 
+.box {
+  flex-grow: 1;
+}
+
 .header {
   display: flex;
   position: fixed;
@@ -73,10 +77,11 @@ body, html {
   border-radius: 10px;
   width: 41%;
   height: 180px;
+  overflow: hidden;
   margin: 10px;
   cursor: pointer;
   transition-property: height, border, background-color;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 .card .title {
   text-transform: uppercase;
@@ -101,6 +106,7 @@ body, html {
 }
 .card .long_summary {
   transition-property: opacity;
+  transition-duration: 0.5s;
 }
 
 .card:hover {
@@ -110,7 +116,7 @@ body, html {
 .card.active {
   background-color: #ffbb750a;
   animation-name: open-card;
-  animation-duration: 0.3s;
+  animation-duration: 0.2s;
   animation-delay: 0.4s;
   animation-fill-mode: both;
 }
@@ -134,7 +140,7 @@ body, html {
   opacity: 0.2;
   /* for shrinking */
   transition-property: width;
-  transition-duration: 0.3s;
+  transition-duration: 0.25s;
 }
 
 .card.filler.shrink {
@@ -155,14 +161,19 @@ body, html {
   position: absolute;
 }
 
-.show-long-summary-enter-active, .show-long-summary-leave-active {
-  transition-property: opacity, height;
+.toggle-long-summary-enter-active, .toggle-long-summary-leave-active {
+  /* for some reason putting this here doesn't work. So I put it into
+     .long-summary directly */
+  transition-property: opacity;
   transition-duration: 0.3s;
 }
 
-.show-long-summary-enter, .show-long-summary-leave-to {
+.toggle-long-summary-enter, .toggle-long-summary-leave-to {
   opacity: 0;
-  height: 0px;
+}
+
+.toggle-long-summary-enter-to {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=master.css.map */

@@ -9,12 +9,13 @@ $card-width: 41%;
 	width: $card-width;
 	height: $card-height;
 
+	overflow: hidden;
 	margin: 10px;
 
 	cursor: pointer;
 
 	transition-property: height, border, background-color;
-	transition-duration: 0.3s;
+	transition-duration: 0.2s;
 
 	.title{
 		text-transform: uppercase;
@@ -23,7 +24,6 @@ $card-width: 41%;
 	}
 
 	.tags{
-
 		span{
 			border:1px solid $hl-blue;
 			border-radius: 5px;
@@ -48,7 +48,8 @@ $card-width: 41%;
 	}
 
 	.long_summary{
-		transition-property: opacity;;
+		transition-property: opacity;
+		transition-duration:0.5s;
 	}
 
 }
@@ -57,7 +58,7 @@ $card-width: 41%;
 	border:1px solid #d4a989;
 }
 
-$width-expand-dur: 0.3s;
+$width-expand-dur: 0.2s;
 
 .card.active{
 	background-color: #ffbb750a;
@@ -92,7 +93,7 @@ $width-expand-dur: 0.3s;
 
 	/* for shrinking */
 	transition-property: width;
-	transition-duration: $width-expand-dur;
+	transition-duration: 0.25s;
 }
 .card.filler.shrink{
 	/* this class is applied in fillerEnter() */
