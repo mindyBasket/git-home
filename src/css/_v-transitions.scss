@@ -11,7 +11,8 @@
 }
 
 .shift-card-leave-active {
-
+	/* you need this to animate shifting when cards leave */
+	position: absolute; 
 }
 
 

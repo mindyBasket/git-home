@@ -36,21 +36,32 @@ Vue.component('project-card', {
   	},
   	data() {
 	    return {
+          projTitle: "",
+
 	      	isActive: false,
           isOpened: false,
+
+          elShortSummary: null,
 
           elStyle: null,
           defaultHeight: null,
 
-          to_showSummary: null,
+          toid_showSummary: null,
+          to_hideSummary: null,
 	    }
 	  }
     ,
     mounted(){
+      // dom ref
+      this.elShortSummary = this.$el.querySelector(".short_summary");
+
       // add style info
       // Note: getComputedStyle properties come with units like "px"
       this.elStyle = getComputedStyle(this.$el);
       this.defaultHeight = this.elStyle.height;
+
+      // Update title, for reference
+      this.projTitle =  this.proj.title.replace(/ /g,'');
     }
     ,
   	methods: {
@@ -58,7 +69,9 @@ Vue.component('project-card', {
       // transition hooks
       longSum_enter: function(el, done){
 
-        //el.style.opacity = 1;
+        // hide short summary. 
+        // Its opacity is set to 0 upon click of the card
+        this.elShortSummary.style.height = "0px";
 
         // Quickly turn card to height:auto to get the full height
         this.$el.style.height = 'auto';
@@ -78,31 +91,59 @@ Vue.component('project-card', {
       ,
       longSum_leave: function(el, done){
         this.$el.style.height = this.defaultHeight;
+        this.elShortSummary.style.height = "auto";
         done();
       }
       ,
-	  	openCard: function(){
+	  	toggleCard: function(){
 	  		if (this.isActive){
-	  			vm.removeCurrFiller();
           clearTimeout(this.to_showSummary);
           this.isOpened=false;
 
+          vm.fitFiller(this.projTitle); // fit into a card's position
+          this.to_hideSummary = setTimeout(()=>{ 
+            console.log("DELETE");
+            vm.removeCurrFiller();
+          }, 100);
+
 	  		} else { 
+          clearTimeout(this.to_hideSummary);
+          // Move to card of question
+          // this.$el.querySelector(".title").scrollIntoView({ 
+          //   behavior: 'smooth' 
+          // });
+          if ( (this.index+1)%2 == 0){
+            window.scroll({
+              top: this.$el.offsetTop + 190,
+              left: 0, 
+              behavior: 'smooth' 
+            });
+          } else {
+            window.scroll({
+              top: this.$el.offsetTop - 70,
+              left: 0, 
+              behavior: 'smooth' 
+            });
+          }
+          
 	  			vm.addFiller(this.index);
-          //clearTimeout(this.to_showSummary);
-          const delay = 680; // $v-tran-dur + $el's duration
+          const delay = 500; // > $el's duration + $width-expand-dur
           // Note: I wanted the delay to be a bit shorter, but the height
           //       translation something do not occur. When it is exact match, it is okay.
-          this.to_showSummary = setTimeout(()=>{ console.log("show summary"); this.isOpened = true; }, delay);
+          this.to_showSummary = setTimeout(()=>{ 
+            this.isOpened = true; // show long summary
+            const fillerElem = document.querySelector(`.project[index="${this.index+1}"]`);
+                  fillerElem.setAttribute("id", this.projTitle);
+          }, delay);
 	  		}
 	  		this.isActive = !this.isActive;
 	  	}
 	  },
   	template: `
 		<div class="card project" 
-			 v-on:click="openCard"
+			 v-on:click="toggleCard"
 			 v-bind:class = "{'active': isActive, 'filler' : proj.hasOwnProperty('isFiller') ? proj.isFiller : false, 'hidden': proj.hasOwnProperty('isHidden') ? true : false}"
-			 v-bind:index = "index">
+       v-bind:index = "index">
 			<div class="thumbnail">
 				<img src=""/>
 			</div>
@@ -152,8 +193,8 @@ var vm = new Vue({
       return resultCode
     },
   	filler_afterEnter: function(el){
-      /* shrink filler card after being inserted */
-  		el.className += " shrink";
+      /* previously used to shrink filler card after being inserted 
+         but not used by changing strategy. */
   	},
   	duplicateProjObj: function(ind){
   		const copyProj = JSON.parse(JSON.stringify(this.projectData.projects[ind]));
@@ -164,13 +205,28 @@ var vm = new Vue({
   	addFiller: function (ind) {
       // check if card is even
       console.log( (ind+1)%2 );
+      const fillerProj = this.duplicateProjObj(ind);
       if ( (ind+1)%2 == 0){
         console.log("EVENs");
-        this.projectData.projects.splice(ind, 0, this.duplicateProjObj(ind) );
+        this.projectData.projects.splice(ind, 0, fillerProj );
         
       } else {
-        this.projectData.projects.splice(ind+1, 0, this.duplicateProjObj(ind) );
+        this.projectData.projects.splice(ind+1, 0, fillerProj );
       }
+      
+      // Don't do this. Elements are not rendered yet!
+      // return document.querySelectorAll(".project")[ind];
+
+    },
+    fitFiller: function(id){
+      // Stage before removing filler. The filler container's width is
+      // reduced to fit between existing card. This way, when it is removed,
+      // v-transition animates position properly.
+      document.querySelectorAll(`#${id}`).forEach((el)=>{
+        el.style.width="30%";
+      });
+
+
     },
     removeCurrFiller: function () {
     	const targetInd = Number(document.querySelector(".project.filler").getAttribute("index"));
