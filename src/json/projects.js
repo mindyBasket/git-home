@@ -21,7 +21,7 @@ var projectData = {
   		{
 
   			img: "",
-  			title: "[Secret ongoing project]",
+  			title: "Ongoing project",
   			shortSummary: "Building a mobile app that uses visual programming language to introduce children to robotics hardware and programming",
   			tags: [
   				"ReactJS",
@@ -88,7 +88,7 @@ var projectData = {
   		{
   			img: "",
   			title: "Flipbook",
-  			shortSummary: "Build an app that generates sharable 'flipbooks', an alternative story telling format that is somewhere between an animated movie and a storyboard",
+  			shortSummary: "Build an app that started as a trello-like photo manager but became an animation editor",
   			tags: [
   				"ReactJS",
   				"Django",
@@ -112,7 +112,7 @@ var projectData = {
 		  					<ul>
 		  						<li>Both front-end and back-end</li>
 		  						<li>Using RESTful api to make single page app for certain objects</li>
-		  						<li>Building and deploying<li>
+		  						<li>Building and deploying</li>
 		  					</ul>
 		  				</p>
 		  				<p>
@@ -267,16 +267,29 @@ var projectData = {
   				"Video Production"
   			],
   			longSummary: `
-  				<div>
-  					Key Features I worked on:
-  					- Everything except the curriculum content
-  					- Video Production
-  					- Widgets build for creating interactive quizzes
-  					- Math parser for our widget
+  				<div class="flex_row">
+  					<div class="box">
+  						<p>
+		  					Highlight of my role:
+		  					<ul>
+		  						<li>Built from scratch.</li>
+		  						<li>Built reusable widgets for creating interactive quizzes</li>
+		  						<li>Math parser for the widgets</li>
+		  						<li>Video production</li>
 
-  					Challenges:
-  					- Cannot assume target environment (school computer lab) has internet.
-  					- Cannot assume target environment (school computer lab) has modern browsers.
+		  					</ul>
+		  				</p>
+		  				<p>
+		  					Notable Challenges:
+		  					<ul>
+		  						<li>Cannot assume target environment (school computer lab) has internet.</li>
+		  						<li>Cannot assume target environment (school computer lab) has modern browsers.</li>
+		  					</ul>
+		  				</p>
+  					</div>
+  					<div class="box">
+  						Image
+  					</div>
   				</div>
   			`
   		}
@@ -284,23 +297,35 @@ var projectData = {
   		{
   			img: "",
   			title: "HCII Research",
-  			shortSummary: "Worked as a research assistant creating interface to delivering content",
+  			shortSummary: "Beginning of my journey: worked as a research assistant creating interface to delivering content",
   			tags: [
   				"ActionScript 3",
   				"CTAT",
-  				"Vector Art",
   			],
   			longSummary: `
-  				<div>
-  					Worked as an intern making flash interactives back when Animate was called Flash. CMU HCII is researching better way to teach information, particularly math, using CTAT.
+  				<div class="flex_row">
+  					<div class="box">
+  						<p>
+  							Worked as an intern building flash interactives back when Animate was still called "Flash". CMU HCII department I worked for was researching better way to teach information, particularly math, using CTAT.
+  						</p>
+  						<p>
+		  					Highlight of my role:
+		  					<ul>
+		  						<li>UI for hint/guide system for course content</li>
+		  						<li>Graphic Assets</li>
 
-  					Key Features I worked on:
-  					- UI/UX
-  					- Hint System
-  					- Graphic assets
-
-  					Challenges:
-  					- Making coherent interface based on events being sent from CTAT
+		  					</ul>
+		  				</p>
+		  				<p>
+		  					Notable Challenges:
+		  					<ul>
+		  						<li>Filling in limitation of CTAT with Flash</li>
+		  					</ul>
+		  				</p>
+  					</div>
+  					<div class="box">
+  						Image
+  					</div>
   				</div>
   			`
   		}
