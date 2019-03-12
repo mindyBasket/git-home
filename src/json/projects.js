@@ -21,11 +21,10 @@ var projectData = {
   		{
 
   			img: "",
-  			title: "Ongoing project",
+  			title: "Ongoing projects at Robomatter",
   			shortSummary: "Building a mobile app that uses visual programming language to introduce children to robotics hardware and programming",
   			tags: [
   				"ReactJS",
-				"Unity",
 				"Blockly"
   			],
   			longSummary: `
@@ -220,19 +219,29 @@ var projectData = {
   				"mySQL",
   			],
   			longSummary: `
-  				<div>
-  					Badge system was waiting for big update where it rewards different tiers of badge and UI to show user their badges and its progress to the higher tier. 
+  				<div class="flex_row">
+  					<div class="box">
+  						<p>
+  						Badge system was waiting for big update where it rewards different tiers of badge and UI to show user their badges and its progress to the higher tier
 
-  					Key Features I worked on:
-  					- Logic parser for interpreting trigger rule.
-  					- UI+UX for badges for each user batch profile
-  					- Badge Tier system, and sub-badges
-  					- Badge design, and badge display design
-
-  					Challenges:
-  					- First iteration of badge system written without any proper comments
-  					- Minimizing querying for efficiency
-  					- Throttle Badge requests
+		  					Notable contributions by me:
+		  					<ul>
+		  						<li>Badge Tier system, and sub-badges<li>
+		  						<li>Logic parser for interpreting trigger rule.</li>
+		  						<li>UI+UX for new badge system</li>
+		  					</ul>
+		  				</p>
+		  				<p>
+		  					Notable Challenges:
+		  					<ul>
+		  						<li>Server sometimes crashes. Optimizing and throttling was necessary.</li>
+		  						<li>First iteration of badge system written without any proper comments</li>
+		  					</ul>
+		  				</p>
+  					</div>
+  					<div class="box">
+  						Image
+  					</div>
   				</div>
   			`
   		}
@@ -245,15 +254,27 @@ var projectData = {
   				"Javascript",
   			],
   			longSummary: `
-  				<div>
-  					Madcap is a documentation program that we extended its usage to behave like Moodle. Javascript was used to fill the gap between desired UI/UX functionality to what Madcap can offer.
+  				<div class="flex_row">
+  					<div class="box">
+  						<p>
+  							Context: Madcap is a documentation program that we extended its usage to behave like Moodle. Javascript was used to fill the gap between desired UI/UX functionality to what Madcap can offer.
 
-  					Key Features I worked on:
-  					- Made plugin solution for various navigation shortcomings
-  					- Curriculum Content development
-
-  					Challenges:
-  					- Overcoming poor choice of tools
+		  					Notable contributions by me:
+		  					<ul>
+		  						<li>Made plugin solution for various navigation shortcomings<li>
+		  						<li>Curriculum Content development</li>
+		  					</ul>
+		  				</p>
+		  				<p>
+		  					Notable Challenges:
+		  					<ul>
+		  						<li>n/a</li>
+		  					</ul>
+		  				</p>
+  					</div>
+  					<div class="box">
+  						Image
+  					</div>
   				</div>
   			`
   		}
