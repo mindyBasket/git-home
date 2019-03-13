@@ -6,7 +6,8 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: "Quicksand", sans-serif;
-  color: #404265;
+  background-color: #eeeeee;
+  color: #464e79;
   font-size: 12pt;
 }
 
@@ -53,8 +54,6 @@ body, html {
 
 .block {
   display: flex;
-  background-color: #34332f;
-  color: #b59e7a;
 }
 .block .content {
   width: 900px;
@@ -74,6 +73,7 @@ body, html {
   background-color: #4c4b47;
 }
 
+/* style will be added soon */
 .card {
   position: relative;
   padding: 20px;
@@ -167,6 +167,36 @@ body, html {
   opacity: 0;
   padding: 0;
   margin: 0;
+}
+
+.work_card {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #979797;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+.work_card .card_head .role {
+  flex-grow: 1;
+}
+.work_card .card_head .role .role_name {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.work_card .card_head .role .role_company {
+  font-weight: bold;
+}
+.work_card .card_head .year {
+  width: 100px;
+  border-left: 1px solid black;
+}
+.work_card .tags span {
+  border: 1px solid #99cfb9;
+  border-radius: 5px;
+  padding: 3px 6px;
+  margin: 0px 5px 5px 0;
+  color: #99cfb9;
+  font-size: 0.7em;
 }
 
 .shift-card-move {

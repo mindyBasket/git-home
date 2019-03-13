@@ -1,9 +1,9 @@
 ## About
 
-Dead-simple version of a personal portfolio site, just html and javascript. The original plan of using node.js is separated into another repo. That is for the future when I have more time.
+Simple, static version of a personal portfolio site, just vue.js and sass. The original plan of using node.js is separated into another repo. That is for the future when I have more time.
 
 ## How to view
-I used python server when developing. Without a server, some files may not load. 
+You need a server to view this app. Python server is recommended due to its simplicity. 
 
 1. Get python, if you have not already.
 2. Run simple server

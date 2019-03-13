@@ -1,0 +1,41 @@
+.work_card{
+    position:relative;
+    
+	padding: 20px;
+	border: 1px solid #979797;
+
+	transition-property: background-color;
+	transition-duration: 0.2s;
+
+    .card_head{
+        .role{
+            flex-grow: 1;
+            .role_name{
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .role_company{
+                font-weight: bold;
+            }
+        }
+
+        .year{
+            width:100px;
+            border-left: 1px solid black;
+        }
+    }
+
+	
+
+	.tags{
+		span{
+			border:1px solid $hl-blue;
+			border-radius: 5px;
+			padding: 3px 6px;
+			margin: 0px 5px 5px 0;
+			color: $hl-blue;
+			font-size: 0.7em;
+
+		}
+    }
+}
