@@ -1,8 +1,17 @@
+.work_card_wrapper{
+    width: 100%;
+    border:2px solid red;
+}
+
 .work_card{
     position:relative;
     
 	padding: 20px;
-	border: 1px solid #979797;
+    border: 1px solid #979797;
+    
+    width: $content_width;
+    max-width: 700px;
+    margin: 0 auto;
 
 	transition-property: background-color;
 	transition-duration: 0.2s;

@@ -1,6 +1,6 @@
 ## About
 
-Simple, static version of a personal portfolio site, just vue.js and sass. The original plan of using node.js is separated into another repo. That is for the future when I have more time.
+Simple, static version of a personal portfolio site, just vue.js and sass. The original plan of using node.js is separated into another repo. That is for the future when I have more time. 
 
 ## How to view
 You need a server to view this app. Python server is recommended due to its simplicity. 
@@ -16,7 +16,6 @@ You need a server to view this app. Python server is recommended due to its simp
 ### Setup and run sass
 I used sass to compile all style into one master css. 
 
-1. Install sass
+1. Install [sass](https://sass-lang.com/install)
 2. cd into /src/css/ 
 3. run sass watcher: `sass --watch input.scss master.css`
-
