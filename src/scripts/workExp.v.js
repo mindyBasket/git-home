@@ -9,6 +9,8 @@ Vue.component('card-body', {
     templt: String,
   },
   data() {
+    // component's data MUST BE A FUNCTION
+    // (Unlike Vue instance)
     return {
         isActive: false,
     }
@@ -22,7 +24,7 @@ Vue.component('card-body', {
 });
 
 
-Vue.component('timeline-cards', {
+Vue.component('work-cards', {
 
     props:{
       // HTML names are case IN-sensitive. Keep them lowercase

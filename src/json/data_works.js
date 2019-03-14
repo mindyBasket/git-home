@@ -8,12 +8,13 @@ var workExperienceData = {
       year: ["2016", "Present"],
       description: `
         <ul>
-          <li>Started early role as a full-stack web developer, building, designing both back and front end to
+          <li><strong>Full stack web developer</strong>: started early role as a full-stack web developer, building, designing both back and front end to
           solve content delivery challenges to satisfy our client.<li>
+          <li><strong>Adapted agile practices</strong>
           <li>Building solutions to modularize.</li>
-          <li>Maintain and improve deployment by adding automation to solve problems and challenges.</li>
+          <li><strong>Content delivery challenges</strong>Maintain and improve deployment by adding automation to solve problems and challenges.</li>
           <li>Brainstorm and build STEM curriculum content</li>
-          <li>Joined a team of product and software engineers research for the best technology, and build a prototype,
+          <li><strong>Block-based programming language editor</strong>Joined a team of product and software engineers research for the best technology, and build a prototype,
           a minimum viable software in 2 months.
           to showcase proof of concept</li>
           <li>Currently continuing to collaborate on a project that is currently confidential.</li>
@@ -63,6 +64,7 @@ var workExperienceData = {
         <ul>
           <li>Generated graphic assets and created UI used in the curriculum used for research.</li>
           <li>Tested internal software used for research</li>
+          <li>Collaborated with educators to test, and collect data to produce quantified results.<li>
         </ul>
       `,
       tags: [

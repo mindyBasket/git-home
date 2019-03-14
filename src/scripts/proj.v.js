@@ -1,32 +1,5 @@
 console.log("Script loaded");
 
-//var local_data = data;
-//console.log(JSON.stringify(local_data));
-
-
-
-// Note: components must come first before "new Vue"
-
-Vue.component('long-summary', {
-
-    props:{
-      templt: String,
-    },
-    data() {
-      return {
-          isActive: false,
-      }
-    }
-    ,
-    mounted(){
-
-    }
-    ,
-    template: `<div v-html="templt"></div>`
-});
-
-
-
 
 Vue.component('project-card', {
 
@@ -38,7 +11,7 @@ Vue.component('project-card', {
 	    return {
           projTitle: "",
 
-	      	isActive: false,
+          isActive: false,
           isOpened: false,
 
           elShortSummary: null,
@@ -142,7 +115,10 @@ Vue.component('project-card', {
   	template: `
 		<div class="card project" 
 			 v-on:click="toggleCard"
-			 v-bind:class = "{'active': isActive, 'filler' : proj.hasOwnProperty('isFiller') ? proj.isFiller : false, 'hidden': proj.hasOwnProperty('isHidden') ? true : false}"
+			 v-bind:class = "{
+         'active': isActive, 
+         'filler' : proj.hasOwnProperty('isFiller') ? proj.isFiller : false, 
+         'hidden': proj.hasOwnProperty('isHidden') ? true : false}"
        v-bind:index = "index">
 			<div class="thumbnail">
 				<img src=""/>
@@ -177,7 +153,7 @@ Vue.component('project-card', {
 
 
 var vm = new Vue({
-  el: '#projects1',
+  el: '#notable_projects',
   data: {
   	projectData: projectData,
   	isActive: false

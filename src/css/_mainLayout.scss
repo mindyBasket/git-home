@@ -31,6 +31,9 @@ body, html{
 .flex_column.wrap{
 	flex-wrap: wrap;
 }
+.justify_center{
+	justify-content: center;
+}
 
 .box{
 	flex-grow: 1;
@@ -58,6 +61,21 @@ body, html{
 
 .block{
 	display:flex;
+	padding: 35px 0;
+
+	.section_title_wrapper{
+		font-size: 1.5em;
+
+		.line{
+			display:inline-block;
+			flex-grow: 1;
+			align-self: center;
+			border-top: 1px solid black;
+		}
+		.title{
+			padding: 0 20px;
+		}
+	}
 
 	.content{
 		width: $content_width;
@@ -85,4 +103,8 @@ body, html{
 
 .block#aboutme{
 	background-color: #4c4b47;
+}
+
+.block#workexp{
+	background-color: $light_mediumBase;
 }

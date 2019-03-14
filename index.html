@@ -22,7 +22,7 @@
 			Mindybox
 		</div>
 
-		<div class='portfolio_wrapper'>
+		<div class='portfolio_wrapper' id="main_body">
 
 			<div class="block" id="intro">
 				<div class="content">
@@ -30,8 +30,6 @@
 					<h1>I am a self-taught Software Developer who've dedicated herself to Robotics and Education.</h1>
 					<h1>This is my story:</h1>
 				</div>
-
-				
 			</div>
 			
 			<div class="block" id="aboutme">
@@ -81,17 +79,22 @@
 
 			<div class="block flex_column" id="workexp">
 				<div class="content">
-					<h1>Work Experience</h1>
+					<div class="section_title_wrapper flex_row justify_center">
+						<span class="line"></span>
+						<span class="title">Work Experience</span>
+						<span class="line"></span>
+					</div>
+					
 				</div>
 				<div class="content flood">
 				
-					<timeline-cards v-for="(work, ind) in workExperienceData.data"
+					<work-cards v-for="(work, ind) in workExperienceData.data"
 										  v-bind:workobj="work"
 										  v-bind:index="ind"
 										  v-bind:key="work.title"/>
 				</div>
-
 			</div>
+
 			<div class="block" id="projects">
 				<div class="content">
 					<h1>Notable Projects</h1>
@@ -100,7 +103,7 @@
 					</p>
 					<transition-group name="shift-card"
 									  class="cardlist flex_row wrap" 
-						 			  id="projects1"
+						 			  id="notable_projects"
 						 			  v-on:after-enter="filler_afterEnter">
 							<project-card v-for="(proj, ind) in projectData.projects"
 										  v-bind:proj="proj"
@@ -213,9 +216,10 @@
 
 
 		
-		<script type="text/javascript" src="/src/json/projects.js"></script>
+		<script type="text/javascript" src="/src/json/data_projects.js"></script>
 		<script type="text/javascript" src="/src/json/data_works.js"></script>
-		<script type="text/javascript" src="/src/scripts/main.js"></script>
+		
+		<script type="text/javascript" src="/src/scripts/proj.v.js"></script>
 		<script type="text/javascript" src="/src/scripts/workExp.v.js"></script>
 
 

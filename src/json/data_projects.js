@@ -2,23 +2,6 @@ var projectData = {
 
   	projects: [
   		{
-  			isHidden: true,
-  			img: "",
-  			title: "na1",
-  			shortSummary: "",
-  			tags: ["N/A"],
-  			longSummary: ""
-  		},
-  		{
-  			isHidden: true,
-  			img: "",
-  			title: "na2",
-  			shortSummary: "",
-  			tags: ["N/A"],
-  			longSummary: ""
-  		}
-  		,
-  		{
 
   			img: "",
   			title: "Ongoing projects at Robomatter",
