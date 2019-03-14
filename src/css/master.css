@@ -50,6 +50,7 @@ body, html {
   background-color: #00000030;
   height: 50px;
   color: #b89d81;
+  z-index: 100;
 }
 
 .portfolio_wrapper {
@@ -102,25 +103,29 @@ body, html {
 }
 
 /* style will be added soon */
-.card {
+.card_project {
   position: relative;
   padding: 20px;
-  border: 1px solid #ff966e2b;
-  border-radius: 10px;
+  background-color: #e1e1e1;
   width: 41%;
   height: 180px;
+  border-bottom: 2px solid black;
   overflow: hidden;
-  margin: 10px;
+  margin-top: 8px;
+  /* $space_around_card - border */
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
   cursor: pointer;
-  transition-property: height, border, background-color;
+  transition-property: margin, border, background-color;
   transition-duration: 0.2s;
 }
-.card .title {
+.card_project .title {
   text-transform: uppercase;
   font-weight: bold;
   margin: 5px 0;
 }
-.card .tags span {
+.card_project .tags span {
   border: 1px solid #99cfb9;
   border-radius: 5px;
   padding: 3px 6px;
@@ -128,32 +133,33 @@ body, html {
   color: #99cfb9;
   font-size: 0.7em;
 }
-.card .short_summary {
+.card_project .short_summary {
   overflow: hidden;
   transition-property: opacity;
   transition-duration: 0.4s;
   opacity: 1;
 }
-.card .short_summary .summary {
+.card_project .short_summary .summary {
   margin-bottom: 5px;
 }
-.card .long_summary {
+.card_project .long_summary {
   transition-property: opacity;
   transition-duration: 0.5s;
 }
 
-.card:hover {
-  border: 1px solid #d4a989;
+.card_project:hover {
+  margin-top: 0px;
+  border-bottom: 10px solid black;
 }
 
-.card.active {
-  background-color: #ffbb750a;
-  animation-name: open-card;
+.card_project.active {
+  background-color: white;
+  animation-name: none;
   animation-duration: 0.2s;
   animation-delay: 0.1s;
   animation-fill-mode: both;
 }
-.card.active .short_summary {
+.card_project.active .short_summary {
   opacity: 0;
 }
 

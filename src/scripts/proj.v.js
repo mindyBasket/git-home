@@ -69,55 +69,35 @@ Vue.component('project-card', {
       }
       ,
 	  	toggleCard: function(){
-	  		if (this.isActive){
-          clearTimeout(this.to_showSummary);
-          this.isOpened=false;
+        this.isActive = !this.isActive; 
 
-          vm.fitFiller(this.projTitle); // fit into a card's position
-          this.to_hideSummary = setTimeout(()=>{ 
-            console.log("DELETE");
-            vm.removeCurrFiller();
-          }, 100);
+        // clearTimeout(this.to_showSummary);
+        // this.isOpened=false;
 
-	  		} else { 
-          clearTimeout(this.to_hideSummary);
-          // Move to card of question
-          // this.$el.querySelector(".title").scrollIntoView({ 
-          //   behavior: 'smooth' 
-          // });
-          if ( (this.index+1)%2 == 0){
-            window.scroll({
-              top: this.$el.offsetTop + 190,
-              left: 0, 
-              behavior: 'smooth' 
-            });
-          } else {
-            window.scroll({
-              top: this.$el.offsetTop - 70,
-              left: 0, 
-              behavior: 'smooth' 
-            });
-          }
-          
-	  			vm.addFiller(this.index);
-          const delay = 500; // > $el's duration + $width-expand-dur
-          // Note: I wanted the delay to be a bit shorter, but the height
-          //       translation something do not occur. When it is exact match, it is okay.
-          this.to_showSummary = setTimeout(()=>{ 
-            this.isOpened = true; // show long summary
-            const fillerElem = document.querySelector(`.project[index="${this.index+1}"]`);
-                  fillerElem.setAttribute("id", this.projTitle);
-          }, delay);
-	  		}
-	  		this.isActive = !this.isActive;
+        // vm.fitFiller(this.projTitle); // fit into a card's position
+        // this.to_hideSummary = setTimeout(()=>{ 
+        //   console.log("DELETE");
+        //   vm.removeCurrFiller();
+        // }, 100);
+
+	  		// 	vm.addFiller(this.index);
+        //   const delay = 500; // > $el's duration + $width-expand-dur
+        //   // Note: I wanted the delay to be a bit shorter, but the height
+        //   //       translation something do not occur. When it is exact match, it is okay.
+        //   this.to_showSummary = setTimeout(()=>{ 
+        //     this.isOpened = true; // show long summary
+        //     const fillerElem = document.querySelector(`.project[index="${this.index+1}"]`);
+        //           fillerElem.setAttribute("id", this.projTitle);
+        //   }, delay);
+	  		// }
+	  
 	  	}
 	  },
   	template: `
-		<div class="card project" 
+		<div class="card_project" 
 			 v-on:click="toggleCard"
 			 v-bind:class = "{
          'active': isActive, 
-         'filler' : proj.hasOwnProperty('isFiller') ? proj.isFiller : false, 
          'hidden': proj.hasOwnProperty('isHidden') ? true : false}"
        v-bind:index = "index">
 			<div class="thumbnail">

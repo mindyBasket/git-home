@@ -39,8 +39,8 @@ var projectData = {
   		,
   		{
   			img: "",
-  			title: "MindyBox",
-  			shortSummary: "Personal portfolio site. A simple version. This project should be in SideTrack",
+  			title: "MindyBox v1",
+  			shortSummary: "Personal portfolio site, and an opportunity to explore Vue.js",
   			tags: [
   				"Vue.js",
   			],
@@ -298,41 +298,5 @@ var projectData = {
   			`
   		}
   		,
-  		{
-  			img: "",
-  			title: "HCII Research",
-  			shortSummary: "Beginning of my journey: worked as a research assistant creating interface to delivering content",
-  			tags: [
-  				"ActionScript 3",
-  				"CTAT",
-  			],
-  			longSummary: `
-  				<div class="flex_row">
-  					<div class="box">
-  						<p>
-  							Worked as an intern building flash interactives back when Animate was still called "Flash". CMU HCII department I worked for was researching better way to teach information, particularly math, using CTAT.
-  						</p>
-  						<p>
-		  					Highlight of my role:
-		  					<ul>
-		  						<li>UI for hint/guide system for course content</li>
-		  						<li>Graphic Assets</li>
-
-		  					</ul>
-		  				</p>
-		  				<p>
-		  					Notable Challenges:
-		  					<ul>
-		  						<li>Filling in limitation of CTAT with Flash</li>
-		  					</ul>
-		  				</p>
-  					</div>
-  					<div class="box">
-  						Image
-  					</div>
-  				</div>
-  			`
-  		}
-
   	]
 }

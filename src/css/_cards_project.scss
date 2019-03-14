@@ -1,20 +1,25 @@
 $card-height: 180px;
 $card-width: 41%;
+$space_around_card: 10px;
 
-.card{
+.card_project{
 	position:relative;
 	padding: 20px;
-	border:1px solid #ff966e2b;
-	border-radius: 10px;
+	background-color: $light_mediumBase;
 	width: $card-width;
 	height: $card-height;
 
+	border-bottom: 2px solid black;
+
 	overflow: hidden;
-	margin: 10px;
+	margin-top: 8px; /* $space_around_card - border */
+	margin-right: $space_around_card;
+	margin-bottom: $space_around_card;
+	margin-left: $space_around_card;
 
 	cursor: pointer;
 
-	transition-property: height, border, background-color;
+	transition-property: margin, border, background-color;
 	transition-duration: 0.2s;
 
 	.title{
@@ -56,18 +61,19 @@ $card-width: 41%;
 
 }
 
-.card:hover{
-	border:1px solid #d4a989;
+.card_project:hover{
+	margin-top: 0px;
+	border-bottom: 10px solid black;
 }
 
 $width-expand-dur: 0.2s;
 
-.card.active{
+.card_project.active{
 	
 
-	background-color: #ffbb750a;
+	background-color: white;
 
-	animation-name: open-card;
+	animation-name: none;
 	animation-duration: $width-expand-dur;
 	animation-delay: 0.1s;
 	animation-fill-mode: both;
