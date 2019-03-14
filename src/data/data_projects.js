@@ -300,3 +300,6 @@ var projectData = {
   		,
   	]
 }
+
+
+export default projectData;

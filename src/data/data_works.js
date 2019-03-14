@@ -73,3 +73,6 @@ var workExperienceData = {
     }
   ]
 }
+
+
+export default workExperienceData;

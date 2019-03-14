@@ -1,7 +1,4 @@
-console.log("Vue script for work experience section loaded");
-
-// Note: components must come first before "new Vue"
-
+import workExperienceData from '../data/data_works';
 
 Vue.component('card-body', {
 
@@ -122,3 +119,4 @@ var vm = new Vue({
 
 });
 
+export default vm;

@@ -1,5 +1,4 @@
-console.log("Script loaded");
-
+import projectData from '../data/data_projects';
 
 Vue.component('project-card', {
 
@@ -197,3 +196,4 @@ var vm = new Vue({
 
 });
 
+export default vm;
