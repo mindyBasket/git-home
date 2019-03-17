@@ -1,5 +1,4 @@
 import Vue from 'vue';
-// import Root from './Root.vue';
 
 // JSON data
 import projectData from './data/data_projects';
@@ -8,13 +7,9 @@ import workExperienceData from './data/data_works';
 // Components
 import * as Projects from './components/Projects';
 import * as WorkExperiences from './components/WorkExperiences';
+import Lightbox from './components/Lightbox.vue';
 
-
-// new Vue({
-//   el: '#main_body',
-//   render: h => h(Root)
-// })
-
+// Main app. 
 var vm = new Vue({
   el: '#main_body',
   data: {
@@ -83,3 +78,10 @@ var vm = new Vue({
 
 });
 
+// Lightbox. Render from .vue file, which has a different format
+// TODO: This is my first attempt at using .vue file. See if it works well, and 
+//       convert other components to .vue
+const vm_lb = new Vue({
+  el: '#modal_wrapper',
+  render: h => h(Lightbox)
+})
