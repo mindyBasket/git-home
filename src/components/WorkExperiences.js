@@ -1,4 +1,4 @@
-import workExperienceData from '../data/data_works';
+import Vue from 'vue';
 
 Vue.component('card-body', {
 
@@ -99,24 +99,4 @@ Vue.component('work-cards', {
       </div>
     </div>
 	`
-
-		
 });
-
-
-var vm = new Vue({
-  el: '#workexp',
-  data: {
-  	workExperienceData: workExperienceData,
-  	isActive: false
-  },
-
-  methods: {
-    sayHello: function(el, done){
-      done();
-    }
-  },
-
-});
-
-export default vm;

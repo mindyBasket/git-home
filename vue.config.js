@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/mindybox-simple/'
+    publicPath: '/mindybox-v1/'
 } 
