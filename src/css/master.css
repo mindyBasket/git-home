@@ -10,6 +10,9 @@ body, html {
   background-color: #eeeeee;
   color: #464e79;
   font-size: 12pt;
+  height: 100%;
+  /* for portfolio_wrapper to have scroll */
+  overflow: hidden;
 }
 
 .flex_row {
@@ -56,6 +59,8 @@ body, html {
 .portfolio_wrapper {
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .block {

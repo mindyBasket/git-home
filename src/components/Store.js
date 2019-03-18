@@ -8,17 +8,12 @@ const store = {
   debug: true,
   state: {
     message: 'Hello!',
-    lightboxIsActive: true,
-  },
-  setBodyScroll(isVisible) {
-    document.querySelector('body').style.overflowY = isVisible ? "scroll" : "hidden";
+    lightboxIsActive: false,
   },
   closeModal() {
-    this.setBodyScroll(true);
     this.state.lightboxIsActive = false;
   },
   openModal() {
-    this.setBodyScroll(false);
     this.state.lightboxIsActive = true;
   },
   setMessageAction(newValue) {
