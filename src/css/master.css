@@ -108,6 +108,11 @@ body, html {
 }
 
 /* style will be added soon */
+.skill_list {
+  background-color: #4155af;
+  color: #dce2f3;
+}
+
 .card_project {
   position: relative;
   padding: 20px;
