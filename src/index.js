@@ -92,5 +92,8 @@ const vm_lb = new Vue({
       console.log("Hello from #modal_wrapper!");
     }
   },
-  render: h => h(Lightbox, { props: { rootState: store.state } })
+  render: h => h(Lightbox, { 
+    props: { 
+      rootState: store.state } 
+    })
 })

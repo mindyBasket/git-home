@@ -7,22 +7,17 @@
 const store = {
   debug: true,
   state: {
-    message: 'Hello!',
+    content: '',
+    title: '',
     lightboxIsActive: false,
   },
   closeModal() {
     this.state.lightboxIsActive = false;
   },
-  openModal() {
+  openModal(title, content) {
     this.state.lightboxIsActive = true;
-  },
-  setMessageAction(newValue) {
-    if (this.debug) console.log('setMessageAction triggered with', newValue)
-    this.state.message = newValue
-  },
-  clearMessageAction() {
-    if (this.debug) console.log('clearMessageAction triggered')
-    this.state.message = ''
+    this.state.content = content;
+    this.state.title = title;
   },
   sayHello() {
     console.log("Hello from the store!");

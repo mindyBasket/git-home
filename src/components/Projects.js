@@ -1,5 +1,17 @@
 import Vue from 'vue';
 
+Vue.component('rendered-long-summary', {
+
+  props:{
+    templt: String,
+  },
+  mounted(){
+
+  }
+  ,
+  template: `<div v-html="templt"></div>`
+});
+
 Vue.component('project-card', {
 
     props:{
@@ -68,9 +80,9 @@ Vue.component('project-card', {
       }
       ,
 	  	toggleCard: function(){
+
         this.isActive = !this.isActive; 
-        
-        store.openModal();
+        store.openModal(this.proj.title, this.proj.longSummary);
         // clearTimeout(this.to_showSummary);
         // this.isOpened=false;
 

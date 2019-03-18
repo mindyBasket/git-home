@@ -9,7 +9,7 @@ $space_around_card: 10px;
 	width: $card-width;
 	height: $card-height;
 
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid $light_darkBase;
 
 	overflow: hidden;
 	margin-top: 8px; /* $space_around_card - border */
@@ -63,7 +63,7 @@ $space_around_card: 10px;
 
 .card_project:hover{
 	margin-top: 0px;
-	border-bottom: 10px solid black;
+	border-bottom: 10px solid $light_darkBase;
 }
 
 $width-expand-dur: 0.2s;

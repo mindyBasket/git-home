@@ -50,8 +50,8 @@ body, html{
 	flex-direction: row;
 	width: 100%;
 
-	background-color: #00000030;
-	height: 50px;
+	background-color: #eeeeee;
+	height: $HEADER_HEIGHT;
 
 	color: #b89d81;
 
@@ -110,7 +110,7 @@ body, html{
 }
 
 .block#aboutme{
-	background-color: #4c4b47;
+	background-color: $light_mediumBase;
 }
 
 .block#workexp{

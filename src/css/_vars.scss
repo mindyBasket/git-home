@@ -1,6 +1,8 @@
 $light_lightBase: #eeeeee;
 $light_mediumBase: #e1e1e1;
-$light_lightKey: cyan;
+$light_darkBase: #8d8d8d;
+
+$light_lightKey: #5b75d5;
 $light_mediumKey: blue;
 $light_text1: #464e79;
 
@@ -12,7 +14,7 @@ $hl-blue: #99cfb9;
 /* Layout variables */
 $content_width: 80vw;
 $content_max_width: 800px;
-
+$HEADER_HEIGHT: 50px;
 
 
 $v-tran-dur: 0.4s;
