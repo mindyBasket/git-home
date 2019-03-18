@@ -19,8 +19,8 @@ $space_around_card: 10px;
 
 	cursor: pointer;
 
-	transition-property: margin, border, background-color;
-	transition-duration: 0.2s;
+	transition-property: color, margin, border, background-color;
+	transition-duration: 0.2s, 0.2s, 0.2s, 0s;
 
 	.title{
 		text-transform: uppercase;
@@ -36,7 +36,6 @@ $space_around_card: 10px;
 			margin: 0px 5px 5px 0;
 			color: $hl-blue;
 			font-size: 0.7em;
-
 		}
 	}
 
@@ -70,17 +69,25 @@ $width-expand-dur: 0.2s;
 
 .card_project.active{
 	
-
 	background-color: white;
+	margin-top: 0px;
+	border-bottom: 10px solid $light_darkBase;
+	color: $light_lightKey;
 
 	animation-name: none;
 	animation-duration: $width-expand-dur;
 	animation-delay: 0.1s;
 	animation-fill-mode: both;
+}
 
-	.short_summary{
-		opacity: 0;
-	}
+.card_project.opened{
+	/* Used for adding slightly different transition property on 
+	   project cards they were "opened". Since "active" turns off
+	   immediately when closed, needed a second class to do this */
+
+	transition-property: color, margin, border, background-color;
+	transition-duration: 0.5s, 0.8s, 0.8s, 0.5s;
+	transition-delay: 0.6s, 0.2s, 0.2s, 0.6s;
 }
 
 /* Note: because height needs to be calculated, it is done in main.js.

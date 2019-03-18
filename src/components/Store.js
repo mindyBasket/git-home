@@ -10,9 +10,15 @@ const store = {
     content: '',
     title: '',
     lightboxIsActive: false,
+
+    depressNow: 0, 
   },
   closeModal() {
     this.state.lightboxIsActive = false;
+
+    // Note: any variable I set with "Now" is a prop used to 
+    //       force rerender by incrementing. 
+    this.state.depressNow = this.state.depressNow+1;
   },
   openModal(title, content) {
     this.state.lightboxIsActive = true;
