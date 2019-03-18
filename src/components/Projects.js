@@ -69,7 +69,8 @@ Vue.component('project-card', {
       ,
 	  	toggleCard: function(){
         this.isActive = !this.isActive; 
-
+        
+        store.openModal();
         // clearTimeout(this.to_showSummary);
         // this.isOpened=false;
 

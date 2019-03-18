@@ -10,7 +10,6 @@ body, html {
   background-color: #eeeeee;
   color: #464e79;
   font-size: 12pt;
-  overflow-x: hidden;
 }
 
 .flex_row {
@@ -251,13 +250,22 @@ body, html {
   background-color: #0000009e;
   overflow-y: scroll;
   overflow-x: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
+.lightbox.active {
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .modal {
   align-self: center;
   background-color: white;
   margin: 0 auto;
-  width: 60vw;
+  width: 70vw;
 }
 
 .shift-card-move {

@@ -8,6 +8,17 @@
 
     overflow-y: scroll;
     overflow-x: hidden;
+
+    pointer-events: none;
+    opacity: 0;
+
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.lightbox.active{
+    pointer-events: auto;
+    opacity: 1;
 }
 
 .modal{
@@ -15,5 +26,7 @@
 
     background-color: white;
     margin: 0 auto;
-    width: 60vw;
+    width: 70vw;
+
+    
 }

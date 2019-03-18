@@ -15,6 +15,7 @@ var vm = new Vue({
   data: {
     projectData: projectData,
     workExperienceData: workExperienceData,
+    rootState: store.state,
   },
 
   methods: {
@@ -83,5 +84,13 @@ var vm = new Vue({
 //       convert other components to .vue
 const vm_lb = new Vue({
   el: '#modal_wrapper',
-  render: h => h(Lightbox)
+  data: {
+
+  },
+  methods: {
+    sayHello: function(){
+      console.log("Hello from #modal_wrapper!");
+    }
+  },
+  render: h => h(Lightbox, { props: { rootState: store.state } })
 })
