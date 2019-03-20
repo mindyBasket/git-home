@@ -109,7 +109,7 @@ body, html {
 
 /* style will be added soon */
 .skill_list {
-  background-color: #30354c;
+  background-color: #3e458b;
   color: #dce2f3;
 }
 
@@ -235,6 +235,7 @@ body, html {
   width: 80vw;
   max-width: 700px;
   margin: 0 auto;
+  border-left: 5px solid #3e458b;
   transition-property: background-color;
   transition-duration: 0.2s;
 }
