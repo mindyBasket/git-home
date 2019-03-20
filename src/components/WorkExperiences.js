@@ -38,7 +38,10 @@ Vue.component('work-cards', {
           isActive: false,
           elShortSummary: '',
           scrollingParent: null, // too early to do: document.querySelector('#main_body'),
-          testvar: 0,
+          wrapper_bg: 'rgba(255, 255, 255, 1)',
+          scrollRange: [],
+          boxHeight: 0,
+          testOutput: null,
 	    }
 	  }
     ,
@@ -46,28 +49,44 @@ Vue.component('work-cards', {
       // dom ref
       this.elShortSummary = this.$el.querySelector(".short_summary");
       document.querySelector('#main_body').addEventListener('scroll', this.getScrollPos);
+
+      // calc range
+      const viewHeight = window.innerHeight || document.documentElement.clientHeight;
+      // const boxHeight = this.$el.getBoundingClientRect().bottom - this.$el.getBoundingClientRect().top;
+      const boxHeight = this.$el.clientHeight;
+      this.boxHeight = boxHeight;
+      const minScrollPos = viewHeight + boxHeight; // position box just starts to enter
+      const midScrollPos = viewHeight/2 + boxHeight/2; // position box is in the middle of viewPort
+      const maxScrollPos = 0; // position box just went out of viewPort
+      const padding = 50;
+      this.scrollRange = [minScrollPos-padding, midScrollPos, maxScrollPos+padding];
     }
     ,
   	methods: {
       getScrollPos: function(e){
-        const viewHeight = window.innerHeight || document.documentElement.clientHeight;
-        this.testvar = this.$el.getBoundingClientRect().top;
-
-        sstore.sayHello();
+        const currScrollPos = this.$el.getBoundingClientRect().bottom;
+        const diff = this.scrollRange[0] - this.scrollRange[1];
+        const min = this.scrollRange[0];
+        const max = this.scrollRange[2];
+        this.testOutput = `${currScrollPos} >= ${max}`;
+        if (currScrollPos < this.scrollRange[0] && currScrollPos >= this.scrollRange[1]){
+          // brighten
+          const normalized = (currScrollPos - min)*(-1)/diff;
+          this.wrapper_bg = `rgba(255, 255, 255, ${normalized})`;
+          
+        } else if (currScrollPos < this.scrollRange[1] && currScrollPos >= max ){
+          // darken
+          const normalized = currScrollPos/diff;
+          this.wrapper_bg = `rgba(255, 255, 255, ${normalized})`;
+        } else {
+          // do nothing?
+          return;
+        }
+  
+        //sstore.sayHello();
       },
-      // transition hooks
-      longSum_enter: function(el, done){
-        done();
-      }
-      ,
-      longSum_leave: function(el, done){
-        this.$el.style.height = this.defaultHeight;
-        this.elShortSummary.style.height = "auto";
-        done();
-      },
-      
+   
 	  	clickTest: function(){
-
 	  		vm.addFiller(this.index);
 	  		this.isActive = !this.isActive;
       }
@@ -75,14 +94,18 @@ Vue.component('work-cards', {
       
 	  },
     template: `
-    <div class="work_card_wrapper">
+    <div 
+      class="work_card_wrapper"
+    >
     
       <div class="work_card" 
         v-on:click="clickTest"
         v-bind:class = "{
           'active': isActive,
           }"
-        v-bind:index = "index">
+        v-bind:index = "index"
+        v-bind:style="{ backgroundColor: wrapper_bg }"
+      >
 
         <div class="card_head flex_row">
           <div class="role">
@@ -90,7 +113,7 @@ Vue.component('work-cards', {
               {{workobj.role}}
             </div>
             <div class="role_company">
-              {{workobj.company}} {{testvar}}
+              {{workobj.company}}
             </div>
           </div>
           <div class="year">

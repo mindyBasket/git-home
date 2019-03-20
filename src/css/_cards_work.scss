@@ -1,14 +1,15 @@
 .work_card_wrapper{
     width: 100%;
-    background-color: $light_mediumBase;
+    /* This is set by script */
+    /* background-color: $light_mediumBase; */
+    margin: 50px 0;
 }
 
 .work_card{
     position:relative;
     
-	padding: 20px;
-    border: 1px solid #979797;
-    
+	padding: 25px 35px;
+   
     width: $content_width;
     max-width: 700px;
     margin: 0 auto;
