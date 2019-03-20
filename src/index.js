@@ -98,13 +98,3 @@ const vm_lb = new Vue({
     })
 })
 
-
-
-
-const mainBody = document.querySelector('#main_body');
-
-// Here, you can add scroll event, but can't access scrollUtils...
-
-// mainBody.addEventListener('scroll', (e) => {
-//   console.log("s")
-// }, false);

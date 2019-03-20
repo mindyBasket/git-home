@@ -38,7 +38,7 @@ Vue.component('work-cards', {
           isActive: false,
           elShortSummary: '',
           scrollingParent: null, // too early to do: document.querySelector('#main_body'),
-          wrapper_bg: 'rgba(255, 255, 255, 1)',
+          wrapper_bg: 'rgba(255, 255, 255, 0)',
           scrollRange: [],
           boxHeight: 0,
           testOutput: null,
@@ -59,22 +59,28 @@ Vue.component('work-cards', {
       const midScrollPos = viewHeight/2 + boxHeight/2; // position box is in the middle of viewPort
       const maxScrollPos = 0; // position box just went out of viewPort
       const padding = 50;
-      this.scrollRange = [minScrollPos-padding, midScrollPos, maxScrollPos+padding];
+      this.scrollRange = [minScrollPos-padding, midScrollPos+padding, midScrollPos-padding, maxScrollPos+padding];
     }
     ,
   	methods: {
       getScrollPos: function(e){
         const currScrollPos = this.$el.getBoundingClientRect().bottom;
-        const diff = this.scrollRange[0] - this.scrollRange[1];
+        
+        const padding = this.scrollRange[3];
         const min = this.scrollRange[0];
-        const max = this.scrollRange[2];
+        const midlow = this.scrollRange[1];
+        const midhigh = this.scrollRange[2];
+        const max = this.scrollRange[3];
+
+        const diff = min - midlow;
+        
         this.testOutput = `${currScrollPos} >= ${max}`;
-        if (currScrollPos < this.scrollRange[0] && currScrollPos >= this.scrollRange[1]){
+        if (currScrollPos < min && currScrollPos >= midlow){
           // brighten
           const normalized = (currScrollPos - min)*(-1)/diff;
           this.wrapper_bg = `rgba(255, 255, 255, ${normalized})`;
           
-        } else if (currScrollPos < this.scrollRange[1] && currScrollPos >= max ){
+        } else if (currScrollPos < midhigh && currScrollPos >= max ){
           // darken
           const normalized = currScrollPos/diff;
           this.wrapper_bg = `rgba(255, 255, 255, ${normalized})`;
@@ -135,3 +141,16 @@ Vue.component('work-cards', {
     </div>
 	`
 });
+
+
+const mainBody = document.querySelector('#main_body');
+const workExpContainer = document.querySelector('#workexp');
+
+// Binding event here does not let it fire
+mainBody.addEventListener('scroll', (e) => {
+  console.log("s");
+  if (sstore.isInViewport(workExpContainer)) {
+    console.log("s");
+  }
+  
+}, false);
