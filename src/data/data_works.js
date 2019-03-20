@@ -8,16 +8,16 @@ var workExperienceData = {
       year: ["2016", "Present"],
       description: `
         <ul>
-          <li><strong>Full stack web developer</strong>: started early role as a full-stack web developer, building, designing both back and front end to
-          solve content delivery challenges to satisfy our client.<li>
-          <li><strong>Adapted agile practices</strong>
-          <li>Building solutions to modularize.</li>
-          <li><strong>Content delivery challenges</strong>Maintain and improve deployment by adding automation to solve problems and challenges.</li>
-          <li>Brainstorm and build STEM curriculum content</li>
-          <li><strong>Block-based programming language editor</strong>Joined a team of product and software engineers research for the best technology, and build a prototype,
+          <li>Currently building a software for a confidential project.</li>
+          <li><strong>???? editor</strong>Joined a team of software engineers research for the best technology, and build a prototype,
           a minimum viable software in 2 months.
           to showcase proof of concept</li>
-          <li>Currently continuing to collaborate on a project that is currently confidential.</li>
+          <li><strong>Adapted agile practices</strong>
+          <li><strong>Full stack web developer</strong>: started early role as a full-stack web developer. 
+              Building, designing both back and front end to solve content delivery challenges to satisfy our client.<li>
+          <li><strong>Curriculum Content delivery and Devops</strong>: Maintain and improve deployment by adding automation to solve problems and challenges.</li>
+          <li>Collaborated with a web developer to build course delivery solution aimed for educators.</li>
+          <li>Brainstorm and build STEM curriculum content</li>
         </ul>
       `,
       tags: [
@@ -38,6 +38,7 @@ var workExperienceData = {
         <ul>
           <li>Produced video contents as well as all graphic assets that appear on the curriculum project, which now
           became a defining style of the education content of this organization.</li>
+          <li>Teaching assistant for professional developement</li>
           <li>Architected a solution to deliver course content in a lightweight form to school facilities
           that does not have the most reliable technologies.<li>
           <li>Collaborated with an education researcher to build series of web app that deliver 
