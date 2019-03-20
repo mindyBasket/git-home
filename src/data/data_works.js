@@ -17,7 +17,7 @@ var workExperienceData = {
               Building, designing both back and front end to solve content delivery challenges to satisfy our client.<li>
           <li><strong>Curriculum Content delivery and Devops</strong>: Maintain and improve deployment by adding automation to solve problems and challenges.</li>
           <li>Collaborated with a web developer to build course delivery solution aimed for educators.</li>
-          <li>Brainstorm and build STEM curriculum content</li>
+          <li>Brainstorm and build engaging, project-based STEM curriculum contents.</li>
         </ul>
       `,
       tags: [
@@ -36,18 +36,18 @@ var workExperienceData = {
       year: ["2012", "2016"],
       description: `
         <ul>
-          <li>Produced video contents as well as all graphic assets that appear on the curriculum project, which now
-          became a defining style of the education content of this organization.</li>
-          <li>Teaching assistant for professional developement</li>
-          <li>Architected a solution to deliver course content in a lightweight form to school facilities
-          that does not have the most reliable technologies.<li>
-          <li>Collaborated with an education researcher to build series of web app that deliver 
-          course content along with interactives to keep track of progress.</li>
-          <li>Took initatives to built and architect javascript solutions to create components that is reusable for developers,
-          as well as engaging for students to improve learning a range of programming languages such as LabView, EV3, and VEX</li>
           <li>Implemented a second interation of badge award system, which award users with badges with much more 
           intricate baging rules, as well as parser for developer to populate these rules.</li>
           <li>Built UI for users to access and track and share their badge process</li>
+          <li>Teaching assistant for professional developement courses that occur on site</li>
+          <li>Collaborated with an education researcher to build series of web app that deliver 
+          course content along with interactives to keep track of progress.</li>
+          <li>Architected a solution to deliver course content in a lightweight form to school facilities
+          that does not have the most reliable technologies.<li>
+          <li>Produced video contents as well as all graphic assets that appear on the curriculum project, which now
+          became a defining style of the education content of this organization.</li>
+          <li>Built and architect javascript solutions to create components that is reusable for developers,
+          as well as engaging for students to improve learning a range of programming languages such as LabView, EV3, and VEX</li>
         </ul>
       `,
       tags: [
