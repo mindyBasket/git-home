@@ -36,16 +36,8 @@ Vue.component('project-card', {
 	  }
     ,
     mounted(){
-      // dom ref
-      this.elShortSummary = this.$el.querySelector(".short_summary");
-
-      // add style info
-      // Note: getComputedStyle properties come with units like "px"
-      this.elStyle = getComputedStyle(this.$el);
-      this.defaultHeight = this.elStyle.height;
-
       // Update title, for reference
-      this.projTitle =  this.proj.title.replace(/ /g,'');
+      // this.projTitle =  this.proj.title.replace(/ /g,'');
     },
 
     watch: { 
@@ -95,5 +87,4 @@ Vue.component('project-card', {
 
 		
 });
-
 

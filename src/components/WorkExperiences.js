@@ -1,5 +1,7 @@
 import Vue from 'vue';
 
+const sstore = scrollStore.utils;
+
 Vue.component('card-body', {
 
   props:{
@@ -35,16 +37,24 @@ Vue.component('work-cards', {
           label: "",
           isActive: false,
           elShortSummary: '',
+          scrollingParent: null, // too early to do: document.querySelector('#main_body'),
+          testvar: 0,
 	    }
 	  }
     ,
     mounted(){
       // dom ref
       this.elShortSummary = this.$el.querySelector(".short_summary");
+      document.querySelector('#main_body').addEventListener('scroll', this.getScrollPos);
     }
     ,
   	methods: {
-    
+      getScrollPos: function(e){
+        const viewHeight = window.innerHeight || document.documentElement.clientHeight;
+        this.testvar = this.$el.getBoundingClientRect().top;
+
+        sstore.sayHello();
+      },
       // transition hooks
       longSum_enter: function(el, done){
         done();
@@ -60,7 +70,9 @@ Vue.component('work-cards', {
 
 	  		vm.addFiller(this.index);
 	  		this.isActive = !this.isActive;
-	  	}
+      }
+      
+      
 	  },
     template: `
     <div class="work_card_wrapper">
@@ -78,7 +90,7 @@ Vue.component('work-cards', {
               {{workobj.role}}
             </div>
             <div class="role_company">
-              {{workobj.company}}
+              {{workobj.company}} {{testvar}}
             </div>
           </div>
           <div class="year">

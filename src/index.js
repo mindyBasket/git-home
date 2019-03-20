@@ -8,7 +8,7 @@ import workExperienceData from './data/data_works';
 import * as Projects from './components/Projects';
 import * as WorkExperiences from './components/WorkExperiences';
 import Lightbox from './components/Lightbox.vue';
-
+// 
 // Main app. 
 var vm = new Vue({
   el: '#main_body',
@@ -97,3 +97,14 @@ const vm_lb = new Vue({
       rootState: store.state } 
     })
 })
+
+
+
+
+const mainBody = document.querySelector('#main_body');
+
+// Here, you can add scroll event, but can't access scrollUtils...
+
+// mainBody.addEventListener('scroll', (e) => {
+//   console.log("s")
+// }, false);
