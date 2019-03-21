@@ -9,13 +9,15 @@ var workExperienceData = {
       description: `
         <ul>
           <li><strong>Robotic software for kids:</strong> Currently building a software tool for kids.</li>
-          <li><strong>Adapted agile practices</strong>: Joined a team of software engineers to build a minimum viable software
-          as proof of concept in 2 months.
-          <li><strong>Full stack web developer</strong>: started early role as a full-stack web developer. 
-              Building, designing both back and front end to solve content delivery challenges to satisfy our client.<li>
-          <li><strong>Curriculum Content delivery and Devops</strong>: Maintain and improve deployment by adding automation to solve problems and challenges.</li>
-          <li>Collaborated with a web developer to build course delivery solution aimed for educators.</li>
-          <li>Brainstorm and build engaging, project-based STEM curriculum contents.</li>
+          <li><strong>Agile developement</strong>: Joined a small team of software engineers to rapid prototype 
+          a minimum viable softwares.
+          <li><strong>Full stack web developer</strong>: Collaborated with web developers and engineers 
+          to build and design both back and front end in order to solve content delivery challenges for 
+          our client, as well as general educators.</li>
+          <li><strong>DevOps</strong>: Maintain and improve deployment by adding automation to 
+          reduce deployment time from 2 hours to 20 min average.</li>
+          <li><strong>Curriculum Content development:</strong> Brainstorm and build engaging, 
+          project-based STEM curriculum contents.</li>
         </ul>
       `,
       tags: [
@@ -34,18 +36,20 @@ var workExperienceData = {
       year: ["2012", "2016"],
       description: `
         <ul>
-          <li>Implemented a second interation of badge award system, which award users with badges with much more 
-          intricate baging rules, as well as parser for developer to populate these rules.</li>
-          <li>Built UI for users to access and track and share their badge process</li>
-          <li>Teaching assistant for professional developement courses that occur on site</li>
-          <li>Collaborated with an education researcher to build series of web app that deliver 
-          course content along with interactives to keep track of progress.</li>
-          <li>Architected a solution to deliver course content in a lightweight form to school facilities
-          that does not have the most reliable technologies.<li>
-          <li>Produced video contents as well as all graphic assets that appear on the curriculum project, which now
-          became a defining style of the education content of this organization.</li>
-          <li>Built and architect javascript solutions to create components that is reusable for developers,
+          <li><strong>Front and Backend for badging/achievement system:</strong> Developed an interation of 
+          an existing badge/achievement system to have much more intricate badging rules, such as sub/super badges, 
+          tiers of reward, and progress values. Developed a system for admins to 
+          edit and create these new rules, and a system for users to access, track, and share their badges.</li> 
+          <li><strong>Robotics Curriculum App:</strong> Collaborated with an education researcher to 
+          architect various web apps teaching in LabView, Lego EV3, and VEX IQ. Built reusable, interactive 
+          javascript components to be used for these app. They are lightweight interactive course delivery apps, optimized to be
+          deployed to schools despite out-of-date technologies.<li>
+          <li>Reusable Components Built and architect javascript solutions to create components that is reusable for developers,
           as well as engaging for students to improve learning a range of programming languages such as LabView, EV3, and VEX</li>
+          <li><strong>Graphics and video developement:</strong> Produced video contents as well as all graphic assets 
+          that appear on the curriculum projects.</li>
+          <li><strong>Teaching assistant:</strong> for professional developement classes that occur on site. The class
+          used the curriculum app developed by me and my team.</li>
         </ul>
       `,
       tags: [
@@ -61,6 +65,7 @@ var workExperienceData = {
       year: ["2010", "2012"],
       description: `
         <ul>
+          <li><strong>UI programming:</strong> Added small extra features</li>
           <li>Generated graphic assets and created UI used in the curriculum used for research.</li>
           <li>Tested internal software used for research</li>
           <li>Collaborated with educators to test, and collect data to produce quantified results.<li>

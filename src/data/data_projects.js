@@ -5,7 +5,7 @@ var projectData = {
 
   			img: "",
   			title: "Ongoing projects at Robomatter",
-  			shortSummary: "Building a mobile app that uses visual programming language to introduce children to robotics hardware and programming",
+  			shortSummary: "Currently building a mobile app that uses visual programming language to introduce children to robotics hardware and programming",
   			tags: [
   				"ReactJS",
 				"Blockly"
@@ -14,7 +14,7 @@ var projectData = {
   				<div class="flex_row">
   					<div class="box">
   						<p>
-		  					Notable contributions by me:
+		  					Role highlights:
 		  					<ul>
 		  						<li>Lead ReactJS developer</li>
 		  						<li>Optimization for UX on Mobile</li>
@@ -22,7 +22,7 @@ var projectData = {
 		  					</ul>
 		  				</p>
 		  				<p>
-		  					Notable Challenges:
+		  					Key Challenges:
 		  					<ul>
 		  						<li>Cross-platform compatibility: iOS, Android, and ChromeOS</li>
 		  						<li>Keeping the same code base</li>
@@ -48,13 +48,13 @@ var projectData = {
   				<div class="flex_row">
   					<div class="box">
   						<p>
-		  					Highlight of my role:
+						 	Role highlights:
 		  					<ul>
 		  						<li>Build from scratch</li>
 		  					</ul>
 		  				</p>
 		  				<p>
-		  					Notable Challenges:
+						  	Key Challenges:
 		  					<ul>
 		  						<li>Learning Vue.js</li>
 		  					</ul>
@@ -69,14 +69,14 @@ var projectData = {
   		,
   		{
   			img: "",
-  			title: "Flipbook",
-  			shortSummary: "Build an app that started as a trello-like photo manager but became an animation editor",
+  			title: "Flipbook with Lambda",
+  			shortSummary: "Trello-inspired animation editor that uses lambda to do all heavy lifting for video processing",
   			tags: [
   				"ReactJS",
   				"Django",
   				"RESTful framework",
   				"Node.js",
-  				"AWS",
+  				"AWS Lambda",
   				"Heroku"
   			],
   			longSummary: `
@@ -90,7 +90,7 @@ var projectData = {
 							The app is still at its infancy. More features will be added.
   						</p>
   						<p>
-		  					Highlight of my role:
+		  					Role Highlights:
 		  					<ul>
 		  						<li>Both front-end and back-end</li>
 		  						<li>Using RESTful api to make single page app for certain objects</li>
@@ -98,7 +98,7 @@ var projectData = {
 		  					</ul>
 		  				</p>
 		  				<p>
-		  					Notable Challenges:
+		  					Key Challenges:
 		  					<ul>
 		  						<li>Creating a disposable demo instance</li>
 		  						<li>Optimization around rendering and animating large number of images</li>
@@ -127,7 +127,7 @@ var projectData = {
   				<div class="flex_row">
   					<div class="box">
   						<p>
-		  					Highlight of my role:
+						  Role Highlights:
 		  					<ul>
 		  						<li>Used Octobot for scheduled build and deployment</li>
 		  						<li>Keeping same code base, deploy multiple versions</li>
@@ -231,8 +231,8 @@ var projectData = {
   		,
   		{
   			img: "",
-  			title: "Robomatter Curriculum Products",
-  			shortSummary: "Assisted building course delivery platform by writing course content and making plugins and widgets that original software could not fill in",
+  			title: "Chat-Py",
+  			shortSummary: "Chat client with built-in animation tool that let you draw a few frame send a hand-drawn message that comes to life!",
   			tags: [
   				"Javascript",
   			],
@@ -242,10 +242,10 @@ var projectData = {
   						<p>
   							Context: Madcap is a documentation program that we extended its usage to behave like Moodle. Javascript was used to fill the gap between desired UI/UX functionality to what Madcap can offer.
 
-		  					Notable contributions by me:
+		  					Role Highlights:
 		  					<ul>
-		  						<li>Made plugin solution for various navigation shortcomings<li>
-		  						<li>Curriculum Content development</li>
+								<li>Built animation UI in python<li>
+								<li></li>
 		  					</ul>
 		  				</p>
 		  				<p>
