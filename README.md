@@ -11,6 +11,10 @@ You need a server to view this app. Python server is recommended due to its simp
 	(python 3) python -m http.server <portNo>
 	(python 2) python -m SimpleHTTPServer <portNo>
 	```
+
+	There is an npm script short cut that starts server at 3000, but note that it needs python3 and py-launcher:
+	`npm run start`. 
+	
 3. Open browser and view localhost:<portNo>
 
 ### Setup and run sass
