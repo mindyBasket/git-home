@@ -39,6 +39,7 @@ Vue.component('work-cards', {
           elShortSummary: '',
           scrollingParent: null, // too early to do: document.querySelector('#main_body'),
           wrapper_bg: 'rgba(255, 255, 255, 0)',
+          decoration_opacity: '0',
           scrollRange: [],
           boxHeight: 0,
           testOutput: null,
@@ -58,7 +59,7 @@ Vue.component('work-cards', {
       const minScrollPos = viewHeight + boxHeight; // position box just starts to enter
       const midScrollPos = viewHeight/2 + boxHeight/2; // position box is in the middle of viewPort
       const maxScrollPos = 0; // position box just went out of viewPort
-      const padding = 50;
+      const padding = 100;
       this.scrollRange = [minScrollPos-padding, midScrollPos+padding, midScrollPos-padding, maxScrollPos+padding];
     }
     ,
@@ -77,13 +78,15 @@ Vue.component('work-cards', {
         this.testOutput = `${currScrollPos} >= ${max}`;
         if (currScrollPos < min && currScrollPos >= midlow){
           // brighten
-          const normalized = (currScrollPos - min)*(-1)/diff;
+          const normalized = Math.round(10*((currScrollPos - min)*(-1)/diff))/10;
           this.wrapper_bg = `rgba(255, 255, 255, ${normalized})`;
+          this.decoration_opacity = normalized;
           
         } else if (currScrollPos < midhigh && currScrollPos >= max ){
           // darken
-          const normalized = currScrollPos/diff;
+          const normalized =  Math.round(10*(currScrollPos/diff))/10;
           this.wrapper_bg = `rgba(255, 255, 255, ${normalized})`;
+          this.decoration_opacity = normalized;
         } else {
           // do nothing?
           return;
@@ -91,51 +94,48 @@ Vue.component('work-cards', {
   
         //sstore.sayHello();
       },
-   
-	  	clickTest: function(){
-	  		vm.addFiller(this.index);
-	  		this.isActive = !this.isActive;
-      }
-      
-      
 	  },
     template: `
     <div 
       class="work_card_wrapper"
     >
-    
-      <div class="work_card" 
-        v-on:click="clickTest"
+      <div class="work_card flex_row" 
         v-bind:class = "{
           'active': isActive,
           }"
         v-bind:index = "index"
         v-bind:style="{ backgroundColor: wrapper_bg }"
       >
-
-        <div class="card_head flex_row">
-          <div class="role">
-            <div class="role_name">
-              {{workobj.role}}
+        <div 
+          class="content_left"
+          v-bind:style="{ opacity: decoration_opacity }"
+        ></div>
+        <div class="content_right">
+          <div class="card_head flex_row">
+            <div class="role">
+              <div class="role_name">
+                {{workobj.role}}
+              </div>
+              <div class="role_company">
+                {{workobj.company}}
+              </div>
             </div>
-            <div class="role_company">
-              {{workobj.company}}
+            <div class="year">
+              <span>{{workobj.year[0]}}</span>
+              <span>-</span>
+              <span>{{workobj.year[1]}}</span>
             </div>
-          </div>
-          <div class="year">
-            <span>{{workobj.year[0]}}</span>
-            <span>-</span>
-            <span>{{workobj.year[1]}}</span>
-          </div>
-        </div> <!-- end: header -->
+          </div> <!-- end: header -->
+            
+          <card-body v-bind:templt="workobj.description">
+            {{workobj.description}}
+          </card-body>
           
-        <card-body v-bind:templt="workobj.description">
-          {{workobj.description}}
-        </card-body>
-        
-        <div class="tags flex_row wrap">
-          <span v-for="tag in workobj.tags">{{tag}}</span>
+          <div class="tags flex_row wrap">
+            <span v-for="tag in workobj.tags">{{tag}}</span>
+          </div>
         </div>
+        
 
       </div>
     </div>

@@ -5,19 +5,30 @@
     margin: 50px 0;
 }
 
+
+
 .work_card{
     position:relative;
     
-	padding: 25px 35px;
-   
     width: $content_width;
     max-width: 700px;
     margin: 0 auto;
 
-    border-left: 5px solid $light_darkKey;
-
 	transition-property: background-color;
-	transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    
+    .content_left{
+        /* decorative bar */
+        background-color: $light_darkKey;
+        flex-shrink: 0;
+        width: 5px;
+        
+    }
+    .content_right{
+        /* contains actual content */
+        flex-grow: 1;
+        padding: 25px 35px;
+    }
 
     .card_head{
         .role{
