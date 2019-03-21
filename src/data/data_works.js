@@ -4,15 +4,13 @@ var workExperienceData = {
     {
       title: "Robomatter Inc.",
       role: "Software Developer",
-      company: "Robomatter",
+      company: "Robomatter Inc.",
       year: ["2016", "Present"],
       description: `
         <ul>
-          <li>Currently building a software for a confidential project.</li>
-          <li><strong>???? editor</strong>Joined a team of software engineers research for the best technology, and build a prototype,
-          a minimum viable software in 2 months.
-          to showcase proof of concept</li>
-          <li><strong>Adapted agile practices</strong>
+          <li><strong>Robotic software for kids:</strong> Currently building a software tool for kids.</li>
+          <li><strong>Adapted agile practices</strong>: Joined a team of software engineers to build a minimum viable software
+          as proof of concept in 2 months.
           <li><strong>Full stack web developer</strong>: started early role as a full-stack web developer. 
               Building, designing both back and front end to solve content delivery challenges to satisfy our client.<li>
           <li><strong>Curriculum Content delivery and Devops</strong>: Maintain and improve deployment by adding automation to solve problems and challenges.</li>
@@ -32,7 +30,7 @@ var workExperienceData = {
     {
       title: "Robotics Academy at National Robotics Engineering Center",
       role: "Web Developer",
-      company: "Robomatter",
+      company: "Robotics Academy at NREC",
       year: ["2012", "2016"],
       description: `
         <ul>
@@ -59,7 +57,7 @@ var workExperienceData = {
     {
       title: "Human Computer Interaction Institution at CMU",
       role: "Research Assistent",
-      company: "Robomatter",
+      company: "Human Computer Interaction Institution at CMU",
       year: ["2010", "2012"],
       description: `
         <ul>
