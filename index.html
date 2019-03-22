@@ -77,9 +77,6 @@
 									<li>Illustrator, Photoshop, Animate</li>
 								</ul>
 							</p>
-							 
-	
-							
 						</div>
 
 					</div>
@@ -88,16 +85,10 @@
 			</div>
 
 			<div class="block flex_column" id="workexp">
-				<div class="content">
-					<div class="section_title_wrapper flex_row justify_center">
-						<span class="line"></span>
-						<span class="title">Work Experience</span>
-						<span class="line"></span>
-					</div>
-					
-				</div>
+				<Titlebox title="Work Experience"></Titlebox>
+
 				<div class="content flood">
-				
+
 					<work-cards 
 						v-for="(work, ind) in workExperienceData.data"
 						v-bind:rootState="rootState"
@@ -107,9 +98,9 @@
 				</div>
 			</div>
 
-			<div class="block" id="projects">
+			<div class="block flex_column" id="projects">
+				<Titlebox title="Notable Projects"></Titlebox>
 				<div class="content">
-					<h1>Notable Projects</h1>
 					<p>
 						This is the journey I took. (Newest to Oldest)
 					</p>
@@ -132,10 +123,9 @@
 
 
 
-			<div class="block" id="small-projects">
+			<div class="block flex_column" id="small-projects">
+				<Titlebox title="Other Activities"></Titlebox>
 				<div class="content">
-					<h1>My Side Activities</h1>
-
 					<p>
 						Smaller projects that are ongoing that I am excited for. 
 					</p>
@@ -193,9 +183,9 @@
 
 
 		
-			<div class="block">
+			<div class="block flex_column">
+				<Titlebox title="Keep In Touch!"></Titlebox>
 				<div class="content">
-					<h1>Keep in touch</h1>
 
 					Thank you for dropping by!
 				</div>

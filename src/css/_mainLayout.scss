@@ -76,12 +76,13 @@ strong{
 
 	.section_title_wrapper{
 		font-size: 1.5em;
+		margin-top: 50px;
 
 		.line{
 			display:inline-block;
 			flex-grow: 1;
 			align-self: center;
-			border-top: 1px solid black;
+			border-top: 1px solid #7271bb4f;
 		}
 		.title{
 			padding: 0 20px;

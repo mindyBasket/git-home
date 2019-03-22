@@ -8,7 +8,8 @@ import workExperienceData from './data/data_works';
 import * as Projects from './components/Projects';
 import * as WorkExperiences from './components/WorkExperiences';
 import Lightbox from './components/Lightbox.vue';
-// 
+import Titlebox from './components/Titlebox.vue';
+
 // Main app. 
 var vm = new Vue({
   el: '#main_body',
@@ -17,7 +18,9 @@ var vm = new Vue({
     workExperienceData: workExperienceData,
     rootState: store.state,
   },
-
+  components: { 
+    Titlebox
+  },
   methods: {
     sayHello: function (el, done) {
       done();

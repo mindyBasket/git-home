@@ -75,22 +75,19 @@ Vue.component('work-cards', {
 
         const diff = min - midlow;
         
-        this.testOutput = `${currScrollPos} >= ${max}`;
+        // this.testOutput = `${currScrollPos} >= ${max}`;
+        let normalized = 0;
         if (currScrollPos < min && currScrollPos >= midlow){
           // brighten
-          const normalized = Math.round(10*((currScrollPos - min)*(-1)/diff))/10;
-          this.wrapper_bg = `rgba(255, 255, 255, ${normalized})`;
-          this.decoration_opacity = normalized;
-          
+          normalized = Math.round(10*((currScrollPos - min)*(-1)/diff))/10;
         } else if (currScrollPos < midhigh && currScrollPos >= max ){
           // darken
-          const normalized =  Math.round(10*(currScrollPos/diff))/10;
-          this.wrapper_bg = `rgba(255, 255, 255, ${normalized})`;
-          this.decoration_opacity = normalized;
+          normalized =  Math.round(10*(currScrollPos/diff))/10;
         } else {
-          // do nothing?
           return;
         }
+        this.wrapper_bg = `rgba(255, 255, 255, ${normalized})`;
+        this.decoration_opacity = normalized;
   
         //sstore.sayHello();
       },
