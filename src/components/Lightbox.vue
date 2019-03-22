@@ -36,7 +36,10 @@
     <div 
       class="modal"
       v-on:click="onModalClick($event)">
-
+      <div class="image_header flex_row">
+        <span class="image_item"><img src="dist/img/proj1/img01.png"/></span>
+        <span class="image_item"><img src="dist/img/proj1/img02.png"/></span>
+      </div>
       <div class="modal_unit title">{{ this.rootState.title }}</div>
       <div class="modal_unit content" v-html="this.rootState.content"></div>
 

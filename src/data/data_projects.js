@@ -2,37 +2,44 @@ var projectData = {
 
   	projects: [
   		{
-
-  			img: "",
-  			title: "Ongoing projects at Robomatter",
-  			shortSummary: "Currently building a mobile app that uses visual programming language to introduce children to robotics hardware and programming",
+        id: "robomatter_current",
+  			imgCount: 2,
+  			title: "[Ongoing] Educational Robotic Programming software",
+  			shortSummary: "Class friendly, STEM-solution by programming your robot to life!",
   			tags: [
-  				"ReactJS",
-				"Blockly"
+        "ReactJS",  
+        "TypeScript",
+        "Blockly",
+        "Node.js",
+        "NWJS",
+        "Mobile Dev",
+        "BLE",
+        "Sass",
   			],
-  			longSummary: `
+        longSummary: `
+          <div>
+            <p>
+              Worked as a team. Operated under agile practice and each member shared responsibilities almost equally. 
+            </p>
+          </div>
   				<div class="flex_row">
-  					<div class="box">
-  						<p>
-		  					Role highlights:
-		  					<ul>
-		  						<li>Lead ReactJS developer</li>
-		  						<li>Optimization for UX on Mobile</li>
-		  						<li>Flexible layout for cross platform compatibility<li>
-		  					</ul>
-		  				</p>
-		  				<p>
-		  					Key Challenges:
-		  					<ul>
-		  						<li>Cross-platform compatibility: iOS, Android, and ChromeOS</li>
-		  						<li>Keeping the same code base</li>
-		  						<li>Building communication between Bluetooth <-> App <-> Unity</li>
-		  					</ul>
-		  				</p>
-  					</div>
-  					<div class="box">
-  						Image
-  					</div>
+					  <div class="box">
+              <div class="section_title">Role highlights</div>
+              <ul>
+                <li>Built and designed UI and the main software structure in ReactJS</li>
+                <li>Built reusable and flexible components used for UI interface, hardware connection</li>
+                <li>Strategized modularizing tasks so that multiple engineer can build collaboratively to finish a feature faster.</li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="box">
+              <div class="section_title">Key Challenges</div>
+              <ul>
+                <li>Integrating Blockly and compiling it into C++</li>
+                <li>Cross-platform compatibility for both mobile and desktop: iOS, Android, ChromeOS, MacOS and Windows</li>
+                <li>Complex hardware communications: Bluetooth and USB</li>
+              </ul>
+            </div>
   				</div>
   			`
   		}
@@ -42,9 +49,15 @@ var projectData = {
   			title: "MindyBox v1",
   			shortSummary: "Personal portfolio site, and an opportunity to explore Vue.js",
   			tags: [
-  				"Vue.js",
+          "Vue.js",
+          "Sass",
   			],
-  			longSummary: `
+        longSummary: `
+          <div>
+            <p>
+              
+            </p>
+          </div>
   				<div class="flex_row">
   					<div class="box">
   						<p>
@@ -73,41 +86,43 @@ var projectData = {
   			shortSummary: "Trello-inspired animation editor that uses lambda to do all heavy lifting for video processing",
   			tags: [
   				"ReactJS",
-  				"Django",
+          "Django",
   				"RESTful framework",
-  				"Node.js",
+          "Node.js",
+          "PIL",
+          "AWS S3",
   				"AWS Lambda",
   				"Heroku"
   			],
-  			longSummary: `
+        longSummary: `
+          <div>
+            <p>
+              Structure inspired by single-page task organizer such as Trello. Creates a story telling, animated medium 
+              called "flipbook", which is half-way between a storyboard, and a movie. 
+              The idea is to create a scenamatic, interactive story using just few frames. 
+            <br/>
+              Everything is on cloud; animations are baked using lambda. 
+            <br/>
+              More features are coming soon.
+            </p>
+          </div>
   				<div class="flex_row">
   					<div class="box">
-  						<p>
-  							This Started out as a Trello imitation of collecting and tagging images but changed its purpose as an animation editor that creates an experimental form of media called "flipbook" (name subject to change).
-  							<br/>
-  							Flipbooks are intended to create something that appear scenamatic, but is low cost since it is not an actual movie. 
-  							<br/>
-							The app is still at its infancy. More features will be added.
-  						</p>
-  						<p>
-		  					Role Highlights:
-		  					<ul>
-		  						<li>Both front-end and back-end</li>
-		  						<li>Using RESTful api to make single page app for certain objects</li>
-		  						<li>Building and deploying</li>
-		  					</ul>
-		  				</p>
-		  				<p>
-		  					Key Challenges:
-		  					<ul>
-		  						<li>Creating a disposable demo instance</li>
-		  						<li>Optimization around rendering and animating large number of images</li>
-		  						<li>Fetching images from external CDS that has better storage</li>
-		  					</ul>
-		  				</p>
-  					</div>
-  					<div class="box">
-  						Image
+              Role Highlights:
+              <ul>
+                <li>Front-end built using ReactJS, back-end built using Django</li>
+                <li>RESTful api to make smooth single page app experience</li>
+                <li>Disposable instances for easy demo</li>
+                <li>Building and deploying using Node.js and Heroku</li>
+              </ul>
+            </div>
+            <div class="box">
+              Key Challenges:
+              <ul>
+                <li>Integrating ReactJS onto Django</li>
+                <li>Serving large quantity of images</li>
+                <li>Fitting video proccessing onto Lambda</li>
+              </ul>
   					</div>
   				</div>
   			`
@@ -116,14 +131,20 @@ var projectData = {
   		{
   			img: "",
   			title: "VEX Education Portal",
-  			shortSummary: "Built a STEM course content delivery platform as well as the build script for content deployment",
+  			shortSummary: "STEM course content delivery platform",
   			tags: [
 				"PHP",
-				"Node.js",
-				"Python",
+        "Javascript",
+        "Handlebar.js",
+        "Node.js",
 				"DevOps"
   			],
-  			longSummary: `
+        longSummary: `
+        <div>
+          <p>
+            Deployment script
+          </p>
+        </div>
   				<div class="flex_row">
   					<div class="box">
   						<p>
@@ -163,8 +184,8 @@ var projectData = {
   				"Javascript",
   				"Phaser",
   				"NW.js",
-  				"Blockly",
-
+          "Blockly",
+          "SemanticUI",
   			],
   			longSummary: `
   				<div class="flex_row">
@@ -198,8 +219,9 @@ var projectData = {
   			shortSummary: "Worked on the second iteration of the badge reward system, both back end and front end",
   			tags: [
   				"Ruby on Rails",
-  				"Javascript",
-  				"mySQL",
+  				"jQuery",
+          "mySQL",
+          "Graphics",
   			],
   			longSummary: `
   				<div class="flex_row">
@@ -234,7 +256,10 @@ var projectData = {
   			title: "Chat-Py",
   			shortSummary: "Chat client with built-in animation tool that let you draw a few frame send a hand-drawn message that comes to life!",
   			tags: [
-  				"Javascript",
+          "Python",
+          "Tornado",
+          "SocketIO",
+          "PIL"
   			],
   			longSummary: `
   				<div class="flex_row">
