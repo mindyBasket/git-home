@@ -117,7 +117,7 @@ Vue.component('work-cards', {
                 {{workobj.company}}
               </div>
             </div>
-            <div class="year">
+            <div class="year flex_row">
               <span>{{workobj.year[0]}}</span>
               <span>-</span>
               <span>{{workobj.year[1]}}</span>

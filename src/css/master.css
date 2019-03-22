@@ -265,8 +265,12 @@ strong {
   font-weight: bold;
 }
 .work_card .card_head .year {
-  width: 100px;
-  border-left: 1px solid black;
+  width: fit-content;
+  border-left: 1px solid #8d8d8d;
+  padding: 10px 0 10px 20px;
+}
+.work_card .card_head .year span {
+  align-self: center;
 }
 .work_card .tags span {
   border: 1px solid #99cfb9;
