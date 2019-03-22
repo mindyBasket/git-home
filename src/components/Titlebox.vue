@@ -2,7 +2,7 @@
 <script>
   module.exports = {
     props: {
-      title: Number,
+      title: String,
     },
     data: function () {
       return {
