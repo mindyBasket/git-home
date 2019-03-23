@@ -135,7 +135,8 @@ var projectData = {
   		}
   		,
   		{
-  			img: "",
+        id: "vex_portal",
+  			imgCount: 2,
   			title: "VEX Education Portal",
   			shortSummary: "STEM course content delivery platform",
   			tags: [
@@ -144,35 +145,35 @@ var projectData = {
         "PHP",
         "Node.js",
         "DevOps",
+        "STEM content",
         ],
         longSummaryData: {
           projectDescription: `
-          Joined in a team of 3 to build a solution to a content delivery challenge; 
-          a growing amount of content is stored in 3rd party service that compiles all content 
-          into a format that has insufficient accessibility, and is ineffective for distribution.     
+          Joined in a team of 3 to build a solution for STEM curriculum content that is stored
+          and maintained in a 3rd party service. It had a notable challenge where it compiled all contents 
+          into a format that does not match our client's need. It was not very accessible, and had an 
+          incompatible distribution method. 
           </br>
-          The team brainstormed and built a custom content delivery environment using PHP, Javascript,
+          </br>
+          We built a custom content delivery environment using PHP, MySQL, Javascript,
           and shell scripts to make it possible to serve, maintain and scale.
           `,
           roleHighlights: `
             <ul>
-              <li>Helped <strong>schedule and automate</strong> building and deploying using Octopus Deploy.</li>
-              <li>Added a throttler to keep connection alive as the amount of content increase rapidly.</li>
-              <li>Exporter script to reduce pain of converting external CDS's foramt to ours</li>
-              <li>Collaborate to build content delivery site that can deploy multiple different versions
+              <li>Collaborated to build <strong>content delivery site</strong> that can deploy multiple different versions
               and flavors using single code base.</li>
-              <li>Precompiler to index our curriculum for search Feature.</li>
-              <li>Collaborated to build a login system for educators to access the portal.</li>
-              <li>Brainstormed STEM Lab (Curriculum) activities for content developement.</li>
+              <li>Helped building the <strong>deployment pipeline</strong> to schedule and automate using Octopus Deploy.</li>
+              <li>Implemented scripts to precompile and throttle in order to manage resource and traffic 
+               as the amount of contents to deploy increased rapidly.</li>
+              <li>Built a <strong>login system</strong> for educators to access the portal.</li>
+              <li>Brainstormed and created <strong>STEM Lab</strong> (curriculum content) activities.</li>
             </ul>
           `,
           notableChallenges: `
             <ul>
-              <li>Dynamic requirements from the client, because the website was built the same time as the hardware it represents</li>
-              <li>Rapid prototyping</li>
-              <li>Entire archive of content is not available local. It is fetched through another CDS.</li>
-              <li>Handling large archive that is rapidly expanding (2-5 GB)</li>
-              <li>CDS format does not match with our custom delivery format</li>
+              <li>Deploying heavy archive that is <strong>rapidly expanding</strong> and constantly changing  
+              (1 GB to 5 GB in a span of few weeks)</li>
+              <li>Adding and exposing <strong>custom behaviors</strong> such as in a framework not intended to be customized.</li>
             </ul>
           `
         },
