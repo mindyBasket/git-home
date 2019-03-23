@@ -5,10 +5,14 @@ import projectData from './data/data_projects';
 import workExperienceData from './data/data_works';
 
 // Components
+
 import * as Projects from './components/Projects';
 import * as WorkExperiences from './components/WorkExperiences';
+
+// Single file components
 import Lightbox from './components/Lightbox.vue';
 import Titlebox from './components/Titlebox.vue';
+import Headermenu from './components/Headermenu.vue';
 
 // Main app. 
 var vm = new Vue({
@@ -19,7 +23,25 @@ var vm = new Vue({
     rootState: store.state,
   },
   components: { 
-    Titlebox
+    Titlebox,
+    Headermenu,
+  },
+  mounted: function(){
+    const mainBody = document.querySelector('#main_body');
+    const header = document.querySelector('#portfolio_header');
+    const ESCAPE_HEIGHT = 120; //px
+
+    if (mainBody && header){
+      mainBody.addEventListener('scroll', (e) => {
+        if (mainBody.scrollTop >= ESCAPE_HEIGHT){
+          // Detach header (style, not actually detached)
+          store.detachHeader();
+        } else {
+          // Attach header
+          store.detachHeader(false);
+        }
+      }, false);
+    }
   },
   methods: {
     sayHello: function (el, done) {
@@ -36,38 +58,6 @@ var vm = new Vue({
     filler_afterEnter: function (el) {
       /* previously used to shrink filler card after being inserted 
          but not used by changing strategy. */
-    },
-    duplicateProjObj: function (ind) {
-      const copyProj = JSON.parse(JSON.stringify(this.projectData.projects[ind]));
-      copyProj.title = copyProj.title + this.getRandBase64(10);
-      copyProj.isFiller = true;
-      return copyProj;
-    },
-    addFiller: function (ind) {
-      // check if card is even
-      console.log((ind + 1) % 2);
-      const fillerProj = this.duplicateProjObj(ind);
-      if ((ind + 1) % 2 == 0) {
-        console.log("EVENs");
-        this.projectData.projects.splice(ind, 0, fillerProj);
-
-      } else {
-        this.projectData.projects.splice(ind + 1, 0, fillerProj);
-      }
-
-      // Don't do this. Elements are not rendered yet!
-      // return document.querySelectorAll(".project")[ind];
-
-    },
-    fitFiller: function (id) {
-      // Stage before removing filler. The filler container's width is
-      // reduced to fit between existing card. This way, when it is removed,
-      // v-transition animates position properly.
-      document.querySelectorAll(`#${id}`).forEach((el) => {
-        el.style.width = "30%";
-      });
-
-
     },
     removeCurrFiller: function () {
       const targetInd = Number(document.querySelector(".project.filler").getAttribute("index"));
@@ -97,7 +87,6 @@ const vm_lb = new Vue({
   },
   render: h => h(Lightbox, { 
     props: { 
-      rootState: store.state } 
+      rootstate: store.state } 
     })
 })
-

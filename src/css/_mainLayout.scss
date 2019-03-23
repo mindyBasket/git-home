@@ -54,23 +54,7 @@ strong{
 }
 
 
-.header{
-	position: fixed;
-	width: 100%;
 
-	background-color: #eeeeee;
-	height: $HEADER_HEIGHT;
-
-	z-index: 100;
-
-	.group{
-		align-items: center;
-
-		span{
-			padding: 0 10px;
-		}
-	}
-}
 
 .portfolio_wrapper{
 	width: 100%;

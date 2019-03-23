@@ -1,5 +1,7 @@
-
 <script>
+  // .vue usage note:
+  // It doesn't like name like "HeaderGhost" or "LightBox". ONLY ONE CAP ALLOWED.
+  // ex. "Headerghost", "Lightbox"
   module.exports = {
     props: {
       title: String,

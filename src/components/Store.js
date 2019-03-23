@@ -10,6 +10,7 @@ const store = {
     content: '',
     title: '',
     lightboxIsActive: false,
+    headerDetached: false,
 
     depressNow: 0, 
   },
@@ -25,6 +26,15 @@ const store = {
     this.state.content = content;
     this.state.title = title;
   },
+  detachHeader(doDetach){
+    doDetach = (doDetach === null || doDetach === undefined) ? true : doDetach;
+    if (doDetach){
+      this.state.headerDetached = true;
+    } else {
+      this.state.headerDetached = false;
+    }
+  },
+
   sayHello() {
     console.log("Hello from the store!");
   }

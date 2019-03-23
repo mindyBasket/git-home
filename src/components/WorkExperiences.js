@@ -144,14 +144,16 @@ Vue.component('work-cards', {
 });
 
 
-const mainBody = document.querySelector('#main_body');
-const workExpContainer = document.querySelector('#workexp');
+// Does not work here. Seems to work if you do it inside mounted()
 
-// Binding event here does not let it fire
-mainBody.addEventListener('scroll', (e) => {
-  console.log("s");
-  if (sstore.isInViewport(workExpContainer)) {
-    console.log("s");
-  }
+// const mainBody = document.querySelector('#main_body');
+// const workExpContainer = document.querySelector('#workexp');
+
+// // Binding event here does not let it fire
+// mainBody.addEventListener('scroll', (e) => {
+//   console.log("s");
+//   if (sstore.isInViewport(workExpContainer)) {
+//     console.log("s");
+//   }
   
-}, false);
+// }, false);

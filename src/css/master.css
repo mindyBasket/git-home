@@ -1,4 +1,33 @@
 /* Layout variables */
+#portfolio_header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  height: 50px;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.3s;
+  z-index: 100;
+}
+#portfolio_header .group {
+  align-self: center;
+}
+#portfolio_header .group span {
+  padding: 0 10px;
+}
+#portfolio_header .group:first-of-type {
+  margin-left: 20px;
+}
+#portfolio_header .group:last-of-type {
+  margin-right: 20px;
+}
+
+#portfolio_header.detached {
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -55,20 +84,6 @@ strong {
 
 .box {
   flex-grow: 1;
-}
-
-.header {
-  position: fixed;
-  width: 100%;
-  background-color: #eeeeee;
-  height: 50px;
-  z-index: 100;
-}
-.header .group {
-  align-items: center;
-}
-.header .group span {
-  padding: 0 10px;
 }
 
 .portfolio_wrapper {
@@ -263,6 +278,10 @@ strong {
   margin: 50px 0;
 }
 
+.content .work_card_wrapper:last-of-type {
+  margin-bottom: 150px;
+}
+
 .work_card {
   position: relative;
   width: 80vw;
@@ -322,7 +341,7 @@ strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0000009e;
+  background-color: #00000080;
   overflow-y: scroll;
   overflow-x: hidden;
   z-index: 101;
@@ -345,12 +364,16 @@ strong {
   background-color: white;
   margin: -10px auto 50px auto;
   width: 70vw;
+  max-width: 750px;
   transition-property: margin;
   transition-duration: 0.6s;
 }
 .modal .modal_unit {
   /* container for each unit of content */
   padding: 18px 35px;
+}
+.modal .modal_unit:last-of-type {
+  padding-bottom: 50px;
 }
 .modal .image_header {
   height: 280px;
@@ -367,7 +390,7 @@ strong {
 }
 
 .lightbox.active .modal {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .shift-card-move {
