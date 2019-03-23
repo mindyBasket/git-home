@@ -16,6 +16,10 @@ body, html{
 	overflow: hidden;
 }
 
+ul{
+	list-style-type: square;
+}
+
 strong{
 	color: #4753c5;
 }
@@ -41,6 +45,9 @@ strong{
 .justify_center{
 	justify-content: center;
 }
+.space_between{
+	justify-content: space-between;
+}
 
 .box{
 	flex-grow: 1;
@@ -48,17 +55,21 @@ strong{
 
 
 .header{
-	display:flex;
 	position: fixed;
-	flex-direction: row;
 	width: 100%;
 
 	background-color: #eeeeee;
 	height: $HEADER_HEIGHT;
 
-	color: #b89d81;
-
 	z-index: 100;
+
+	.group{
+		align-items: center;
+
+		span{
+			padding: 0 10px;
+		}
+	}
 }
 
 .portfolio_wrapper{
@@ -69,6 +80,19 @@ strong{
 	overflow-x: hidden;
 }
 
+
+.flushed_block{
+	/* used for splash */
+	display:flex;
+	padding: 0;
+
+	.content{
+		width: $content_width;
+		max-width: $content_max_width;
+		margin: 0 auto;
+		padding: 30px 0;
+	}
+}
 
 .block{
 	display:flex;
@@ -104,13 +128,12 @@ strong{
 }
 
 /* for each sections */
-.block#intro{
+#intro{
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 
 	height: 100vh;
-
 }
 
 .block#aboutme{
@@ -118,5 +141,5 @@ strong{
 }
 
 .block#workexp{
-	background-color: #d3d3d3;
+	background-color: $light_mediumBase;
 }

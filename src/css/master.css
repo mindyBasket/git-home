@@ -15,6 +15,10 @@ body, html {
   overflow: hidden;
 }
 
+ul {
+  list-style-type: square;
+}
+
 strong {
   color: #4753c5;
 }
@@ -45,19 +49,26 @@ strong {
   justify-content: center;
 }
 
+.space_between {
+  justify-content: space-between;
+}
+
 .box {
   flex-grow: 1;
 }
 
 .header {
-  display: flex;
   position: fixed;
-  flex-direction: row;
   width: 100%;
   background-color: #eeeeee;
   height: 50px;
-  color: #b89d81;
   z-index: 100;
+}
+.header .group {
+  align-items: center;
+}
+.header .group span {
+  padding: 0 10px;
 }
 
 .portfolio_wrapper {
@@ -65,6 +76,18 @@ strong {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.flushed_block {
+  /* used for splash */
+  display: flex;
+  padding: 0;
+}
+.flushed_block .content {
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 0;
 }
 
 .block {
@@ -97,7 +120,7 @@ strong {
 }
 
 /* for each sections */
-.block#intro {
+#intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,22 +132,30 @@ strong {
 }
 
 .block#workexp {
-  background-color: #d3d3d3;
+  background-color: #dddddf;
 }
 
 /* style will be added soon */
 .skill_list {
-  background-color: #3e458b;
-  color: #dce2f3;
+  color: #1eaed1;
+  border: 4px solid #f1f1f1;
   padding: 15px 35px;
+}
+
+.me_description {
+  padding: 15px 35px;
+}
+
+.cardlist {
+  justify-content: center;
 }
 
 .card_project {
   position: relative;
   padding: 20px;
-  background-color: #e1e1e1;
-  width: 41%;
-  height: 180px;
+  background-color: #dddddf;
+  width: 42%;
+  height: 200px;
   border-bottom: 2px solid #8d8d8d;
   overflow: hidden;
   margin-top: 8px;
@@ -134,7 +165,7 @@ strong {
   margin-left: 10px;
   cursor: pointer;
   transition-property: color, margin, border, background-color;
-  transition-duration: 0.2s, 0.2s, 0.2s, 0s;
+  transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
 }
 .card_project .title {
   text-transform: uppercase;
@@ -166,6 +197,7 @@ strong {
 .card_project:hover {
   margin-top: 0px;
   border-bottom: 10px solid #8d8d8d;
+  background-color: #e3e3e5;
 }
 
 .card_project.active {
@@ -173,10 +205,6 @@ strong {
   margin-top: 0px;
   border-bottom: 10px solid #8d8d8d;
   color: #758bdf;
-  animation-name: none;
-  animation-duration: 0.2s;
-  animation-delay: 0.1s;
-  animation-fill-mode: both;
 }
 
 .card_project.opened {
@@ -192,7 +220,7 @@ strong {
 		 check toggleCard() for details */
 @keyframes open-card {
   0% {
-    width: 41%;
+    width: 42%;
   }
   100% {
     width: 89%;
@@ -245,7 +273,7 @@ strong {
 }
 .work_card .content_left {
   /* decorative bar */
-  background-color: #3e458b;
+  background-color: #4c57bf;
   flex-shrink: 0;
   width: 5px;
 }
@@ -266,7 +294,7 @@ strong {
 }
 .work_card .card_head .year {
   width: fit-content;
-  border-left: 1px solid #8d8d8d;
+  border-left: 1px solid #dddddf;
   padding: 10px 0 10px 20px;
 }
 .work_card .card_head .year span {

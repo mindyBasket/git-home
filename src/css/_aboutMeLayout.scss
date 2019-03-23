@@ -1,5 +1,9 @@
 .skill_list{
-    background-color: $light_darkKey;
-    color: $light_text2;
+    color: $light_mediumAltKey;
+    border: 4px solid $light_lightBase;
+    padding: 15px 35px;
+}
+
+.me_description{
     padding: 15px 35px;
 }

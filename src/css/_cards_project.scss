@@ -1,13 +1,16 @@
-$card-height: 180px;
-$card-width: 41%;
+$CARD_HEIGHT: 200px;
+$card-width: 42%;
 $space_around_card: 10px;
 
+.cardlist{
+	justify-content: center;
+}
 .card_project{
 	position:relative;
 	padding: 20px;
 	background-color: $light_mediumBase;
 	width: $card-width;
-	height: $card-height;
+	height: $CARD_HEIGHT;
 
 	border-bottom: 2px solid $light_darkBase;
 
@@ -20,7 +23,7 @@ $space_around_card: 10px;
 	cursor: pointer;
 
 	transition-property: color, margin, border, background-color;
-	transition-duration: 0.2s, 0.2s, 0.2s, 0s;
+	transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
 
 	.title{
 		text-transform: uppercase;
@@ -64,6 +67,7 @@ $space_around_card: 10px;
 .card_project:hover{
 	margin-top: 0px;
 	border-bottom: 10px solid $light_darkBase;
+	background-color: #e3e3e5;
 }
 
 $width-expand-dur: 0.2s;
@@ -74,11 +78,6 @@ $width-expand-dur: 0.2s;
 	margin-top: 0px;
 	border-bottom: 10px solid $light_darkBase;
 	color: $light_lightKey;
-
-	animation-name: none;
-	animation-duration: $width-expand-dur;
-	animation-delay: 0.1s;
-	animation-fill-mode: both;
 }
 
 .card_project.opened{

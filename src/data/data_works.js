@@ -45,7 +45,7 @@ var workExperienceData = {
           facilitate effective learning for students of robotics and STEM educators.</li>
           <li><strong>Graphics and Video Production:</strong> Responsible for defining the graphic style used across the curriculum series. Produced lesson videos, and graphic assets.</li>
           <li><strong>Teaching assistant:</strong> For professional developement classes that occur on site.</li>
-        </ul>d
+        </ul>
       `,
       tags: [
         "Ruby on Rails",
