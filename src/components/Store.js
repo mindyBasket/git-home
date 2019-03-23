@@ -25,7 +25,7 @@ const store = {
   openModal(title, contentObj) {
     this.state.lightboxIsActive = true;
     // this.state.content = content; // not using this for nwo
-    this.state.contentData = contentObj; // this is longSummaryData
+    this.state.contentData = contentObj; // this is projObj
     this.state.title = title;
   },
   detachHeader(doDetach){

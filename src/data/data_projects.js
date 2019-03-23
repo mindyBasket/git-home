@@ -136,18 +136,20 @@ var projectData = {
   		,
   		{
         id: "vex_portal",
-  			imgCount: 2,
+  			imgCount: 5,
   			title: "VEX Education Portal",
   			shortSummary: "STEM course content delivery platform",
   			tags: [
         "Javascript",
-        "Handlebar.js",
-        "PHP",
         "Node.js",
+        "PHP",
+        "MySQL",
         "DevOps",
         "STEM content",
+        "Graphics",
         ],
         longSummaryData: {
+          info: "Hello world",
           projectDescription: `
           Joined in a team of 3 to build a solution for STEM curriculum content that is stored
           and maintained in a 3rd party service. It had a notable challenge where it compiled all contents 
@@ -163,9 +165,10 @@ var projectData = {
               <li>Collaborated to build <strong>content delivery site</strong> that can deploy multiple different versions
               and flavors using single code base.</li>
               <li>Helped building the <strong>deployment pipeline</strong> to schedule and automate using Octopus Deploy.</li>
-              <li>Implemented scripts to precompile and throttle in order to manage resource and traffic 
+              <li>Implemented scripts to <strong>precompile and throttle</strong> in order to manage resources and reduce traffic 
                as the amount of contents to deploy increased rapidly.</li>
               <li>Built a <strong>login system</strong> for educators to access the portal.</li>
+              <li>Created <strong>robot sprite</strong> assets used to explain robotics concepts</li>
               <li>Brainstormed and created <strong>STEM Lab</strong> (curriculum content) activities.</li>
             </ul>
           `,

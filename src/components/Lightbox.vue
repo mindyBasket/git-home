@@ -10,6 +10,35 @@
         // NO!: isActive: state.lightboxIsActive,
       }
     },
+    computed: {
+      // a computed getter
+      longSummaryData: function () {
+        // `this` points to the vm instance
+        if ('contentData' in this.rootstate && 'longSummaryData' in this.rootstate.contentData){
+          return this.rootstate.contentData.longSummaryData;
+        }
+        return {};
+      },
+      projId: function () {
+        if ('contentData' in this.rootstate && 'id' in this.rootstate.contentData){
+          return this.rootstate.contentData.id;
+        }
+        return {};
+      },
+      imgPathArr: function () {
+        if ('contentData' in this.rootstate && 'imgCount' in this.rootstate.contentData){
+          // make array
+          const imgCount = this.rootstate.contentData.imgCount;
+          const emptyArr = (new Array(imgCount)).fill(null);
+          const imgNameArr = emptyArr.map((n, ind)=>{
+            return `dist/img/${this.projId}/img${ind}.png`;
+          });
+          console.log(imgNameArr);
+          return imgNameArr;
+        }
+        return {};
+      }
+    },
     methods: {
       onLightboxClick: function() {
         console.log("Lightbox clicked");
@@ -37,8 +66,13 @@
       class="modal"
       v-on:click="onModalClick($event)">
       <div class="image_header flex_row">
-        <span class="image_item"><img src="dist/img/proj1/img01.png"/></span>
-        <span class="image_item"><img src="dist/img/proj1/img02.png"/></span>
+        <span 
+          class="image_item"
+          v-for="(imgPath, ind) in this.imgPathArr"
+          v-bind:key="ind"
+        >
+          <img v-bind:src="imgPath" /> 
+        </span>
       </div>
       <div class="modal_unit title">{{ this.rootstate.title }}</div>
       <div class="modal_unit content">
@@ -46,7 +80,7 @@
         <div>
           <p
             class="description" 
-            v-html="this.rootstate.contentData.projectDescription">
+            v-html="this.longSummaryData.projectDescription">
           </p>
         </div>
         <div class="flex_row">
@@ -55,13 +89,13 @@
               <div class="section_title flex_row">
                 <span class="title_icon fas fa-cube" />Role Highlights:
               </div>
-              <div v-html="this.rootstate.contentData.roleHighlights"></div>
+              <div v-html="this.longSummaryData.roleHighlights"></div>
             </div>
             <div class="content_unit">
               <div class="section_title">
                 <span class="title_icon fas fa-puzzle-piece" />Notable Challenges:
               </div>
-              <div v-html="this.rootstate.contentData.notableChallenges"></div>
+              <div v-html="this.longSummaryData.notableChallenges"></div>
             </div>
           </div>
         </div>

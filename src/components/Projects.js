@@ -60,7 +60,7 @@ Vue.component('project-card', {
 
         if ("longSummaryData" in this.proj) {
           // content data sent here is stored in Store.contentData
-          store.openModal(this.proj.title, this.proj.longSummaryData);1
+          store.openModal(this.proj.title, this.proj);
         } else {
           //store.openModal(this.proj.title, this.proj.longSummary);
           console.warn("longSummaryData not found in the project object!");
