@@ -19,7 +19,12 @@ var projectData = {
         longSummary: `
           <div>
             <p>
-              Worked as a team. Operated under agile practice and each member shared responsibilities almost equally. 
+              Formed a team of 3 engineers to implement a tool for programming robots. 
+              We operated using agile practices, and shared responsibilities, as well as strategizing to modularize.
+              Wait, I say that in the bullet below!!! 
+              Built a working prototype with key features in 2 weeks, and continued to rapidly produce minimally 
+              viable product, successfully reaching a software with full features in a month.  
+              It is architected and developed using React.js.
             </p>
           </div>
   				<div class="flex_row">
@@ -28,14 +33,15 @@ var projectData = {
               <ul>
                 <li>Built and designed UI and the main software structure in ReactJS</li>
                 <li>Built reusable and flexible components used for UI interface, hardware connection</li>
-                <li>Strategized modularizing tasks so that multiple engineer can build collaboratively to finish a feature faster.</li>
-                <li></li>
+                <li>Strategized modularizing tasks so that multiple engineer can build collaboratively to 
+                delivery faster without quality loss.</li>
               </ul>
             </div>
             <div class="box">
               <div class="section_title">Key Challenges</div>
               <ul>
                 <li>Integrating Blockly and compiling it into C++</li>
+                <li>Working around limited time, strategizing to complete feature faster without quality loss.</li>
                 <li>Cross-platform compatibility for both mobile and desktop: iOS, Android, ChromeOS, MacOS and Windows</li>
                 <li>Complex hardware communications: Bluetooth and USB</li>
               </ul>
@@ -83,7 +89,7 @@ var projectData = {
   		{
   			img: "",
   			title: "Flipbook with Lambda",
-  			shortSummary: "Trello-inspired animation editor that uses lambda to do all heavy lifting for video processing",
+  			shortSummary: "Cloud based animation editor for creating low-cost format of scenamatic story telling",
   			tags: [
   				"ReactJS",
           "Django",
@@ -133,47 +139,44 @@ var projectData = {
   			title: "VEX Education Portal",
   			shortSummary: "STEM course content delivery platform",
   			tags: [
-				"PHP",
         "Javascript",
         "Handlebar.js",
+        "PHP",
         "Node.js",
-				"DevOps"
-  			],
-        longSummary: `
-        <div>
-          <p>
-            Deployment script
-          </p>
-        </div>
-  				<div class="flex_row">
-  					<div class="box">
-  						<p>
-						  Role Highlights:
-		  					<ul>
-		  						<li>Used Octobot for scheduled build and deployment</li>
-		  						<li>Keeping same code base, deploy multiple versions</li>
-		  						<li>Exporter script to reduce pain of converting external CDS's foramt to ours</li>
-		  						<li>Precompiler to index our curriculum for search Feature</li>
-		  						<li>Login system</li>
-		  						<li>STEM Lab (Curriculum) development</li>
-		  					</ul>
-		  				</p>
-		  				<p>
-		  					Notable Challenges:
-		  					<ul>
-		  						<li>Dynamic requirements from the client, because the website was built the same time as the hardware it represents</li>
-		  						<li>Rapid prototyping</li>
-		  						<li>Entire archive of content is not available local. It is fetched through another CDS.</li>
-		  						<li>Handling large archive (2-5 GB)</li>
-		  						<li>CDS format does not match with our custom delivery format</li>
-		  					</ul>
-		  				</p>
-  					</div>
-  					<div class="box">
-  						Image
-  					</div>
-  				</div>
-  			`
+        "DevOps",
+        ],
+        longSummaryData: {
+          projectDescription: `
+          Joined in a team of 3 to build a solution to a content delivery challenge; 
+          a growing amount of content is stored in 3rd party service that compiles all content 
+          into a format that has insufficient accessibility, and is ineffective for distribution.     
+          </br>
+          The team brainstormed and built a custom content delivery environment using PHP, Javascript,
+          and shell scripts to make it possible to serve, maintain and scale.
+          `,
+          roleHighlights: `
+            <ul>
+              <li>Helped <strong>schedule and automate</strong> building and deploying using Octopus Deploy.</li>
+              <li>Added a throttler to keep connection alive as the amount of content increase rapidly.</li>
+              <li>Exporter script to reduce pain of converting external CDS's foramt to ours</li>
+              <li>Collaborate to build content delivery site that can deploy multiple different versions
+              and flavors using single code base.</li>
+              <li>Precompiler to index our curriculum for search Feature.</li>
+              <li>Collaborated to build a login system for educators to access the portal.</li>
+              <li>Brainstormed STEM Lab (Curriculum) activities for content developement.</li>
+            </ul>
+          `,
+          notableChallenges: `
+            <ul>
+              <li>Dynamic requirements from the client, because the website was built the same time as the hardware it represents</li>
+              <li>Rapid prototyping</li>
+              <li>Entire archive of content is not available local. It is fetched through another CDS.</li>
+              <li>Handling large archive that is rapidly expanding (2-5 GB)</li>
+              <li>CDS format does not match with our custom delivery format</li>
+            </ul>
+          `
+        },
+        longSummary: "CONTENT MOVED TO longSummaryData"
   		}
   		,
   		{

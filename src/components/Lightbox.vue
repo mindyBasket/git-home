@@ -41,7 +41,31 @@
         <span class="image_item"><img src="dist/img/proj1/img02.png"/></span>
       </div>
       <div class="modal_unit title">{{ this.rootstate.title }}</div>
-      <div class="modal_unit content" v-html="this.rootstate.content"></div>
+      <div class="modal_unit content">
+        <!-- Rendering from longSummaryData. Check Store.js -->
+        <div>
+          <p
+            class="description" 
+            v-html="this.rootstate.contentData.projectDescription">
+          </p>
+        </div>
+        <div class="flex_row">
+          <div class="box">
+            <div class="content_unit">
+              <div class="section_title flex_row">
+                <span class="title_icon fas fa-cube" />Role Highlights:
+              </div>
+              <div v-html="this.rootstate.contentData.roleHighlights"></div>
+            </div>
+            <div class="content_unit">
+              <div class="section_title">
+                <span class="title_icon fas fa-puzzle-piece" />Notable Challenges:
+              </div>
+              <div v-html="this.rootstate.contentData.notableChallenges"></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>

@@ -1,14 +1,15 @@
 import Vue from 'vue';
 
-Vue.component('rendered-long-summary', {
-  props:{
-    templt: String,
-  },
-  mounted(){
-  }
-  ,
-  template: `<div v-html="templt"></div>`
-});
+// Vue.component('rendered-long-summary', {
+//   props:{
+//     templt: String,
+//     longSummaryData: Object,
+//   },
+//   mounted(){
+//   }
+//   ,
+//   template: `<div v-html="templt"></div>`
+// });
 
 Vue.component('project-card', {
 
@@ -57,9 +58,13 @@ Vue.component('project-card', {
         this.isActive = !this.isActive; 
         this.isOpened = true;
 
-        // TODO: uncomment when done
-        store.openModal(this.proj.title, this.proj.longSummary);
-
+        if ("longSummaryData" in this.proj) {
+          // content data sent here is stored in Store.contentData
+          store.openModal(this.proj.title, this.proj.longSummaryData);1
+        } else {
+          //store.openModal(this.proj.title, this.proj.longSummary);
+          console.warn("longSummaryData not found in the project object!");
+        }
 	  	}
 	  },
   	template: `

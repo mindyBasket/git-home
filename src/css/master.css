@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Layout variables */
 #portfolio_header {
   position: fixed;
@@ -365,15 +366,32 @@ strong {
   margin: -10px auto 50px auto;
   width: 70vw;
   max-width: 750px;
+  line-height: 1.5em;
   transition-property: margin;
   transition-duration: 0.6s;
 }
 .modal .modal_unit {
   /* container for each unit of content */
-  padding: 18px 35px;
+  padding: 18px 50px 18px 40px;
 }
-.modal .modal_unit:last-of-type {
-  padding-bottom: 50px;
+.modal .modal_unit .content_unit {
+  margin: 10px 0 30px 0;
+}
+.modal .modal_unit .content_unit ul {
+  list-style: none;
+  padding: 0;
+}
+.modal .modal_unit .content_unit ul li::before {
+  content: "▶";
+  margin-left: -23px;
+  margin-right: 10px;
+  color: #dce2f3;
+}
+.modal .modal_unit .content_unit li {
+  padding-left: 40px;
+}
+.modal .modal_unit .content_unit:last-of-type {
+  margin-bottom: 40px;
 }
 .modal .image_header {
   height: 280px;
@@ -386,6 +404,19 @@ strong {
 }
 .modal .title {
   background-color: #f1f1f1;
+  font-size: 1.5em;
+}
+.modal .description {
+  margin-left: 30px;
+}
+.modal .section_title {
+  /* color: #1eaed1; */
+  font-size: 1.1em;
+  align-items: center;
+  font-weight: bold;
+}
+.modal .section_title .title_icon {
+  width: 40px;
   font-size: 1.5em;
 }
 

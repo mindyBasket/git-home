@@ -7,7 +7,8 @@
 const store = {
   debug: true,
   state: {
-    content: '',
+    content: '', // string content or template
+    contentData: {}, // JSON object to be rendered
     title: '',
     lightboxIsActive: false,
     headerDetached: false,
@@ -21,9 +22,10 @@ const store = {
     //       force rerender by incrementing. 
     this.state.depressNow = this.state.depressNow+1;
   },
-  openModal(title, content) {
+  openModal(title, contentObj) {
     this.state.lightboxIsActive = true;
-    this.state.content = content;
+    // this.state.content = content; // not using this for nwo
+    this.state.contentData = contentObj; // this is longSummaryData
     this.state.title = title;
   },
   detachHeader(doDetach){
