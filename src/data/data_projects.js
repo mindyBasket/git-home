@@ -305,7 +305,11 @@ var projectData = {
 		  						<li>Built reusable widgets for creating interactive quizzes</li>
 		  						<li>Math parser for the widgets</li>
 		  						<li>Video production</li>
-
+                  <li>Built reusable, interactive 
+          javascript components to be used for these app. They are lightweight interactive course delivery apps, optimized to be
+          deployed to schools despite out-of-date technologies.</li>
+          <li><strong>Reusable Components:</strong> nd architect javascript solutions to create components that is reusable for developers,
+          as well as engaging for students to improve learning a range of programming languages such as LabView, EV3, and VEX</li>
 		  					</ul>
 		  				</p>
 		  				<p>

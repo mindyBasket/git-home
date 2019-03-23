@@ -11,7 +11,7 @@
     position:relative;
     
     width: $content_width;
-    max-width: 700px;
+    max-width: $WORK_EXP_MAX_WIDTH;
     margin: 0 auto;
 
 	transition-property: background-color;
@@ -49,7 +49,16 @@
 
             span{
                 align-self: center;
+                margin-right: 10px;
             }
+        }
+    }
+
+    .card_body{
+        line-height: 1.3em;
+
+        li{
+            margin-bottom: 10px;
         }
     }
 

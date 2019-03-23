@@ -18,6 +18,7 @@ var workExperienceData = {
           reduce deployment time from 2 hours to 20 min average.</li>
           <li><strong>Curriculum Content development:</strong> Brainstorm and build engaging, 
           project-based STEM curriculum contents.</li>
+          <li>QA and Regression testing</li>
         </ul>
       `,
       tags: [
@@ -36,21 +37,15 @@ var workExperienceData = {
       year: ["2012", "2016"],
       description: `
         <ul>
-          <li><strong>Front and Backend for badging/achievement system:</strong> Developed an interation of 
-          an existing badge/achievement system to have much more intricate badging rules, such as sub/super badges, 
-          tiers of reward, and progress values. Developed a system for admins to 
-          edit and create these new rules, and a system for users to access, track, and share their badges.</li> 
-          <li><strong>Robotics Curriculum App:</strong> Collaborated with an education researcher to 
-          architect various web apps teaching in LabView, Lego EV3, and VEX IQ. Built reusable, interactive 
-          javascript components to be used for these app. They are lightweight interactive course delivery apps, optimized to be
-          deployed to schools despite out-of-date technologies.<li>
-          <li>Reusable Components Built and architect javascript solutions to create components that is reusable for developers,
-          as well as engaging for students to improve learning a range of programming languages such as LabView, EV3, and VEX</li>
-          <li><strong>Graphics and video developement:</strong> Produced video contents as well as all graphic assets 
-          that appear on the curriculum projects.</li>
-          <li><strong>Teaching assistant:</strong> for professional developement classes that occur on site. The class
-          used the curriculum app developed by me and my team.</li>
-        </ul>
+          <li><strong>Front and Back-end for badging/achievement system:</strong> Responsible for 
+          implementing an interation of a badge/achievement system to have much more intricate and flexible rules and triggers. Built a system for admins to edit and create badges, and a system for users to access, track, 
+          and share them.</li>
+          <li><strong>Robotics Curriculum App:</strong> Collaborated with an Robotics education specialist to 
+          architect and build a series of interactive, web-based curriculum delivery solution to 
+          facilitate effective learning for students of robotics and STEM educators.</li>
+          <li><strong>Graphics and Video Production:</strong> Responsible for defining the graphic style used across the curriculum series. Produced lesson videos, and graphic assets.</li>
+          <li><strong>Teaching assistant:</strong> For professional developement classes that occur on site.</li>
+        </ul>d
       `,
       tags: [
         "Ruby on Rails",
@@ -60,15 +55,17 @@ var workExperienceData = {
     },
     {
       title: "Human Computer Interaction Institution at CMU",
-      role: "Research Assistent",
+      role: "Intern, Research Assistent",
       company: "Human Computer Interaction Institution at CMU",
       year: ["2010", "2012"],
       description: `
         <ul>
-          <li><strong>UI programming:</strong> Added small extra features</li>
-          <li>Generated graphic assets and created UI used in the curriculum used for research.</li>
-          <li>Tested internal software used for research</li>
-          <li>Collaborated with educators to test, and collect data to produce quantified results.<li>
+          <li><strong>UI and Graphics:</strong> Implemented UI and vector assets for the interactive 
+          tutoring content used for the research focusing on teaching mathematical concepts.</li>
+          <li><strong>Research Assistant: </strong>Worked with educators and phD students to test and collect data to 
+          produce quantified results.</li>
+          <li><strong>Internal Tests: </strong>Used internal software to script authoring behavior to 
+          improve specialized feedbacks in the tutoring content. Actively reported bugs to the developers.</li>
         </ul>
       `,
       tags: [

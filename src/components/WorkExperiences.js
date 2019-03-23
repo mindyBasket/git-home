@@ -19,7 +19,11 @@ Vue.component('card-body', {
 
   }
   ,
-  template: `<div v-html="templt"></div>`
+  template: `
+    <div 
+      class="card_body"
+      v-html="templt">
+    </div>`
 });
 
 
