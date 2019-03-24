@@ -302,7 +302,7 @@ var projectData = {
   		,
   		{
         id: "ra_curric",
-  			imgCount: 11,
+  			imgCount: 9,
   			title: "RoboAcademy Curriculum Products",
         shortSummary: `A family of curriculum modules that teach robotics and computer programming concepts
          with video tutorials, engaging interactive quizzes, and much more.`,
