@@ -92,9 +92,9 @@ var projectData = {
           projectDescription: `
           Inspired by single-page task managing apps such as Trello, this app creates a story telling, animated medium 
           called "flipbook", which is half-way between a storyboard, and a movie. 
-          The idea is to create a scenamatic, interactive story using much lighter resource.  
+          The idea is to create a scenamatic, interactive story using much lighter resource. 
           <br/><br/>
-          An unlimited number of video processing instance fire on cloud, using AWS Lambda.
+          An unlimited number of video processing instances fire on cloud, using AWS Lambda.
           Currently this app is available with invite only, but a demo is available to public. 
           New features will be continuously added.
           `,
@@ -208,45 +208,48 @@ var projectData = {
   		}
   		,
   		{
-  			img: "/images/project_thumbs/cs2n_1.png",
+        id: "cs2n",
+  			imgCount: 0,
   			title: "CS2N",
   			shortSummary: "Worked on the second iteration of the badge reward system, both back end and front end",
   			tags: [
   				"Ruby on Rails",
   				"jQuery",
           "MySQL",
-          "Icon Design",
-  			],
-  			longSummary: `
-  				<div class="flex_row">
-  					<div class="box">
-  						<p>
-  						  Badge system was waiting for big update where it rewards different tiers of badge and UI to show user their badges and its progress to the higher tier
-
-		  					Notable contributions by me:
-		  					<ul>
-		  						<li>Badge Tier system, and sub-badges<li>
-		  						<li>Logic parser for interpreting trigger rule.</li>
-		  						<li>UI+UX for new badge system</li>
-		  					</ul>
-		  				</p>
-		  				<p>
-		  					Notable Challenges:
-		  					<ul>
-		  						<li>Server sometimes crashes. Optimizing and throttling was necessary.</li>
-		  						<li>First iteration of badge system written without any proper comments</li>
-		  					</ul>
-		  				</p>
-  					</div>
-  					<div class="box">
-  						Image
-  					</div>
-  				</div>
-  			`
+          "Full stack",
+          "Icon Design"
+        ],
+        longSummaryData: {
+          projectDescription: `
+            CS2N is a learning portal for students and educators pursuing computer science and robotics discipline.
+            I entered the project to overhaul the existing badge/achivement system to scaffold it in order to
+            to game-ify learning father, allowing more incentives and motivations for students to 
+            complete educational activities.   
+          `,
+          roleHighlights: `
+            <ul>
+              <li>Architected a system to add <strong>tiers</strong> to the badges/achievements, 
+              where higher-tier badge can be unlocked by a specified combination of one or more lower-badges.</li>
+              <li>Built <strong>interface for admins</strong> to create and edit new triggers for the new types of badges.</li>
+              <li>Built <strong>user profile</strong> interface for users to access, track, and share their 
+              badges and their progresses.</li>
+              <li>Created the new family of <strong>badge graphics</strong>.</li>
+            </ul>
+          `,
+          notableChallenges: `
+            <ul>
+              <li><strong>Increased complexity</strong> of badge trigger introduced other complications, 
+              such as nested parentheses in the trigger expressions. 
+              I implemented a new <strong>recursive parser</strong> to deal with the new expressions.</li>
+            </ul>
+          `
+        },
+  			longSummary: "CONTENT MOVED TO longSummaryData"
   		}
   		,
   		{
-  			img: "",
+        id: "chat_py",
+  			imgCount: 0,
   			title: "Chat-Py",
   			shortSummary: "Chat client with built-in animation tool that let you draw a few frame send a hand-drawn message that comes to life!",
   			tags: [
@@ -254,7 +257,30 @@ var projectData = {
           "Tornado",
           "SocketIO",
           "PIL"
-  			],
+        ],
+        longSummaryData: {
+          projectDescription: `
+            CS2N is a learning portal for students and educators pursuing computer science and robotics discipline.
+            I entered the project to overhaul the existing badge/achivement system, which 
+            was waiting for big update where it rewards different tiers of badge 
+            and UI to show user their badges and its progress to the higher tier.
+          `,
+          roleHighlights: `
+            <ul>
+              <li>Architected an upgrade to the badge/achievement system have "tiers", which enables 
+              badges to have a "progress" aspect, where any combination of one or more badges can trigger reward of another.</li>
+              <li>Built interface for admins to create and edit achievement's new triggers.</li>
+              <li>Built user profile interface for users to access, track, and share their badges and their progresses.</li>
+              <li>Parser?</li>
+              <li>Created the new family of badge graphics.</li>
+            </ul>
+          `,
+          notableChallenges: `
+            <ul>
+              <li>Increase in complexity of badge/achievement trigger</li>
+            </ul>
+          `
+        },
   			longSummary: `
   				<div class="flex_row">
   					<div class="box">

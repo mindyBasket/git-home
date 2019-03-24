@@ -39,8 +39,8 @@ var workExperienceData = {
       description: `
         <ul>
           <li><strong>Front and Back-end for badging/achievement system:</strong> Responsible for 
-          implementing an interation of a badge/achievement system to have much more intricate and flexible rules and triggers. Built a system for admins to edit and create badges, and a system for users to access, track, 
-          and share them.</li>
+          implementing an interation of a badge/achievement system to have much more intricate and 
+          flexible rules and triggers, as well as UI to access this new feature.</li>
           <li><strong>Robotics Curriculum App:</strong> Collaborated with an Robotics education specialist to 
           architect and build a series of interactive, web-based curriculum delivery solution to 
           facilitate effective learning for students of robotics and STEM educators.</li>
