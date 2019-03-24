@@ -32,12 +32,12 @@
     </div>
     
     <div class="group flex_row">
-      <span>About</span>
-      <span>Work</span>
-      <span>Projects</span>
-      <span>Ice Breakers</span>
-      <span>Contact</span>
-      <span>Resume</span>
+      <a>About</a>
+      <a>Work</a>
+      <a>Projects</a>
+      <a>Ice Breakers</a>
+      <a>Contact</a>
+      <a>Resume</a>
     </div>
 
   </div>

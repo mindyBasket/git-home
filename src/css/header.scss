@@ -8,14 +8,21 @@
 
     transition-property: background-color, box-shadow;
     transition-duration: 0.3s;
-	z-index: 100;
+    z-index: 100;
 
 	.group{
 		align-self: center;
 
-		span{
+		a {
+            color: $light_mediumKey;
 			padding: 0 10px;
 		}
+    }
+
+    .logo{
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $light_mediumKey;
     }
     
     .group:first-of-type{
