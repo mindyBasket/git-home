@@ -3,11 +3,12 @@ import Vue from 'vue';
 // JSON data
 import projectData from './data/data_projects';
 import workExperienceData from './data/data_works';
+import activityData from './data/data_activities';
 
 // Components
-
 import * as Projects from './components/Projects';
 import * as WorkExperiences from './components/WorkExperiences';
+import * as Activities from './components/Activities';
 
 // Single file components
 import Lightbox from './components/Lightbox.vue';
@@ -20,6 +21,7 @@ var vm = new Vue({
   data: {
     projectData: projectData,
     workExperienceData: workExperienceData,
+    activityData: activityData,
     rootState: store.state,
   },
   components: { 

@@ -88,9 +88,7 @@
 
 			<div class="block flex_column" id="workexp">
 				<Titlebox title="Work Experience"></Titlebox>
-
 				<div class="content flood">
-
 					<work-cards 
 						v-for="(work, ind) in workExperienceData.data"
 						v-bind:rootState="rootState"
@@ -103,82 +101,37 @@
 			<div class="block flex_column" id="projects">
 				<Titlebox title="Notable Projects"></Titlebox>
 				<div class="content">
-					<p>
-						This is the journey I took. (Newest to Oldest)
-					</p>
-
-					<transition-group name="shift-card"
-									  class="cardlist flex_row wrap" 
-						 			  id="notable_projects"
-						 			  v-on:after-enter="filler_afterEnter">
-							<project-card v-for="(proj, ind) in projectData.projects"
-										  v-bind:proj="proj"
-											v-bind:index="ind"
-											v-bind:depressnow="rootState.depressNow"
-										  v-bind:key="proj.title"/>
+					<transition-group 
+						name="shift-card"
+						class="cardlist flex_row wrap" 
+						id="notable_projects"
+						v-on:after-enter="filler_afterEnter"
+					>
+						<project-card 
+							v-for="(proj, ind) in projectData.projects"
+							v-bind:proj="proj"
+							v-bind:index="ind"
+							v-bind:depressnow="rootState.depressNow"
+							v-bind:key="proj.title"
+						/>
 					</transition-group>
 					<!-- end: cardlist -->
 
 				</div> <!-- end content -->
 			</div>
 		
-
+			
 
 
 			<div class="block flex_column" id="small-projects">
 				<Titlebox title="Other Activities"></Titlebox>
 				<div class="content">
-					<p>
-						Smaller projects that are ongoing that I am excited for. 
-					</p>
-
-					div.project-item
-					div.thumb
-					div.description
-						span.name Muter
-						span Harassers online are often provoked even more by action of "blocking". The best way to combat harassers and trolls online is a complete disengagement. But that can only get you so far. This chrome extention mutes anonymous harassers stealthly. 
-					div.tags
-						ol
-							li JQuery
-
-				div.project-item
-					div.thumb
-						image
-					div.title
-						span.name PyChat
-						span.role Software Dev
-					div.description
-						span May look like rudimentary chat client, but can send hand drawn messages. The hand-drawn drawings can be dranw in frames to make a short animatio
-					div.tags
-						ol
-							li Python
-							li Tornado
-							li Pillow
-
-				div.project-item
-					div.thumb
-						image
-					div.title
-						span.name Money Buffer
-						span.role Creator
-					div.description
-						span Gameifies your spending by "buffering" your money daily. Whatever you do not spend on your daily buffer is added to the buffer, getting bigger and bigger. Be more aware of your spending habits and save money.
-					div.tags
-						ol
-							li Excel
-							li VBA
-
-				
-							<p>
-								<ul>
-									<li>Programming judge: at FLL and VEX Robotics Competition</li>
-									<li>Udacity: Currently teaching myself Machine Learning and Deep Neural Networks. </li>
-									<li>Global Game Jam 2018 and 2019</li>
-				
-								</ul>
-								
-							</p>
-		
+						<activity-card
+							v-for="(act, ind) in activityData.data"
+							v-bind:act="act"
+							v-bind:index="ind"
+							v-bind:key="ind"
+						/>
 
 				</div>
 			</div>

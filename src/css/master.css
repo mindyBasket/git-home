@@ -353,6 +353,11 @@ strong {
   font-size: 0.7em;
 }
 
+.card_activity {
+  background-color: white;
+  padding: 30px;
+}
+
 .lightbox {
   position: fixed;
   top: 0;
