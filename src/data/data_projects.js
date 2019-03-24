@@ -185,11 +185,7 @@ var projectData = {
         longSummaryData: {
           projectDescription: `
             Sandbloqs is a proof-of-concept for a code editor that teaches programming concepts 
-            by creating games. 
-            
-            visual programming editor 
-
-            where blocks are used to code. The app is built using a library called Blockly, 
+            by creating games. The app is built using a library called Blockly, 
             which is popular for creating educational tool teaching programming concepts through a visual, 
             block-based language.
             <br/>
@@ -199,15 +195,11 @@ var projectData = {
           `,
           roleHighlights: `
             <ul>
-              <li>Contributed to adding "Object" blocks which came in flavor such as "character", and "enemies"
-               that has its own private methods and properties. 
-            These blocks were used to show case object oriented programming through game creation.</li>
-              <li>Added behaviors to each blocks where each manipulates objects in Phaser to bring 
-              the editor's toolbox to completion for game creation.</li>
-              
-              <li>Designed and Implemented UI to have a themed appearence for the app.</li>
-              <li>Created blocks that can be used to draw simple shapes with given parameters.</li>
-              <li>Create example programs used for curriculum, including a fully playable shooting game.</li>
+              <li>Contributed adding various types of custom "Object" blocks that render game objects.
+              They were built to have its own constructor (to spawn sprites), methods and properties to demonstrate 
+              <strong>object oriented programming</strong>.</li>
+              <li>Designed and Implemented <strong>UI</strong> to have a themed appearence.</li>
+              <li>Create example programs used for the curriculum, including a fully playable shooting game.</li>
             </ul>
           `,
           notableChallenges: `
