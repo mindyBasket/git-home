@@ -23,7 +23,7 @@
 }
 
 .modal{
-    position: relatve;
+    position: relative;
     cursor: default;
 
     align-self: center;
@@ -33,10 +33,33 @@
     width: 70vw;
     max-width: 750px;
 
+    -webkit-box-shadow: 0px 2px 9px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 9px 2px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 9px 2px rgba(0,0,0,0.2);
+
     line-height: 1.5em;
 
     transition-property: margin;
     transition-duration: 0.6s;
+    
+    .close_btn{
+        cursor: pointer;
+        position: absolute;
+        top: 0; right: 0;
+
+        margin: 10px;
+        width: 50px; height: 50px;
+        background-image: url('img/close_btn.png');
+        background-size: cover;
+        
+        opacity: 0.7;
+
+        transition-property: opacity;
+        transition-duration: 0.3s;
+    }
+    .close_btn:hover{
+        opacity: 1;
+    }
 
     .modal_unit{
         /* container for each unit of content */
@@ -66,6 +89,10 @@
         height: 280px;
         overflow-x: scroll;
         overflow-y: hidden;
+        .image_item{
+            width: fit-content;
+            border-right: 5px solid #2e2e2e;
+        }
         img {
             height: 100%;
             width: auto;

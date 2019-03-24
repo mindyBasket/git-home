@@ -74,7 +74,8 @@ var projectData = {
   		}
   		,
   		{
-  			img: "",
+        id: "flipbook",
+  			imgCount: 2,
   			title: "Flipbook with Lambda",
   			shortSummary: "Cloud based animation editor for creating low-cost format of scenamatic story telling",
   			tags: [
@@ -160,7 +161,7 @@ var projectData = {
           `,
           notableChallenges: `
             <ul>
-              <li>Deploying heavy archive that is <strong>rapidly expanding</strong> and constantly changing  
+              <li>Deploying heavy archive that is <strong>rapidly expanding</strong> and changing  
               (1 GB to 5 GB in a span of few weeks)</li>
               <li>Adding and exposing <strong>custom behaviors</strong> such as in a framework not intended to be customized.</li>
             </ul>
@@ -213,14 +214,14 @@ var projectData = {
   			tags: [
   				"Ruby on Rails",
   				"jQuery",
-          "mySQL",
-          "Graphics",
+          "MySQL",
+          "Icon Design",
   			],
   			longSummary: `
   				<div class="flex_row">
   					<div class="box">
   						<p>
-  						Badge system was waiting for big update where it rewards different tiers of badge and UI to show user their badges and its progress to the higher tier
+  						  Badge system was waiting for big update where it rewards different tiers of badge and UI to show user their badges and its progress to the higher tier
 
 		  					Notable contributions by me:
 		  					<ul>

@@ -33,7 +33,7 @@
           const imgNameArr = emptyArr.map((n, ind)=>{
             return `dist/img/${this.projId}/img${ind}.png`;
           });
-          console.log(imgNameArr);
+          console.warn(imgNameArr);
           return imgNameArr;
         }
         return {};
@@ -41,11 +41,13 @@
     },
     methods: {
       onLightboxClick: function() {
-        console.log("Lightbox clicked");
         // The state changed in the store is updated in $root's data.
         // Then, it is passed as a prop to this component, triggering update.
         store.closeModal();  
 
+      },
+      closeModal: function() {
+        store.closeModal();  
       },
       onModalClick: (e) => {
         e.stopPropagation();
@@ -73,6 +75,11 @@
         >
           <img v-bind:src="imgPath" /> 
         </span>
+        <div 
+          class="close_btn"
+          v-on:click="closeModal()"
+        >
+        </div>
       </div>
       <div class="modal_unit title">{{ this.rootstate.title }}</div>
       <div class="modal_unit content">

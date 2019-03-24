@@ -127,3 +127,15 @@ strong{
 .block#workexp{
 	background-color: $light_mediumBase;
 }
+
+#contact{
+	background-color: white;
+}
+
+#footer{
+	padding: 20px;
+	justify-content: flex-end;
+
+	background-color: $light_extraDarkKey;
+	color: $light_text2;
+}
