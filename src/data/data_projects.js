@@ -174,38 +174,33 @@ var projectData = {
   		{
   			img: "",
   			title: "Sandbloqs",
-  			shortSummary: "Worked on an app that utilizes Google's Blockly. Intended to teach object oriented programming language.",
+  			shortSummary: "Visual programming language used to teach object oriented programming concepts",
   			tags: [
-  				"Javascript",
+          "Javascript",
+          "SemanticUI",
   				"Phaser",
   				"NW.js",
-          "Blockly",
-          "SemanticUI",
-  			],
-  			longSummary: `
-  				<div class="flex_row">
-  					<div class="box">
-  						<p>
-		  					Highlight of my role:
-		  					<ul>
-		  						<li>Block extension to manipulate Phaser objects</li>
-		  						<li>UI</li>
-		  					</ul>
-		  				</p>
-		  				<p>
-		  					Notable Challenges:
-		  					<ul>
-		  						<li>Limited time, fast developement</li>
-		  						<li>Adding object-oriented programming whereas blockly does NOT support</li>
-		  						<li>Communication between Blockly and Phaser</li>
-		  					</ul>
-		  				</p>
-  					</div>
-  					<div class="box">
-  						Image
-  					</div>
-  				</div>
-  			`
+          "Blockly"
+        ],
+        longSummaryData: {
+          projectDescription: `
+            Visual programming language for kids.
+          `,
+          roleHighlights: `
+            <ul>
+              <li>Block extension to manipulate Phaser objects</li>
+              <li>UI</li>
+            </ul>
+          `,
+          notableChallenges: `
+            <ul>
+              <li>Limited time, fast developement</li>
+              <li>Adding object-oriented programming whereas blockly does NOT support</li>
+              <li>Communication between Blockly and Phaser</li>
+            </ul>
+          `
+        },
+  			longSummary: "CONTENT MOVED TO longSummaryData",
   		}
   		,
   		{
@@ -261,10 +256,7 @@ var projectData = {
         ],
         longSummaryData: {
           projectDescription: `
-            CS2N is a learning portal for students and educators pursuing computer science and robotics discipline.
-            I entered the project to overhaul the existing badge/achivement system, which 
-            was waiting for big update where it rewards different tiers of badge 
-            and UI to show user their badges and its progress to the higher tier.
+            
           `,
           roleHighlights: `
             <ul>
@@ -309,13 +301,35 @@ var projectData = {
   		}
   		,
   		{
-  			img: "/images/project_thumbs/cs2n_1.png",
+        id: "ra_curric",
+  			imgCount: 11,
   			title: "RoboAcademy Curriculum Products",
-  			shortSummary: "Build a family of lightweight, standalone curriculum sites. Did everything for it, from web dev, interactive widgets, course video and graphics",
+        shortSummary: `A family of curriculum modules that teach robotics and computer programming concepts
+         with video tutorials, engaging interactive quizzes, and much more.`,
   			tags: [
-  				"jQuery",
+          "jQuery",
+          "Graphic Assets",
   				"Video Production"
-  			],
+        ],
+        longSummaryData: {
+          projectDescription: `
+            Collaborated with an Robotics education specialist to 
+            architect and build a series of interactive, web-based curriculum delivery solution to 
+            facilitate effective learning for students of robotics and STEM educators.
+
+            Did everything on it from web dev, interactive widgets, course video and graphics
+          `,
+          roleHighlights: `
+            <ul>
+              <li></li>
+            </ul>
+          `,
+          notableChallenges: `
+            <ul>
+              <li>Intended to be installed on schools with out-of-date technologies.</li>
+            </ul>
+          `
+        },
   			longSummary: `
   				<div class="flex_row">
   					<div class="box">
