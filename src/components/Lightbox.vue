@@ -91,7 +91,10 @@
               </div>
               <div v-html="this.longSummaryData.roleHighlights"></div>
             </div>
-            <div class="content_unit">
+            <div
+              v-if="this.longSummaryData.notableChallenges" 
+              class="content_unit"
+            >
               <div class="section_title">
                 <span class="title_icon fas fa-puzzle-piece" />Notable Challenges:
               </div>
