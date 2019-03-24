@@ -89,9 +89,14 @@
         height: 280px;
         overflow-x: scroll;
         overflow-y: hidden;
+
         .image_item{
             width: fit-content;
-            border-right: 5px solid #2e2e2e;
+            border-left: 5px solid #2e2e2e;
+            text-align: center;
+        }
+        .image_item:first-of-type{
+            border-left: 0px solid;
         }
         img {
             height: 100%;

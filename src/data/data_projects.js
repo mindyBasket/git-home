@@ -51,7 +51,8 @@ var projectData = {
   		}
   		,
   		{
-  			img: "",
+        id:"mindybox",
+        imgCount: 1,
   			title: "MindyBox v1",
   			shortSummary: "Personal portfolio site, and an opportunity to explore Vue.js",
   			tags: [
