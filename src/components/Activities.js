@@ -24,15 +24,19 @@ Vue.component('activity-card', {
       }
 	  },
   	template: `
-		<div class="card_activity" 
-			 v-bind:class = "{
-         'active': index,
-        }"
-       v-bind:index = "index">
-			<div class="title">{{ act.title }}</div>
-      <div class="summary">
-        {{ act.description }}
+    <div 
+      class="card_activity_wrapper flex_row" 
+			v-bind:class = "{
+        'indent': (index%2) == 1,
+      }"
+    >
+      <div class="card_activity">
+        <div class="title">{{ act.title }}</div>
+        <div class="summary">
+          {{ act.description }}
+        </div>
       </div>
+			
 		</div>
 	`
 });

@@ -1,4 +1,22 @@
+.card_activity_wrapper {
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.card_activity_wrapper.indent{
+    justify-content: flex-end;
+}
+
+
 .card_activity{
     background-color: white;
-    padding: 30px;
+    padding: 25px 50px;
+    width: 82%;
+
+    .title{
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
 }
+

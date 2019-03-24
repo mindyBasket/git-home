@@ -177,36 +177,42 @@ var projectData = {
   			shortSummary: "Visual programming language used to teach object oriented programming concepts",
   			tags: [
           "Javascript",
-          "SemanticUI",
+          "Blockly",
   				"Phaser",
-  				"NW.js",
-          "Blockly"
+          "NW.js",
+          "SemanticUI",
         ],
         longSummaryData: {
           projectDescription: `
-            Blockly is a popular choice of library for creating a visual programming language editor, 
-            especially for educational purposes. We leveraged the same technology to create a block-based
-            programming language editor to be used along side with our STEM curriculum. 
+            Sandbloqs is a proof-of-concept for a code editor that teaches programming concepts 
+            by creating games. 
+            
+            visual programming editor 
+
+            where blocks are used to code. The app is built using a library called Blockly, 
+            which is popular for creating educational tool teaching programming concepts through a visual, 
+            block-based language.
             <br/>
             <br/>
-            Sandbloqs has a unique feature that sets it apart from other Blockly projects: 
-            <strong>object-oriented programming</strong>!
+            So what sets Sandbloqs apart from other Blockly projects? It is the ability to 
+            do <strong>object-oriented programming</strong>!
           `,
           roleHighlights: `
             <ul>
-              <li>Designed UI to be friendly to young minds, as well as have smooth experience.</li>
-              <li>Block extension to manipulate Phaser objects</li>
-              <li>Helped add "Object" blocks that has its own private methods, properties, and graphics.</li>
+              <li>Contributed to adding "Object" blocks which came in flavor such as "character", and "enemies"
+               that has its own private methods and properties. 
+            These blocks were used to show case object oriented programming through game creation.</li>
+              <li>Added behaviors to each blocks where each manipulates objects in Phaser to bring 
+              the editor's toolbox to completion for game creation.</li>
+              
+              <li>Designed and Implemented UI to have a themed appearence for the app.</li>
               <li>Created blocks that can be used to draw simple shapes with given parameters.</li>
               <li>Create example programs used for curriculum, including a fully playable shooting game.</li>
-              <li>Added behaviors to Phaser</li>
             </ul>
           `,
           notableChallenges: `
             <ul>
-              <li>Project started around time the organization began to implement agile practices. 
-              Limited time, fast developement</li>
-              <li>Communication between Blockly and Phaser</li>
+              <li>Adding object oriented programming which Blockly is not built to support.</li>
             </ul>
           `
         },
@@ -317,6 +323,7 @@ var projectData = {
         shortSummary: `A family of curriculum modules that teach robotics and computer programming concepts
          with video tutorials, engaging interactive quizzes, and much more.`,
   			tags: [
+          "HTML5",
           "jQuery",
           "Graphic Assets",
   				"Video Production"
