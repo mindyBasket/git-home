@@ -184,18 +184,28 @@ var projectData = {
         ],
         longSummaryData: {
           projectDescription: `
-            Visual programming language for kids.
+            Blockly is a popular choice of library for creating a visual programming language editor, 
+            especially for educational purposes. We leveraged the same technology to create a block-based
+            programming language editor to be used along side with our STEM curriculum. 
+            <br/>
+            <br/>
+            Sandbloqs has a unique feature that sets it apart from other Blockly projects: 
+            <strong>object-oriented programming</strong>!
           `,
           roleHighlights: `
             <ul>
+              <li>Designed UI to be friendly to young minds, as well as have smooth experience.</li>
               <li>Block extension to manipulate Phaser objects</li>
-              <li>UI</li>
+              <li>Helped add "Object" blocks that has its own private methods, properties, and graphics.</li>
+              <li>Created blocks that can be used to draw simple shapes with given parameters.</li>
+              <li>Create example programs used for curriculum, including a fully playable shooting game.</li>
+              <li>Added behaviors to Phaser</li>
             </ul>
           `,
           notableChallenges: `
             <ul>
-              <li>Limited time, fast developement</li>
-              <li>Adding object-oriented programming whereas blockly does NOT support</li>
+              <li>Project started around time the organization began to implement agile practices. 
+              Limited time, fast developement</li>
               <li>Communication between Blockly and Phaser</li>
             </ul>
           `
