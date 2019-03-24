@@ -8,17 +8,18 @@ var workExperienceData = {
       year: ["2016", "Present"],
       description: `
         <ul>
-          <li><strong>Robotic software for kids:</strong> Currently building a software tool for kids.</li>
-          <li><strong>Agile developement</strong>: Joined a small team of software engineers to rapid prototype 
-          a minimum viable softwares.
+          <li><strong>Robotic software tool for kids:</strong> Building a software tool 
+          to program robots.</li>
+          <li><strong>Agile developement</strong>: Joined a small team of software engineers to deliver
+          minimum viable products, specializing in developing visual programming tools used to teach
+          programming concepts.</li>
+          <li><strong>QA and Regression testing</strong></li>
           <li><strong>Full stack web developer</strong>: Collaborated with web developers and engineers 
-          to build and design both back and front end in order to solve content delivery challenges for 
-          our client, as well as general educators.</li>
-          <li><strong>DevOps</strong>: Maintain and improve deployment by adding automation to 
-          reduce deployment time from 2 hours to 20 min average.</li>
-          <li><strong>Curriculum Content development:</strong> Brainstorm and build engaging, 
-          project-based STEM curriculum contents.</li>
-          <li>QA and Regression testing</li>
+          to build a scalable system for curriculum content delivery.</li>
+          <li><strong>DevOps</strong>: Learned how to maintain and implement automation to 
+          reduce deployment time from ~2 hours to ~20 min.</li>
+          <li><strong>Curriculum Content development:</strong> Brainstormed and created engaging, 
+          project-based STEM curriculum contents, as well as providing graphic assets.</li>
         </ul>
       `,
       tags: [

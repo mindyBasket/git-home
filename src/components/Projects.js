@@ -79,13 +79,13 @@ Vue.component('project-card', {
 				<img src=""/>
 			</div>
 			<div class="title">{{proj.title}}</div>
-
+      <div class="short_summary">
+				<div class="summary">{{proj.shortSummary}}</div>
+      </div>
       <div class="tags flex_row wrap">
           <span v-for="tag in proj.tags">{{tag}}</span>
         </div>
-			<div class="short_summary">
-				<div class="summary">{{proj.shortSummary}}</div>
-      </div>
+			
       
 		</div>
 	`

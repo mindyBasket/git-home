@@ -57,32 +57,19 @@ var projectData = {
   			tags: [
           "Vue.js",
           "Sass",
-  			],
+        ],
+        longSummaryData: {
+          projectDescription: `
+          A lightweight static website to showcase my skill. A project that also served in helping me learn Vue.js
+          `,
+          roleHighlights: `
+            <ul>
+              <li>Built a responsive static website from ground up.</li>
+            </ul>
+          `
+        },
         longSummary: `
-          <div>
-            <p>
-              
-            </p>
-          </div>
-  				<div class="flex_row">
-  					<div class="box">
-  						<p>
-						 	Role highlights:
-		  					<ul>
-		  						<li>Build from scratch</li>
-		  					</ul>
-		  				</p>
-		  				<p>
-						  	Key Challenges:
-		  					<ul>
-		  						<li>Learning Vue.js</li>
-		  					</ul>
-		  				</p>
-  					</div>
-  					<div class="box">
-  						Image
-  					</div>
-  				</div>
+ 
   			`
   		}
   		,
@@ -95,48 +82,48 @@ var projectData = {
           "Django",
   				"RESTful framework",
           "Node.js",
-          "PIL",
           "AWS S3",
-  				"AWS Lambda",
+          "AWS Lambda",
+          "PIL",
   				"Heroku"
-  			],
-        longSummary: `
-          <div>
-            <p>
-              Structure inspired by single-page task organizer such as Trello. Creates a story telling, animated medium 
-              called "flipbook", which is half-way between a storyboard, and a movie. 
-              The idea is to create a scenamatic, interactive story using just few frames. 
-            <br/>
-              Everything is on cloud; animations are baked using lambda. 
-            <br/>
-              More features are coming soon.
-            </p>
-          </div>
-  				<div class="flex_row">
-  					<div class="box">
-              Role Highlights:
-              <ul>
-                <li>Front-end built using ReactJS, back-end built using Django</li>
-                <li>RESTful api to make smooth single page app experience</li>
-                <li>Disposable instances for easy demo</li>
-                <li>Building and deploying using Node.js and Heroku</li>
-              </ul>
-            </div>
-            <div class="box">
-              Key Challenges:
-              <ul>
-                <li>Integrating ReactJS onto Django</li>
-                <li>Serving large quantity of images</li>
-                <li>Fitting video proccessing onto Lambda</li>
-              </ul>
-  					</div>
-  				</div>
-  			`
+        ],
+        longSummaryData: {
+          projectDescription: `
+          Inspired by single-page task managing apps such as Trello, this app creates a story telling, animated medium 
+          called "flipbook", which is half-way between a storyboard, and a movie. 
+          The idea is to create a scenamatic, interactive story using much lighter resource.  
+          <br/><br/>
+          An unlimited number of video processing instance fire on cloud, using AWS Lambda.
+          Currently this app is available with invite only, but a demo is available to public. 
+          New features will be continuously added.
+          `,
+          roleHighlights: `
+            <ul>
+              <li>Architected the front-end using <strong>ReactJS</strong>, and back-end using <strong>Django</strong>,
+               while teaching myself ReactJS as I go.</li>
+              <li>Used <strong>RESTful APIs</strong> to create a smooth single page app experience.</li>
+              <li>Created an <strong>alternative video UI</strong> for viewing an instance of a "Flipbook".</li>
+              <li>Built and setup an API-triggered Lambda function to do <strong>video processing on cloud</strong>.</li>
+              <li>Implemented a <strong>demo system</strong> that creates a
+              disposable instance of a "Flipbook" for an easy demo.</li>
+              <li>Used Node.js and Heroku to setup <strong>deployment</strong>.</li>
+            </ul>
+          `,
+          notableChallenges: `
+            <ul>
+              <li>Integrating ReactJS into the Django RESTful framework.</li>
+              <li>Serving and handling a large number of images.</li>
+              <li>Working with limitation and restrictions on Lambda in order to 
+              fit a video proccessing module on cloud.</li>
+            </ul>
+          `
+        },
+        longSummary: "CONTENT MOVED TO longSummaryData"
   		}
   		,
   		{
         id: "vex_portal",
-  			imgCount: 5,
+  			imgCount: 4,
   			title: "VEX Education Portal",
   			shortSummary: "STEM course content delivery platform",
   			tags: [
@@ -149,7 +136,6 @@ var projectData = {
         "Graphics",
         ],
         longSummaryData: {
-          info: "Hello world",
           projectDescription: `
           Joined in a team of 3 to build a solution for STEM curriculum content that is stored
           and maintained in a 3rd party service. It had a notable challenge where it compiled all contents 
