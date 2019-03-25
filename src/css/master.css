@@ -59,6 +59,11 @@ strong {
   color: #4753c5;
 }
 
+.color.red {
+  color: #d1315c;
+  font-weight: bold;
+}
+
 .flex_row {
   display: flex;
   flex-direction: row;

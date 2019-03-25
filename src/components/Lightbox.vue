@@ -92,12 +92,26 @@
         </div>
         <div class="flex_row">
           <div class="box">
-            <div class="content_unit">
+            <div
+              v-if="this.longSummaryData.roleHighlights"
+              class="content_unit"
+            >
               <div class="section_title flex_row">
                 <span class="title_icon fas fa-cube" />Role Highlights:
               </div>
               <div v-html="this.longSummaryData.roleHighlights"></div>
             </div>
+
+            <div
+              v-if="this.longSummaryData.featureHighlights"
+              class="content_unit"
+            >
+              <div class="section_title flex_row">
+                <span class="title_icon fas fa-star" />Key Features: 
+              </div>
+              <div v-html="this.longSummaryData.featureHighlights"></div>
+            </div>
+
             <div
               v-if="this.longSummaryData.notableChallenges" 
               class="content_unit"
