@@ -246,7 +246,7 @@ var projectData = {
   		,
   		{
         id: "chat_py",
-  			imgCount: 0,
+  			imgCount: 5,
   			title: "Chat-Py",
         shortSummary: `
           Chat client with a drawing tool that let you sequence 
@@ -260,9 +260,16 @@ var projectData = {
         ],
         longSummaryData: {
           projectDescription: `
-            There is no server for this chat client, however, as proof of concept, each individual machine
+            I attended a class at CMU as a visiting student to fortify my software developement practices.
+            Juggling work and class work, I completed the course with a very successful result. 
+            <br/>
+            <br/>
+            The term project is a chat client written in Python.  There is no server for this chat client, however, as proof of concept, each individual machine
             acts as its own server.
           `,
+          links: {
+            youtube: 'https://youtu.be/sMrIwomA1H0',
+          },
           roleHighlights: `
             <ul>
               <li>Built the UI from ground up using asynchronous websocket called Tornado</li>
