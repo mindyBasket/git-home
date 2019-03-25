@@ -34,8 +34,12 @@ Vue.component('project-card', {
           toid_showSummary: null,
           to_hideSummary: null,
 	    }
-	  }
-    ,
+    },
+    computed: {
+      imgPath: function (){
+        return `dist/img/${this.proj.id}_thumb.jpg`;
+      },
+    },
     mounted(){
       // Update title, for reference
       // this.projTitle =  this.proj.title.replace(/ /g,'');
@@ -46,7 +50,7 @@ Vue.component('project-card', {
         if (newVal > oldVal){
           // "depress" the card button by setting it inactive
           this.isActive = false; 
-          setTimeout(() => { console.log("remove Opened"); this.isOpened = false; }, 300);
+          setTimeout(() => { this.isOpened = false; }, 300);
           
         }
       }
@@ -76,7 +80,7 @@ Vue.component('project-card', {
         }"
        v-bind:index = "index">
 			<div class="thumbnail">
-				<img src=""/>
+        <img v-bind:src="imgPath" /> 
       </div>
       <div class="card_content">
         <div class="title">{{proj.title}}</div>

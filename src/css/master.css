@@ -13,13 +13,13 @@
   align-self: center;
 }
 #portfolio_header .group a {
-  color: #657eff;
+  color: #6568ff;
   padding: 0 10px;
 }
 #portfolio_header .logo {
   font-size: 1.5em;
   font-weight: bold;
-  color: #657eff;
+  color: #6568ff;
 }
 #portfolio_header .group:first-of-type {
   margin-left: 20px;
@@ -170,7 +170,7 @@ strong {
 
 /* style will be added soon */
 .skill_list {
-  color: #657eff;
+  color: #6568ff;
   border: 4px solid #f1f1f1;
   padding: 15px 35px;
 }
@@ -185,11 +185,13 @@ strong {
 
 .card_project {
   position: relative;
-  padding: 20px;
   background-color: #dddddf;
-  width: 42%;
-  height: 200px;
+  width: 45%;
+  height: 240px;
   border-bottom: 2px solid #8d8d8d;
+  border-top: 1px solid #cecece;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
   overflow: hidden;
   margin-top: 8px;
   /* $space_around_card - border */
@@ -199,6 +201,24 @@ strong {
   cursor: pointer;
   transition-property: color, margin, border, background-color;
   transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
+}
+.card_project .thumbnail {
+  background-color: #c7c7c7;
+  height: 60px;
+  overflow: hidden;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition-property: filter, opacity;
+  transition-duration: 0.7s;
+}
+.card_project .thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.card_project .card_content {
+  padding: 5px 20px 20px 20px;
 }
 .card_project .title {
   text-transform: uppercase;
@@ -232,6 +252,12 @@ strong {
   border-bottom: 10px solid #8d8d8d;
   background-color: #e3e3e5;
 }
+.card_project:hover .thumbnail {
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  opacity: 1;
+}
 
 .card_project.active {
   background-color: white;
@@ -253,7 +279,7 @@ strong {
 		 check toggleCard() for details */
 @keyframes open-card {
   0% {
-    width: 42%;
+    width: 45%;
   }
   100% {
     width: 89%;
