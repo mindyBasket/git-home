@@ -11,7 +11,7 @@ var projectData = {
         "TypeScript",
         "Blockly",
         "Node.js",
-        "NWJS",
+        "NW.js",
         "Mobile Dev",
         "BLE",
         ],
@@ -45,30 +45,6 @@ var projectData = {
   		}
   		,
   		{
-        id:"mindybox",
-        imgCount: 1,
-  			title: "MindyBox v1",
-  			shortSummary: "Personal portfolio site, and an opportunity to explore Vue.js",
-  			tags: [
-          "Vue.js",
-          "Sass",
-        ],
-        longSummaryData: {
-          projectDescription: `
-          A lightweight static website to showcase my skill. A project that also served in helping me learn Vue.js
-          `,
-          roleHighlights: `
-            <ul>
-              <li>Built a responsive static website from ground up.</li>
-            </ul>
-          `
-        },
-        longSummary: `
- 
-  			`
-  		}
-  		,
-  		{
         id: "flipbook",
   			imgCount: 2,
   			title: "Flipbook with Lambda",
@@ -78,9 +54,7 @@ var projectData = {
           "Django",
   				"RESTful framework",
           "Node.js",
-          "AWS S3",
           "AWS Lambda",
-          "PIL",
   				"Heroku"
         ],
         longSummaryData: {
@@ -116,7 +90,7 @@ var projectData = {
         },
         longSummary: "CONTENT MOVED TO longSummaryData"
   		}
-  		,
+      ,
   		{
         id: "vex_portal",
   			imgCount: 4,
@@ -128,19 +102,18 @@ var projectData = {
         "PHP",
         "MySQL",
         "DevOps",
-        "STEM content",
         "Graphics",
         ],
         longSummaryData: {
           projectDescription: `
-          Joined in a team of 3 to build a solution for STEM curriculum content that is stored
-          and maintained in a 3rd party service. It had a notable challenge where it compiled all contents 
+          Joined in a team of 3 to build a solution for deliverying STEM curriculum content that is
+          store in a 3rd party service. The challenge was that the service compiled all contents 
           into a format that does not match our client's need. It was not very accessible, and had an 
           incompatible distribution method. 
           </br>
           </br>
           We built a custom content delivery environment using PHP, MySQL, Javascript,
-          and shell scripts to make it possible to serve, maintain and scale.
+          and shell scripts to make it possible to deploy, maintain and scale.
           `,
           roleHighlights: `
             <ul>
@@ -164,8 +137,32 @@ var projectData = {
         },
         longSummary: "CONTENT MOVED TO longSummaryData"
   		}
-  		,
-  		{
+      ,
+      {
+        id:"mindybox",
+        imgCount: 1,
+  			title: "MindyBox v1",
+  			shortSummary: "Personal portfolio site, and an opportunity to explore Vue.js",
+  			tags: [
+          "Vue.js",
+          "Sass",
+        ],
+        longSummaryData: {
+          projectDescription: `
+          A lightweight static website to showcase my skill. A project that also served in helping me learn Vue.js
+          `,
+          roleHighlights: `
+            <ul>
+              <li>Built a responsive static website from ground up.</li>
+            </ul>
+          `
+        },
+        longSummary: `
+ 
+  			`
+  		}
+      ,
+      {
   			img: "",
   			title: "Sandbloqs",
   			shortSummary: "Visual programming language used to teach object oriented programming concepts",
@@ -216,8 +213,8 @@ var projectData = {
           "MySQL",
           "Haml",
           "Sass",
-          "Full stack",
-          "Icon Design"
+          "Full Stack",
+          "Graphics"
         ],
         longSummaryData: {
           projectDescription: `
@@ -293,7 +290,7 @@ var projectData = {
   			tags: [
           "HTML5",
           "jQuery",
-          "Graphic Assets",
+          "Graphics",
   				"Video Production"
         ],
         longSummaryData: {
@@ -311,7 +308,7 @@ var projectData = {
                   and activities.</li>
               <li>Optimize products for <strong>cross-browser compatibility</strong></li>
               <li>Optimize products to work with out-of-date technologies such as older browsers.</li>
-              <li>Produced core lesson videos.</li>
+              <li>Produced core lesson <strong>videos</strong>.</li>
               <li>Created graphic assets with a pioneering style that is adopted into curriculum
               modules that followed after.</li>
             </ul>
