@@ -11,7 +11,8 @@
     z-index: 100;
 
 	.group{
-		align-self: center;
+        align-self: center;
+        padding-bottom: 5px;
 
 		a {
             color: $light_mediumKey;

@@ -114,7 +114,7 @@
 
             <div
               v-if="this.longSummaryData.notableChallenges" 
-              class="content_unit"
+              class="content_unit challenges"
             >
               <div class="section_title">
                 <span class="title_icon fas fa-puzzle-piece" />Notable Challenges:

@@ -11,6 +11,7 @@
 }
 #portfolio_header .group {
   align-self: center;
+  padding-bottom: 5px;
 }
 #portfolio_header .group a {
   color: #6568ff;
@@ -504,6 +505,9 @@ strong {
 }
 .modal .description {
   margin-left: 30px;
+}
+.modal .challenges strong {
+  color: #1eaed1;
 }
 .modal .section_title {
   /* color: #1eaed1; */

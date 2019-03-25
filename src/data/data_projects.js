@@ -4,12 +4,11 @@ var projectData = {
   		{
         id: "robomatter_current",
   			imgCount: 2,
-  			title: "[Ongoing] Educational Robotic Programming software",
-  			shortSummary: "Class friendly, STEM-solution by programming your robot to life!",
+  			title: "Educational Robotics Programming Editor",
+  			shortSummary: "Ongoing project for robot programming for very young audience",
   			tags: [
         "ReactJS",  
         "TypeScript",
-        "Blockly",
         "Node.js",
         "NW.js",
         "Mobile Dev",
@@ -17,29 +16,24 @@ var projectData = {
         ],
         longSummaryData: {
           projectDescription: `
-            Formed a team of 3 engineers to implement a tool for programming robots. 
-            We operated using agile practices, and shared responsibilities, as well as strategizing to modularize.
-            Wait, I say that in the bullet below!!! 
-            Built a working prototype with key features in 2 weeks, and continued to rapidly produce minimally 
-            viable product, successfully reaching a software with full features in a month.  
-            It is architected and developed using React.js.
+            <span class="color red">
+              (Due to an agreement with my company, only a limited amount of detail can be shared at this time.)
+            </span>
+            <br/>
+            <br/>
+            Formed a team of 3 engineers to implement a code editor in context of robotics, targeting
+            very young audience. We are using agile practices to work under aggressive timeline, rapidly producing
+            minimally viable products each increment.
           `,
           roleHighlights: `
             <ul>
-              <li>Built and designed UI and the main software structure in ReactJS</li>
-              <li>Built reusable and flexible components used for UI interface, hardware connection</li>
-              <li>Strategized modularizing tasks so that multiple engineer can build collaboratively to 
-              delivery faster without quality loss.</li>
+              <li>Collaborated to built a working prototype with key features in 2 weeks, and reaching a minimally 
+              viable product with all core features in a month.</li>  
+              <li>Using <strong>ReactJS</strong> and <strong>Typescript</strong></li>
+              <li>Strategized modularizing tasks to delivery faster without quality loss.</li>
+              <li>Built the app to be available for both desktop and mobile using the same code base.</li>
             </ul>
           `,
-          notableChallenges: `
-            <ul>
-              <li>Integrating Blockly and compiling it into C++</li>
-              <li>Working around limited time, strategizing to complete feature faster without quality loss.</li>
-              <li>Cross-platform compatibility for both mobile and desktop: iOS, Android, ChromeOS, MacOS and Windows</li>
-              <li>Complex hardware communications: Bluetooth and USB</li>
-            </ul>
-          `
         },
         longSummary: "CONTENT MOVED TO longSummaryData",
   		}
@@ -52,39 +46,40 @@ var projectData = {
   			tags: [
   				"ReactJS",
           "Django",
-  				"RESTful framework",
-          "Node.js",
+          "RESTful framework",
+          "AWS S3",
           "AWS Lambda",
   				"Heroku"
         ],
         longSummaryData: {
           projectDescription: `
-          Inspired by single-page task managing apps such as Trello, this app creates a story telling, animated medium 
+          Inspired by single-page task managing apps, this app creates a story telling, animated medium 
           called "flipbook", which is half-way between a storyboard, and a movie. 
           The idea is to create a scenamatic, interactive story using much lighter resource. 
           <br/><br/>
-          An unlimited number of video processing instances fire on cloud, using AWS Lambda.
-          Currently this app is available with invite only, but a demo is available to public. 
-          New features will be continuously added.
+          Currently this app is available with invite only, but a demo is available to public.
+          <br/><br/> 
+          New features will be continuously added, and in the next iteration, the app's UI will appear closer
+          a video editor for more intuitive editing.
           `,
-          roleHighlights: `
+          featureHighlights: `
             <ul>
-              <li>Architected the front-end using <strong>ReactJS</strong>, and back-end using <strong>Django</strong>,
-               while teaching myself ReactJS as I go.</li>
-              <li>Used <strong>RESTful APIs</strong> to create a smooth single page app experience.</li>
-              <li>Created an <strong>alternative video UI</strong> for viewing an instance of a "Flipbook".</li>
-              <li>Built and setup an API-triggered Lambda function to do <strong>video processing on cloud</strong>.</li>
-              <li>Implemented a <strong>demo system</strong> that creates a
-              disposable instance of a "Flipbook" for an easy demo.</li>
-              <li>Used Node.js and Heroku to setup <strong>deployment</strong>.</li>
+              <li>Front-end is <strong>ReactJS</strong>, and back-end is <strong>Django</strong>.
+               Taught my self ReactJS as I go.</li>
+              <li>Uses <strong>RESTful APIs</strong> to create a smooth single page app experience.</li>
+              <li>Features an <strong>alternative video UI</strong> for viewing an instance of a "Flipbook".</li>
+              <li>Does all <strong>video processing on cloud</strong> using a powerful 
+              API-triggered <strong>Lambda</strong> function written in python.</li>
+              <li>Visitors can <strong>demo</strong> the app through a copy of disposable instance.</li>
+              <li>Deployed on <strong>Heroku</strong>.</li>
             </ul>
           `,
           notableChallenges: `
             <ul>
               <li>Integrating ReactJS into the Django RESTful framework.</li>
               <li>Serving and handling a large number of images.</li>
-              <li>Working with limitation and restrictions on Lambda in order to 
-              fit a video proccessing module on cloud.</li>
+              <li>Lambda's <strong>size restriction</strong> of 250mb created a challenge 
+              hosting my video processing module that use <strong>ffmpeg</strong> for encoding video for web.</li>
             </ul>
           `
         },
@@ -117,20 +112,21 @@ var projectData = {
           `,
           roleHighlights: `
             <ul>
-              <li>Collaborated to build <strong>content delivery site</strong> that can deploy multiple different versions
-              and flavors using single code base.</li>
+              <li>Collaborated to build a <strong>content delivery site</strong> that is deployed in
+               multiple versions using a single code base.</li>
               <li>Helped building the <strong>deployment pipeline</strong> to schedule and automate using Octopus Deploy.</li>
               <li>Implemented scripts to <strong>precompile and throttle</strong> in order to manage resources and reduce traffic 
-               as the amount of contents to deploy increased rapidly.</li>
+               as the amount of contents increased rapidly.</li>
               <li>Built a <strong>login system</strong> for educators to access the portal.</li>
-              <li>Created <strong>robot sprite</strong> assets used to explain robotics concepts</li>
-              <li>Brainstormed and created <strong>STEM Lab</strong> (curriculum content) activities.</li>
+              <li>Created <strong>robot sprite</strong> assets.</li>
+              <li>Brainstormed and created <strong>STEM Labs</strong> and activities used in the curriculum.</li>
             </ul>
           `,
           notableChallenges: `
             <ul>
-              <li>Deploying heavy archive that is <strong>rapidly expanding</strong> and changing  
+              <li>Deploying a heavy archive that is <strong>rapidly expanding</strong> and changing  
               (1 GB to 5 GB in a span of few weeks)</li>
+              <li>Rapidly changing requirements and requests from our clients.</li>
               <li>Adding and exposing <strong>custom behaviors</strong> such as in a framework not intended to be customized.</li>
             </ul>
           `
@@ -149,17 +145,11 @@ var projectData = {
         ],
         longSummaryData: {
           projectDescription: `
-          A lightweight static website to showcase my skill. A project that also served in helping me learn Vue.js
+          A lightweight static website to showcase my skill and background. 
+          A project that also served in helping me learn <strong>Vue.js</strong>. Some inspiration taken from Trello.
           `,
-          roleHighlights: `
-            <ul>
-              <li>Built a responsive static website from ground up.</li>
-            </ul>
-          `
         },
-        longSummary: `
- 
-  			`
+        longSummary: "use longSummaryData",
   		}
       ,
       {
@@ -219,8 +209,8 @@ var projectData = {
         longSummaryData: {
           projectDescription: `
             CS2N is a learning portal for students and educators pursuing computer science and robotics discipline.
-            I entered the project to overhaul the existing badge/achivement system to scaffold it in order to
-            to game-ify learning father, allowing more incentives and motivations for students to 
+            I entered the project to overhaul the existing badge/achivement system to have an extra depth.
+            This game-ifies learning farther, allowing more incentives and motivations for students to 
             complete educational activities.   
           `,
           roleHighlights: `
@@ -230,7 +220,7 @@ var projectData = {
               <li>Built <strong>interface for admins</strong> to create and edit new triggers for the new types of badges.</li>
               <li>Built <strong>user profile</strong> interface for users to access, track, and share their 
               badges and their progresses.</li>
-              <li>Created the new family of <strong>badge graphics</strong>.</li>
+              <li>Created the a family of <strong>badge graphics</strong>.</li>
             </ul>
           `,
           notableChallenges: `
@@ -249,8 +239,7 @@ var projectData = {
   			imgCount: 5,
   			title: "Chat-Py",
         shortSummary: `
-          Chat client with a drawing tool that let you sequence 
-          few frames send a hand-drawn animated message
+          Chat client with a drawing tool that let you send a hand-drawn animated messages
         `,
   			tags: [
           "Python",
@@ -264,25 +253,35 @@ var projectData = {
             Juggling work and class work, I completed the course with a very successful result. 
             <br/>
             <br/>
-            The term project is a chat client written in Python.  There is no server for this chat client, however, as proof of concept, each individual machine
-            acts as its own server.
+            The term project is a chat client written in Python. Due to the requirements,
+            the chat app could not use any web server for demonstation. As a proof of concept, 
+            SocketIO was used connect to another device using an IP address. 
+            <br/>
+            <br/>
+            However, Tornado was incoporated into the app structure to prepare for future conversion into 
+            a web app.
           `,
           links: {
             youtube: 'https://youtu.be/sMrIwomA1H0',
           },
-          roleHighlights: `
+          featureHighlights: `
             <ul>
-              <li>Built the UI from ground up using asynchronous websocket called Tornado</li>
-              <li>Since there is no server, used socketIO and Tornado to set up server for individual machine</li>
-              <li>Architected a graphics editor that let you draw on a blank canvas, draw on image sent to you, 
-              and draw on top of imported image found on your disk.</li>
-              <li>Architected an animation editor that let you string multiple drawings to create a small GIF 
-              to be sent through the client</li>
+              <li>Built using an <strong>asynchronous websocket</strong> library, 
+              so that you can connect as many friend into one chat room.</li>
+              <li><strong>Share and save images</strong> with your friend.</li>
+              <li>Send <strong>animated GIFs</strong> that will play on the chat client. Great
+              for sharing funny reaction images. It will <strong>pause automatically</strong> when scrolled
+              out of the view, or if the user clicks on it.</li>
+              <li>Features a <strong>drawing tool</strong> that let you draw from scratch, draw onto other's drawing, and 
+              draw on images you upload.</li>
+              <li>Features an <strong>animation editor</strong> for you to string a few drawings 
+              in sequence to bring your message to life.</li>
             </ul>
           `,
           notableChallenges: `
             <ul>
-              <li>Sending and editing GIF</li>
+              <li>Buffering animated GIF images.</li>
+              <li>Animation editor that you can fit into a chat box.</li>
             </ul>
           `
         },
@@ -305,7 +304,8 @@ var projectData = {
             I collaborated with a robotics education specialist to produce a collection of 
             curriculum modules for introductory to
             intermediate level of robotics programming. The family of modules cover multiple programming
-            languages and hardwares, such as LabView, RobotC, and EV3-Mindstorm.       
+            languages and hardwares, such as <strong>LabView</strong>, <strong>RobotC</strong>,
+             and <strong>LEGO EV3-Mindstorm</strong>.       
           `,
           roleHighlights: `
             <ul>
@@ -313,16 +313,15 @@ var projectData = {
               <li>Built many types of reusable, <strong>modularized widgets</strong> that checks answers and math. 
                   The widgets are used by me and other developers to create <strong>interactive quizzes</strong>
                   and activities.</li>
-              <li>Optimize products for <strong>cross-browser compatibility</strong></li>
-              <li>Optimize products to work with out-of-date technologies such as older browsers.</li>
+              <li>Optimize products for <strong>cross-browser compatibility</strong>.</li>
               <li>Produced core lesson <strong>videos</strong>.</li>
-              <li>Created graphic assets with a pioneering style that is adopted into curriculum
-              modules that followed after.</li>
+              <li>Created <strong>graphic assets</strong> that became to define the pioneering style 
+              of the product family, and was adopted into curriculum modules that followed after.</li>
             </ul>
           `,
           notableChallenges: `
             <ul>
-              <li>Because the target environment is <strong>schools</strong>, the product could not 
+              <li>Because the target environment is <strong>school</strong>, the product could not 
               assume the target environment has internet, modern browsers, or latest OS.</li>
             </ul>
           `
