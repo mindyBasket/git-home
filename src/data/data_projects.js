@@ -14,40 +14,34 @@ var projectData = {
         "NWJS",
         "Mobile Dev",
         "BLE",
-        "Sass",
-  			],
-        longSummary: `
-          <div>
-            <p>
-              Formed a team of 3 engineers to implement a tool for programming robots. 
-              We operated using agile practices, and shared responsibilities, as well as strategizing to modularize.
-              Wait, I say that in the bullet below!!! 
-              Built a working prototype with key features in 2 weeks, and continued to rapidly produce minimally 
-              viable product, successfully reaching a software with full features in a month.  
-              It is architected and developed using React.js.
-            </p>
-          </div>
-  				<div class="flex_row">
-					  <div class="box">
-              <div class="section_title">Role highlights</div>
-              <ul>
-                <li>Built and designed UI and the main software structure in ReactJS</li>
-                <li>Built reusable and flexible components used for UI interface, hardware connection</li>
-                <li>Strategized modularizing tasks so that multiple engineer can build collaboratively to 
-                delivery faster without quality loss.</li>
-              </ul>
-            </div>
-            <div class="box">
-              <div class="section_title">Key Challenges</div>
-              <ul>
-                <li>Integrating Blockly and compiling it into C++</li>
-                <li>Working around limited time, strategizing to complete feature faster without quality loss.</li>
-                <li>Cross-platform compatibility for both mobile and desktop: iOS, Android, ChromeOS, MacOS and Windows</li>
-                <li>Complex hardware communications: Bluetooth and USB</li>
-              </ul>
-            </div>
-  				</div>
-  			`
+        ],
+        longSummaryData: {
+          projectDescription: `
+            Formed a team of 3 engineers to implement a tool for programming robots. 
+            We operated using agile practices, and shared responsibilities, as well as strategizing to modularize.
+            Wait, I say that in the bullet below!!! 
+            Built a working prototype with key features in 2 weeks, and continued to rapidly produce minimally 
+            viable product, successfully reaching a software with full features in a month.  
+            It is architected and developed using React.js.
+          `,
+          roleHighlights: `
+            <ul>
+              <li>Built and designed UI and the main software structure in ReactJS</li>
+              <li>Built reusable and flexible components used for UI interface, hardware connection</li>
+              <li>Strategized modularizing tasks so that multiple engineer can build collaboratively to 
+              delivery faster without quality loss.</li>
+            </ul>
+          `,
+          notableChallenges: `
+            <ul>
+              <li>Integrating Blockly and compiling it into C++</li>
+              <li>Working around limited time, strategizing to complete feature faster without quality loss.</li>
+              <li>Cross-platform compatibility for both mobile and desktop: iOS, Android, ChromeOS, MacOS and Windows</li>
+              <li>Complex hardware communications: Bluetooth and USB</li>
+            </ul>
+          `
+        },
+        longSummary: "CONTENT MOVED TO longSummaryData",
   		}
   		,
   		{
@@ -218,8 +212,10 @@ var projectData = {
   			shortSummary: "Worked on the second iteration of the badge reward system, both back end and front end",
   			tags: [
   				"Ruby on Rails",
-  				"jQuery",
+          "jQuery",
           "MySQL",
+          "Haml",
+          "Sass",
           "Full stack",
           "Icon Design"
         ],
@@ -255,7 +251,10 @@ var projectData = {
         id: "chat_py",
   			imgCount: 0,
   			title: "Chat-Py",
-  			shortSummary: "Chat client with built-in animation tool that let you draw a few frame send a hand-drawn message that comes to life!",
+        shortSummary: `
+          Chat client with a drawing tool that let you sequence 
+          few frames send a hand-drawn animated message
+        `,
   			tags: [
           "Python",
           "Tornado",
@@ -264,56 +263,33 @@ var projectData = {
         ],
         longSummaryData: {
           projectDescription: `
-            
+            There is no server for this chat client, however, as proof of concept, each individual machine
+            acts as its own server.
           `,
           roleHighlights: `
             <ul>
-              <li>Architected an upgrade to the badge/achievement system have "tiers", which enables 
-              badges to have a "progress" aspect, where any combination of one or more badges can trigger reward of another.</li>
-              <li>Built interface for admins to create and edit achievement's new triggers.</li>
-              <li>Built user profile interface for users to access, track, and share their badges and their progresses.</li>
-              <li>Parser?</li>
-              <li>Created the new family of badge graphics.</li>
+              <li>Built the UI from ground up using asynchronous websocket called Tornado</li>
+              <li>Since there is no server, used socketIO and Tornado to set up server for individual machine</li>
+              <li>Architected a graphics editor that let you draw on a blank canvas, draw on image sent to you, 
+              and draw on top of imported image found on your disk.</li>
+              <li>Architected an animation editor that let you string multiple drawings to create a small GIF 
+              to be sent through the client</li>
             </ul>
           `,
           notableChallenges: `
             <ul>
-              <li>Increase in complexity of badge/achievement trigger</li>
+              <li>Sending and editing GIF</li>
             </ul>
           `
         },
-  			longSummary: `
-  				<div class="flex_row">
-  					<div class="box">
-  						<p>
-  							Context: Madcap is a documentation program that we extended its usage to behave like Moodle. Javascript was used to fill the gap between desired UI/UX functionality to what Madcap can offer.
-
-		  					Role Highlights:
-		  					<ul>
-								<li>Built animation UI in python<li>
-								<li></li>
-		  					</ul>
-		  				</p>
-		  				<p>
-		  					Notable Challenges:
-		  					<ul>
-		  						<li>n/a</li>
-		  					</ul>
-		  				</p>
-  					</div>
-  					<div class="box">
-  						Image
-  					</div>
-  				</div>
-  			`
+  			longSummary: "CONTENT MOVED TO longSummaryData",
   		}
   		,
   		{
         id: "ra_curric",
   			imgCount: 9,
   			title: "RoboAcademy Curriculum Products",
-        shortSummary: `A family of curriculum modules that teach robotics and computer programming concepts
-         with video tutorials, engaging interactive quizzes, and much more.`,
+        shortSummary: `Curriculum modules that teach robotics programming with real or virtual robots.`,
   			tags: [
           "HTML5",
           "jQuery",
@@ -322,53 +298,32 @@ var projectData = {
         ],
         longSummaryData: {
           projectDescription: `
-            Collaborated with an Robotics education specialist to 
-            architect and build a series of interactive, web-based curriculum delivery solution to 
-            facilitate effective learning for students of robotics and STEM educators.
-
-            Did everything on it from web dev, interactive widgets, course video and graphics
+            I collaborated with a robotics education specialist to produce a collection of 
+            curriculum modules for introductory to
+            intermediate level of robotics programming. The family of modules cover multiple programming
+            languages and hardwares, such as LabView, RobotC, and EV3-Mindstorm.       
           `,
           roleHighlights: `
             <ul>
-              <li></li>
+              <li>Architected <strong>data-driven static web modules</strong> for content delivery.</li>
+              <li>Built many types of reusable, <strong>modularized widgets</strong> that checks answers and math. 
+                  The widgets are used by me and other developers to create <strong>interactive quizzes</strong>
+                  and activities.</li>
+              <li>Optimize products for <strong>cross-browser compatibility</strong></li>
+              <li>Optimize products to work with out-of-date technologies such as older browsers.</li>
+              <li>Produced core lesson videos.</li>
+              <li>Created graphic assets with a pioneering style that is adopted into curriculum
+              modules that followed after.</li>
             </ul>
           `,
           notableChallenges: `
             <ul>
-              <li>Intended to be installed on schools with out-of-date technologies.</li>
+              <li>Because the target environment is <strong>schools</strong>, the product could not 
+              assume the target environment has internet, modern browsers, or latest OS.</li>
             </ul>
           `
         },
-  			longSummary: `
-  				<div class="flex_row">
-  					<div class="box">
-  						<p>
-		  					Highlight of my role:
-		  					<ul>
-		  						<li>Built from scratch.</li>
-		  						<li>Built reusable widgets for creating interactive quizzes</li>
-		  						<li>Math parser for the widgets</li>
-		  						<li>Video production</li>
-                  <li>Built reusable, interactive 
-          javascript components to be used for these app. They are lightweight interactive course delivery apps, optimized to be
-          deployed to schools despite out-of-date technologies.</li>
-          <li><strong>Reusable Components:</strong> nd architect javascript solutions to create components that is reusable for developers,
-          as well as engaging for students to improve learning a range of programming languages such as LabView, EV3, and VEX</li>
-		  					</ul>
-		  				</p>
-		  				<p>
-		  					Notable Challenges:
-		  					<ul>
-		  						<li>Cannot assume target environment (school computer lab) has internet.</li>
-		  						<li>Cannot assume target environment (school computer lab) has modern browsers.</li>
-		  					</ul>
-		  				</p>
-  					</div>
-  					<div class="box">
-  						Image
-  					</div>
-  				</div>
-  			`
+  			longSummary: "CONTENT MOVED TO longSummaryData"
   		}
   		,
   	]
