@@ -40,7 +40,7 @@ var projectData = {
   		,
   		{
         id: "flipbook",
-  			imgCount: 2,
+  			imgCount: 3,
   			title: "Flipbook with Lambda",
   			shortSummary: "Cloud based animation editor for creating low-cost format of scenamatic story telling",
   			tags: [
@@ -88,7 +88,7 @@ var projectData = {
       ,
   		{
         id: "vex_portal",
-  			imgCount: 4,
+  			imgCount: 5,
   			title: "VEX Education Portal",
   			shortSummary: "STEM course content delivery platform",
   			tags: [
@@ -153,7 +153,8 @@ var projectData = {
   		}
       ,
       {
-  			img: "",
+        id: "sandbloqs",
+  			imgCount: 6,
   			title: "Sandbloqs",
   			shortSummary: "Visual programming language used to teach object oriented programming concepts",
   			tags: [
@@ -194,7 +195,7 @@ var projectData = {
   		,
   		{
         id: "cs2n",
-  			imgCount: 0,
+  			imgCount: 3,
   			title: "CS2N",
   			shortSummary: "Worked on the second iteration of the badge reward system, both back end and front end",
   			tags: [
