@@ -31,7 +31,8 @@ var projectData = {
               viable product with all core features in a month.</li>  
               <li>Using <strong>ReactJS</strong> and <strong>Typescript</strong></li>
               <li>Strategized modularizing tasks to delivery faster without quality loss.</li>
-              <li>Built the app to be available for both desktop and mobile using the same code base.</li>
+              <li>Collaborated to build the app to be available for major platforms, 
+              both desktop and mobile, while keeping the same code base.</li>
             </ul>
           `,
         },

@@ -16,7 +16,7 @@ var workExperienceData = {
           <li><strong>QA and Regression testing</strong></li>
           <li><strong>Full stack web developer</strong>: Collaborated with web developers and engineers 
           to build a scalable system for curriculum content delivery.</li>
-          <li><strong>DevOps</strong>: Learned how to maintain and implement automation to 
+          <li><strong>DevOps</strong>: Maintained and added automation to 
           reduce deployment time from ~2 hours to ~20 min.</li>
           <li><strong>Curriculum Content development:</strong> Brainstormed and created engaging, 
           project-based STEM curriculum contents, as well as providing graphic assets.</li>
@@ -65,8 +65,8 @@ var workExperienceData = {
           tutoring content used for the research focusing on teaching mathematical concepts.</li>
           <li><strong>Research Assistant: </strong>Worked with educators and phD students to test and collect data to 
           produce quantified results.</li>
-          <li><strong>Internal Tests: </strong>Used internal software to script authoring behavior to 
-          improve specialized feedbacks in the tutoring content. Actively reported bugs to the developers.</li>
+          <li><strong>Internal Tests: </strong>Used internal software to add more tutoring behaviors 
+          to the tutor interface, and actively reported bugs to the developers.</li>
         </ul>
       `,
       tags: [
