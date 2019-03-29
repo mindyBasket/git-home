@@ -26,12 +26,21 @@
         return {};
       },
       imgPathArr: function () {
+        const getImagePath = (extMap, ind) => {
+          if (extMap == null || extMap[ind] == null) {
+            return `dist/img/${this.projId}/img${ind}.png`;
+          } else {
+            return `dist/img/${this.projId}/img${ind}.${extMap[ind]}`;
+          }
+        };
+
         if ('contentData' in this.rootstate && 'imgCount' in this.rootstate.contentData){
           // make array
+          const contentData = this.rootstate.contentData;
           const imgCount = this.rootstate.contentData.imgCount;
           const emptyArr = (new Array(imgCount)).fill(null);
           const imgNameArr = emptyArr.map((n, ind)=>{
-            return `dist/img/${this.projId}/img${ind}.png`;
+            return getImagePath('imgExtMap' in contentData ? contentData.imgExtMap : null, ind);
           });
           console.warn(imgNameArr);
           return imgNameArr;
