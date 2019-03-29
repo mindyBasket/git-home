@@ -42,7 +42,7 @@
           const imgNameArr = emptyArr.map((n, ind)=>{
             return getImagePath('imgExtMap' in contentData ? contentData.imgExtMap : null, ind);
           });
-          console.warn(imgNameArr);
+          // console.info(imgNameArr);
           return imgNameArr;
         }
         return {};

@@ -11,7 +11,7 @@ import * as WorkExperiences from './components/WorkExperiences';
 import * as Activities from './components/Activities';
 
 // Single file components
-import Lightbox from './components/Lightbox.vue';
+import Projectpopup from './components/Projectpopup.vue';
 import Titlebox from './components/Titlebox.vue';
 import Headermenu from './components/Headermenu.vue';
 
@@ -87,7 +87,7 @@ const vm_lb = new Vue({
       console.log("Hello from #modal_wrapper!");
     }
   },
-  render: h => h(Lightbox, { 
+  render: h => h(Projectpopup, { 
     props: { 
       rootstate: store.state } 
     })
