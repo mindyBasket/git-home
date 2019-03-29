@@ -67,7 +67,10 @@
     <div 
       class="modal"
       v-on:click="onModalClick($event)">
-      <div class="image_header flex_row">
+      <div 
+        class="image_header flex_row"
+        v-if="this.imgPathArr.length > 0"
+      >
         <span 
           class="image_item"
           v-for="(imgPath, ind) in this.imgPathArr"

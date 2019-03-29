@@ -3,7 +3,7 @@ var projectData = {
   	projects: [
   		{
         id: "robomatter_current",
-  			imgCount: 2,
+  			imgCount: 0,
   			title: "Educational Robotics Programming Editor",
   			shortSummary: "Ongoing project for robot programming for very young audience",
   			tags: [
