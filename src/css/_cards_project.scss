@@ -1,7 +1,7 @@
 
 $THUMBNAIL_HEIGHT: 124px;
 $CARD_WIDTH: 22vw;
-$CARD_HEIGHT: 320px;
+$CARD_HEIGHT: 300px;
 $space_around_card: 10px;
 $PROJ_CARD_BORDER: #cecece;
 
@@ -140,13 +140,13 @@ $width-expand-dur: 0.2s;
 @media (max-width: 1100px) {
 	.card_project{
 		width: 30vw;
-		height: 320px;
+
 	}
 }
 @media (max-width: 800px) {
 	.card_project{
 		width: 44vw;
-		height: 320px;
+	
 	}
 }
 
@@ -154,6 +154,6 @@ $width-expand-dur: 0.2s;
 	.card_project{
 		width: 85vw;
 		font-size:0.9em;
-		height: 300px;
+
 	}
 }

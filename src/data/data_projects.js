@@ -5,7 +5,8 @@ var projectData = {
         id: "robomatter_current",
   			imgCount: 0,
   			title: "Educational Robotics Programming Editor",
-  			shortSummary: "Ongoing project for robot programming for young audience",
+        shortSummary: "Ongoing project",
+        external_links: [],
   			tags: [
         "ReactJS",  
         "TypeScript",
@@ -43,7 +44,8 @@ var projectData = {
         id: "flipbook",
   			imgCount: 3,
   			title: "Flipbook with Lambda",
-  			shortSummary: "Cloud based animation editor",
+        shortSummary: "Cloud based animation editor",
+        external_links: ["https://playflipbook.herokuapp.com/","https://github.com/blacksandbox/paper-cumulus"],
   			tags: [
   				"ReactJS",
           "Django",
@@ -91,7 +93,8 @@ var projectData = {
         id: "vex_portal",
   			imgCount: 5,
   			title: "VEX Education Portal",
-  			shortSummary: "STEM course content delivery platform",
+        shortSummary: "STEM course content delivery platform",
+        external_links: [],
   			tags: [
         "Javascript",
         "Node.js",
@@ -139,7 +142,8 @@ var projectData = {
         id:"mindybox",
         imgCount: 1,
   			title: "MindyBox v1",
-  			shortSummary: "Personal portfolio site version 1",
+        shortSummary: "Personal portfolio site version 1",
+        external_links: ["","https://github.com/blacksandbox/mindybox-v1"],
   			tags: [
           "Vue.js",
           "Sass",
@@ -158,7 +162,8 @@ var projectData = {
         imgCount: 6,
         imgExtMap: [null, null, null, null, "gif", "gif"],
   			title: "Sandbloqs",
-  			shortSummary: "Visual programming language for teaching OOP concepts",
+        shortSummary: "Visual programming language for teaching OOP concepts",
+        external_links: [],
   			tags: [
           "Javascript",
           "Blockly",
@@ -199,7 +204,8 @@ var projectData = {
         id: "cs2n",
   			imgCount: 3,
   			title: "CS2N",
-  			shortSummary: "Badge/Achievement system overhaul",
+        shortSummary: "Badge/Achievement system overhaul",
+        external_links: [],
   			tags: [
   				"Ruby on Rails",
           "jQuery",
@@ -244,6 +250,7 @@ var projectData = {
         shortSummary: `
           Chat client with a drawing and animation tool
         `,
+        external_links: [],
   			tags: [
           "Python",
           "Tornado",
@@ -296,6 +303,7 @@ var projectData = {
   			imgCount: 9,
   			title: "RoboAcademy Curriculum Products",
         shortSummary: `Curriculum modules that teach robotics programming with real or virtual robots.`,
+        external_links: ["https://www.cmu.edu/roboticsacademy/roboticscurriculum/index.html", ""],
   			tags: [
           "HTML5",
           "jQuery",

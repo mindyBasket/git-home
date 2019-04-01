@@ -46,7 +46,14 @@
           return imgNameArr;
         }
         return {};
-      }
+      },
+      externalLinks: function () {
+        if ('contentData' in this.rootstate && 'external_links' in this.rootstate.contentData){
+          return this.rootstate.contentData.external_links;
+        }
+        return [];
+      },
+
     },
     methods: {
       onLightboxClick: function() {
@@ -93,14 +100,29 @@
         >
         </div>
       </div>
-      <div class="modal_unit title">{{ this.rootstate.title }}</div>
+      <div class="modal_unit title flex_row space_between">
+        <span>{{ this.rootstate.title }}</span>
+        <div 
+          class="links"
+          v-if="this.externalLinks.length > 0"
+        >
+          <a 
+            class="fas fa-external-link-square-alt"
+            v-if="this.externalLinks[0]"
+            v-bind:href="this.externalLinks[0]"
+            target="_blank"
+          ></a>
+          <a 
+            class="fab fa-github"
+            v-if="this.externalLinks[1]"
+            v-bind:href="this.externalLinks[1]"
+            target="_blank"
+          ></a>
+        </div>  
+      </div>
       <div class="modal_unit content">
         <!-- Rendering from longSummaryData. Check Store.js -->
         <div class="flex_row">
-          <div class="flex_column">
-            <a class="fas fa-external-link-square-alt"></a>
-            <a class="fab fa-github"></a>
-          </div>
           <p
             class="description" 
             v-html="this.longSummaryData.projectDescription">

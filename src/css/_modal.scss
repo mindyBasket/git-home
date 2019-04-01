@@ -109,8 +109,28 @@
         font-size: 1.5em;
     }
 
+    .links{
+
+        .decorator{
+            height: 60px;
+            border-left:1px solid $light_text2;
+            width: 0px;
+            margin: 1em auto 10px auto;
+        }
+
+        a{
+            margin: 0 auto 7px auto;
+            color: $light_mediumKey;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $light_darkKey;
+            text-decoration: none;
+        }
+    }
     .description{
         margin-left: 30px;
+        margin-right: 30px;
     }
 
     .challenges{
@@ -138,6 +158,13 @@
     margin-top: 30px;
 }
 
+
+@media (max-width: 800px) {
+	.modal{
+        width: 85vw;
+        font-size:.9em;
+	}
+}
 
 @media (max-width: 570px) {
 	.modal{
