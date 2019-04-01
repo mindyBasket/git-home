@@ -259,8 +259,9 @@ strong {
 .card_project {
   position: relative;
   background-color: #dddddf;
-  width: 45%;
-  height: 240px;
+  width: 22vw;
+  height: 300px;
+  font-size: 0.9em;
   border-bottom: 2px solid #8d8d8d;
   border-top: 1px solid #cecece;
   border-left: 1px solid #cecece;
@@ -277,7 +278,7 @@ strong {
 }
 .card_project .thumbnail {
   background-color: #c7c7c7;
-  height: 60px;
+  height: fit-content;
   overflow: hidden;
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
@@ -348,46 +349,24 @@ strong {
   transition-delay: 0.5s, 0.2s, 0.2s, 0.5s;
 }
 
-/* Note: because height needs to be calculated, it is done in main.js.
-		 check toggleCard() for details */
-@keyframes open-card {
-  0% {
-    width: 45%;
-  }
-  100% {
-    width: 89%;
+@media (max-width: 1100px) {
+  .card_project {
+    width: 30vw;
+    height: 310px;
   }
 }
-.card.filler {
-  padding: 0;
-  margin: 0;
-  pointer-events: none;
-  width: 100%;
-  height: 0px;
-  border: 0px solid yellow;
-  overflow: hidden;
-  /* for shrinking
-  transition-property: width;
-  transition-duration: 0.25s; */
+@media (max-width: 800px) {
+  .card_project {
+    width: 44vw;
+    height: 300px;
+  }
 }
-
-.card.filler.shrink {
-  /* this class is applied in fillerEnter() */
+@media (max-width: 570px) {
+  .card_project {
+    width: 75vw;
+    height: 300px;
+  }
 }
-
-.card.hidden {
-  /* bug?: v-transition 'shift-card' does not happen if the first 
-  		 clicked element is the first element in the list under the 
-  		 v-transition 'shift-card'. All transition by clicking subsequent
-  		 cards also fails. But if the first element clicked is 
-  		 NOT the first card, the v-transition renders okay */
-  height: 0px;
-  pointer-events: none;
-  opacity: 0;
-  padding: 0;
-  margin: 0;
-}
-
 .work_card_wrapper {
   width: 100%;
   /* This is set by script */

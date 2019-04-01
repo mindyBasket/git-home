@@ -64,7 +64,7 @@
 								and helped me become a full-stack developer.  
 							</p>
 							<p>
-								<strong>My 7+ years of professional jourey</strong> 
+								<strong>My 7+ years of professional journey</strong> 
 								goes through organizations with focus on robotics and education.
 							  I frequently collaborated with mix of other creative and technical minds, 
 							  and I bridge the gap between designers on the front-end, and and engineers on the back-end.
@@ -78,14 +78,26 @@
 				</div>
 				<div class="content">
 						<div class="box" id="key_skills">
-							<div class="skill_title">
-								<span class="title_icon fas fa-star"></span>
-								Key skills overview
+							<div class="skill_title flex_row space_between">
+								<span class="group">
+										<span class="title_icon fas fa-star"></span>
+										Skills overview
+								</span>
+								<span>
+									Collapse all | Expand all
+								</span>
 							</div>
 
 							<ul class="skill_list flex_row">
-								<li>Javascript (ES6)<br/>Typescript<br/>Python<br/>Node.js<br/>C++</li>
-								<li>React.js<br/>Vue.js<br/>Sass<br/>Flux</li>
+								<li class="flex_column">
+									<div class="subskill_title">
+										Languages
+									</div>
+									<div class="subskill_content">
+											Javascript (ES6)<br/>Typescript<br/>Python<br/>C++
+									</div>
+								</li>
+								<li>React.js<br/>Node.js<br/>Vue.js<br/>Sass<br/>Flux</li>
 								<li>Django<br/>Ruby on Rails<br/>RESTful frameworks</li>
 								<li>Shell script</br>Heroku<br/>Webpack<br/>Grunt</li>
 								<li>Agile<br/>Scrum</li>
@@ -113,7 +125,7 @@
 
 			<div class="block flex_column" id="projects">
 				<Titlebox title="Notable Projects"></Titlebox>
-				<div class="content">
+				<div class="content flood">
 					<transition-group 
 						name="shift-card"
 						class="cardlist flex_row wrap" 
@@ -136,7 +148,7 @@
 			
 
 
-			<div class="block flex_column" id="small-projects">
+			<div class="block flex_column" id="activities">
 				<Titlebox title="Other Activities"></Titlebox>
 				<div class="content">
 						<activity-card
