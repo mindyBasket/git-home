@@ -378,7 +378,7 @@ strong {
   width: 100%;
   /* This is set by script */
   /* background-color: $light_mediumBase; */
-  margin: 50px 0;
+  margin: 20px 0 50px 0;
 }
 
 .content .work_card_wrapper:last-of-type {
@@ -466,9 +466,11 @@ strong {
   width: 82%;
 }
 .card_activity .title {
-  font-weight: bold;
-  font-size: 1.2em;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.5em;
 }
 
 .lightbox {
