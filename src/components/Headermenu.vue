@@ -28,7 +28,7 @@
     }"
   >
     <div class="group">
-      <span class="logo">Mindy Jang</span>
+      <a class="logo">Mindy Jang</a>
     </div>
     
     <div class="group flex_row">

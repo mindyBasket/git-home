@@ -13,20 +13,21 @@
   align-self: center;
   padding-bottom: 5px;
 }
-#portfolio_header .group a {
-  color: #6568ff;
+#portfolio_header a {
+  color: #f1f1ff;
   padding: 0 10px;
+  transition-property: color;
+  transition-duration: 0.3s;
 }
-#portfolio_header .logo {
+#portfolio_header a.logo {
   font-size: 1.5em;
   font-weight: bold;
-  color: #6568ff;
 }
 #portfolio_header .group:first-of-type {
   margin-left: 20px;
 }
 #portfolio_header .group:last-of-type {
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 #portfolio_header.detached {
@@ -34,6 +35,10 @@
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #7978b1;
+}
+#portfolio_header.detached a {
+  color: #7978b1;
 }
 
 html {
@@ -178,6 +183,7 @@ strong {
   background-image: url("img/splash_bg.png");
   background-size: contain;
   background-repeat: no-repeat;
+  color: #7978b1;
 }
 #intro .big_title {
   font-size: 3.2em;
@@ -310,7 +316,7 @@ strong {
   background-color: white;
   margin-top: 0px;
   border-bottom: 10px solid #8d8d8d;
-  color: #758bdf;
+  color: #7978b1;
 }
 
 .card_project.opened {

@@ -15,6 +15,8 @@ import Projectpopup from './components/Projectpopup.vue';
 import Titlebox from './components/Titlebox.vue';
 import Headermenu from './components/Headermenu.vue';
 
+const ESCAPE_HEIGHT = 70; //px
+
 // Main app. 
 var vm = new Vue({
   el: '#main_body',
@@ -31,7 +33,7 @@ var vm = new Vue({
   mounted: function(){
     const mainBody = document.querySelector('#main_body');
     const header = document.querySelector('#portfolio_header');
-    const ESCAPE_HEIGHT = 100; //px
+    
 
     if (mainBody && header){
       mainBody.addEventListener('scroll', (e) => {
