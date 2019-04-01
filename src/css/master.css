@@ -228,7 +228,7 @@ strong {
 #key_skills .skill_list li {
   list-style-type: none;
   flex-shrink: 0;
-  width: 130px;
+  width: 23%;
   height: fit-content;
   margin: 5px;
   background-color: #f1f1f1;
@@ -427,6 +427,9 @@ strong {
 }
 .work_card .card_body {
   line-height: 1.3em;
+}
+.work_card .card_body ul {
+  padding-left: 20px;
 }
 .work_card .card_body li {
   margin-bottom: 10px;

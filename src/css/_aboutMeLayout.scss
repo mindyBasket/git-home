@@ -1,3 +1,5 @@
+$SKILLITEM_WIDTH: 23%;
+
 #key_skills{
     border: 4px solid $light_lightBase;
     border-radius: 10px;
@@ -17,7 +19,8 @@
         li{
             list-style-type: none;
             flex-shrink: 0;
-            width: 130px; height: fit-content;
+            width: $SKILLITEM_WIDTH; 
+            height: fit-content;
             margin: 5px;
             background-color: $light_lightBase;
             border-bottom:2px solid #dbdbdb;
