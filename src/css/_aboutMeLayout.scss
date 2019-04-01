@@ -1,9 +1,41 @@
-.skill_list{
-    color: $light_mediumKey;
+#key_skills{
     border: 4px solid $light_lightBase;
-    padding: 15px 35px;
+    border-radius: 10px;
+
+    .skill_title{
+        padding: 15px 35px;
+        background-color: $light_lightBase;
+    }
+
+    .skill_list{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 35px;
+        margin: 0;
+        color: $light_mediumKey;
+
+        li{
+            list-style-type: none;
+            flex-shrink: 0;
+            width: 130px; height: fit-content;
+            margin: 5px;
+            background-color: $light_lightBase;
+            border-bottom:2px solid #dbdbdb;
+            padding: 10px;
+
+            text-align: center;
+            
+            transition-property: height;
+            transition-duration: 0.5s;
+        }
+    }
 }
 
 .me_description{
     padding: 0px 35px;
+}
+
+#aboutme .content:last-of-type{
+    padding-top: 0;
+    margin-bottom: 80px;
 }

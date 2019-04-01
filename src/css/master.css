@@ -188,14 +188,42 @@ strong {
 }
 
 /* style will be added soon */
-.skill_list {
-  color: #6568ff;
+#key_skills {
   border: 4px solid #f1f1f1;
+  border-radius: 10px;
+}
+#key_skills .skill_title {
   padding: 15px 35px;
+  background-color: #f1f1f1;
+}
+#key_skills .skill_list {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px 35px;
+  margin: 0;
+  color: #6568ff;
+}
+#key_skills .skill_list li {
+  list-style-type: none;
+  flex-shrink: 0;
+  width: 130px;
+  height: fit-content;
+  margin: 5px;
+  background-color: #f1f1f1;
+  border-bottom: 2px solid #dbdbdb;
+  padding: 10px;
+  text-align: center;
+  transition-property: height;
+  transition-duration: 0.5s;
 }
 
 .me_description {
   padding: 0px 35px;
+}
+
+#aboutme .content:last-of-type {
+  padding-top: 0;
+  margin-bottom: 80px;
 }
 
 .cardlist {
