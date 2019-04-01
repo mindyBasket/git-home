@@ -8,16 +8,15 @@ var workExperienceData = {
       year: ["2016", "Present"],
       description: `
         <ul>
-          <li><strong>Full stack development</strong>: Collaborated with web developers and engineers 
-          to build various products including educational programming tools for robotics and curriculum
+          <li><strong>Full stack developer</strong>: Collaborated in teams to build various 
+          products including educational programming tools for robotics and scalable curriculum
           delivery solutions for our clients.</li>
           </li>
-          <li><strong>Agile developement</strong>: Joined a team with 2 engineers to work 
-          under very tight timeline, rapidly building prototyps, and successfully delivering minimum viable products.</li>
+          <li><strong>Agile developement</strong></li>
           <li><strong>DevOps</strong>: Maintained and added automation to 
           reduce deployment time from ~2 hours to ~20 min.</li>
           <li><strong>Curriculum content development:</strong> Brainstormed and created engaging, 
-          project-based STEM curriculum contents, as well as providing graphic assets.</li>
+          project-based STEM curriculum contents</li>
         </ul>
       `,
       tags: [
@@ -36,13 +35,14 @@ var workExperienceData = {
       description: `
         <ul>
           <li><strong>Badging/achievement system:</strong> Implemented
-           an interation of a badge/achievement system to have much more intricate and 
-          flexible triggers, as well as UI to access this new feature.</li>
+          a new badge/achievement system for the learning portal so that it has much more intricate and 
+          flexible triggers.</li>
           <li><strong>Robotics Curriculum web products:</strong> Collaborated with a Robotics education specialist to 
-          architect and build a series of interactive, web-based curriculum delivery solution to 
+          architect a series of interactive, web-based curriculum modules to 
           facilitate effective learning.</li>
-          <li><strong>Graphics and Video Production:</strong> Responsible for defining the graphic style used across the curriculum series. Produced lesson videos, and graphic assets.</li>
-          <li><strong>Professional developement Teaching Assistant</strong>: for classes that occurr on site.</li>
+          <li><strong>Graphics and Video Production:</strong> Responsible for defining the graphic style used across
+           the curriculum series. Produced lesson videos, and graphic assets.</li>
+          <li><strong>Professional developement TA</strong></li>
         </ul>
       `,
       tags: [
@@ -58,8 +58,8 @@ var workExperienceData = {
       year: ["2010", "2012"],
       description: `
         <ul>
-          <li><strong>UI and Graphics:</strong> Implemented UI and vector assets for the interactive 
-          tutoring content used for the research focusing on teaching mathematical concepts.</li>
+          <li><strong>UI and Graphics:</strong> Created UI and graphic assets for the interactive 
+          tutoring content. These interactives were used for the research focusing on teaching mathematical concepts.</li>
           <li><strong>Research Assistant: </strong>Worked with educators and phD students to test and collect data to 
           produce quantified results.</li>
           <li><strong>Software testing: </strong>for internal softwares.</li>
