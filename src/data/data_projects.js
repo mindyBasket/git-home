@@ -159,8 +159,8 @@ var projectData = {
       ,
       {
         id: "sandbloqs",
-        imgCount: 6,
-        imgExtMap: [null, null, null, null, "gif", "gif"],
+        imgCount: 7,
+        imgExtMap: [null, null, null, null, "gif", "gif", "gif"],
   			title: "Sandbloqs",
         shortSummary: "Visual programming language for teaching OOP concepts",
         external_links: [],
