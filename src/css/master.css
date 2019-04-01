@@ -200,7 +200,6 @@ strong {
   background-image: url("img/splash_bg.png");
   background-size: contain;
   background-repeat: no-repeat;
-  color: #7978b1;
 }
 #intro .big_title {
   font-size: 3.2em;
@@ -261,11 +260,13 @@ strong {
 }
 
 .card_project {
+  display: flex;
+  flex-direction: column;
   position: relative;
   /* background-color: $light_mediumBase; */
   background-color: white;
   width: 22vw;
-  height: 300px;
+  height: 320px;
   font-size: 0.9em;
   border-bottom: 2px solid #8d8d8d;
   overflow: hidden;
@@ -295,6 +296,10 @@ strong {
   height: auto;
 }
 .card_project .card_content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 5px 20px 20px 20px;
 }
 .card_project .title {
@@ -356,18 +361,19 @@ strong {
 @media (max-width: 1100px) {
   .card_project {
     width: 30vw;
-    height: 310px;
+    height: 320px;
   }
 }
 @media (max-width: 800px) {
   .card_project {
     width: 44vw;
-    height: 300px;
+    height: 320px;
   }
 }
 @media (max-width: 570px) {
   .card_project {
     width: 85vw;
+    font-size: 0.9em;
     height: 300px;
   }
 }
@@ -399,7 +405,7 @@ strong {
 .work_card .content_right {
   /* contains actual content */
   flex-grow: 1;
-  padding: 25px 35px;
+  padding: 30px 35px;
 }
 .work_card .card_head .role {
   flex-grow: 1;
@@ -407,6 +413,8 @@ strong {
 .work_card .card_head .role .role_name {
   text-transform: uppercase;
   font-weight: bold;
+  font-family: monospace;
+  font-size: 1.5em;
 }
 .work_card .card_head .role .role_company {
   font-weight: bold;
@@ -426,12 +434,15 @@ strong {
 .work_card .card_body li {
   margin-bottom: 10px;
 }
+.work_card .tags {
+  margin-left: 20px;
+}
 .work_card .tags span {
-  border: 1px solid #99cfb9;
+  border: 1px solid #6568ff;
   border-radius: 5px;
   padding: 3px 6px;
   margin: 0px 5px 5px 0;
-  color: #99cfb9;
+  color: #6568ff;
   font-size: 0.7em;
 }
 

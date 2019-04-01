@@ -5,7 +5,7 @@ var projectData = {
         id: "robomatter_current",
   			imgCount: 0,
   			title: "Educational Robotics Programming Editor",
-  			shortSummary: "Ongoing project for robot programming for very young audience",
+  			shortSummary: "Ongoing project for robot programming for young audience",
   			tags: [
         "ReactJS",  
         "TypeScript",
@@ -43,7 +43,7 @@ var projectData = {
         id: "flipbook",
   			imgCount: 3,
   			title: "Flipbook with Lambda",
-  			shortSummary: "Cloud based animation editor for creating low-cost format of scenamatic story telling",
+  			shortSummary: "Cloud based animation editor",
   			tags: [
   				"ReactJS",
           "Django",
@@ -139,7 +139,7 @@ var projectData = {
         id:"mindybox",
         imgCount: 1,
   			title: "MindyBox v1",
-  			shortSummary: "Personal portfolio site, and an opportunity to explore Vue.js",
+  			shortSummary: "Personal portfolio site version 1",
   			tags: [
           "Vue.js",
           "Sass",
@@ -158,7 +158,7 @@ var projectData = {
         imgCount: 6,
         imgExtMap: [null, null, null, null, "gif", "gif"],
   			title: "Sandbloqs",
-  			shortSummary: "Visual programming language used to teach object oriented programming concepts",
+  			shortSummary: "Visual programming language for teaching OOP concepts",
   			tags: [
           "Javascript",
           "Blockly",
@@ -199,7 +199,7 @@ var projectData = {
         id: "cs2n",
   			imgCount: 3,
   			title: "CS2N",
-  			shortSummary: "Worked on the second iteration of the badge reward system, both back end and front end",
+  			shortSummary: "Badge/Achievement system overhaul",
   			tags: [
   				"Ruby on Rails",
           "jQuery",
@@ -242,7 +242,7 @@ var projectData = {
   			imgCount: 5,
   			title: "Chat-Py",
         shortSummary: `
-          Chat client with a drawing tool that let you send a hand-drawn animated messages
+          Chat client with a drawing and animation tool
         `,
   			tags: [
           "Python",

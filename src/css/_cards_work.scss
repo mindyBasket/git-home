@@ -30,7 +30,7 @@
     .content_right{
         /* contains actual content */
         flex-grow: 1;
-        padding: 25px 35px;
+        padding: 30px 35px;
     }
 
     .card_head{
@@ -39,6 +39,8 @@
             .role_name{
                 text-transform: uppercase;
                 font-weight: bold;
+                font-family: monospace;
+                font-size: 1.5em;
             }
             .role_company{
                 font-weight: bold;
@@ -68,12 +70,14 @@
 	
 
 	.tags{
+        margin-left: 20px;
+        
 		span{
-			border:1px solid $hl-blue;
+			border:1px solid $light_mediumKey;
 			border-radius: 5px;
 			padding: 3px 6px;
 			margin: 0px 5px 5px 0;
-			color: $hl-blue;
+			color: $light_mediumKey;
 			font-size: 0.7em;
 
 		}
