@@ -21,12 +21,22 @@
             margin: 5px;
             background-color: $light_lightBase;
             border-bottom:2px solid #dbdbdb;
-            padding: 10px;
+            
 
             text-align: center;
             
             transition-property: height;
             transition-duration: 0.5s;
+
+            .subskill_title{
+                background-color: #dad9e9;
+                padding: 10px;
+                color: $light_text1;
+            }
+
+            .subskill_content{
+                padding: 10px;
+            }
         }
     }
 }

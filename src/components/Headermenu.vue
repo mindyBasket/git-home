@@ -28,16 +28,21 @@
     }"
   >
     <div class="group">
-      <a class="logo">Mindy Jang</a>
+      <a class="logo" href="#intro">Mindy Jang</a>
+      <a class="resume">Resume</a>
     </div>
     
     <div class="group flex_row">
-      <a>About</a>
-      <a>Work</a>
-      <a>Projects</a>
-      <a>Ice Breakers</a>
-      <a>Contact</a>
-      <a>Resume</a>
+      <a href="#aboutme">About</a>
+      <span>/</span>
+      <a href="#workexp">Work</a>
+      <span>/</span>
+      <a href="#projects">Projects</a>
+      <span>/</span>
+      <a href="#activities">Activities</a>
+      <span>/</span>
+      <a href="#contact">Contact</a>
+      
     </div>
 
   </div>
