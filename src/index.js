@@ -31,7 +31,7 @@ var vm = new Vue({
   mounted: function(){
     const mainBody = document.querySelector('#main_body');
     const header = document.querySelector('#portfolio_header');
-    const ESCAPE_HEIGHT = 120; //px
+    const ESCAPE_HEIGHT = 100; //px
 
     if (mainBody && header){
       mainBody.addEventListener('scroll', (e) => {
