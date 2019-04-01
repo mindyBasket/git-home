@@ -96,7 +96,11 @@
       <div class="modal_unit title">{{ this.rootstate.title }}</div>
       <div class="modal_unit content">
         <!-- Rendering from longSummaryData. Check Store.js -->
-        <div>
+        <div class="flex_row">
+          <div class="flex_column">
+            <a class="fas fa-external-link-square-alt"></a>
+            <a class="fab fa-github"></a>
+          </div>
           <p
             class="description" 
             v-html="this.longSummaryData.projectDescription">

@@ -137,3 +137,11 @@
 .lightbox.active .modal{
     margin-top: 30px;
 }
+
+
+@media (max-width: 570px) {
+	.modal{
+        width: 100vw;
+        font-size:.8em;
+	}
+}

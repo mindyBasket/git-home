@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* PINK */
+/* $light_lightBase: #ffe5df;
+$light_mediumBase: #ffd3c9;
+$light_darkBase: #8d8d8d; */
 /* Layout variables */
 #portfolio_header {
   position: fixed;
@@ -258,14 +262,12 @@ strong {
 
 .card_project {
   position: relative;
-  background-color: #dddddf;
+  /* background-color: $light_mediumBase; */
+  background-color: white;
   width: 22vw;
   height: 300px;
   font-size: 0.9em;
   border-bottom: 2px solid #8d8d8d;
-  border-top: 1px solid #cecece;
-  border-left: 1px solid #cecece;
-  border-right: 1px solid #cecece;
   overflow: hidden;
   margin-top: 8px;
   /* $space_around_card - border */
@@ -277,13 +279,14 @@ strong {
   transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
 }
 .card_project .thumbnail {
-  background-color: #c7c7c7;
+  /* background-color: #c7c7c7;*/
   height: fit-content;
-  overflow: hidden;
+  padding: 8px;
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-  opacity: 0.5;
+  overflow: hidden;
+  opacity: 0.3;
   transition-property: filter, opacity;
   transition-duration: 0.7s;
 }
@@ -303,9 +306,10 @@ strong {
   border-radius: 5px;
   padding: 5px 8px;
   margin: 0px 5px 5px 0;
-  background-color: #226ca917;
-  color: #195493;
+  background-color: #2239a917;
+  color: #192793;
   font-size: 0.8em;
+  font-weight: bold;
 }
 .card_project .short_summary {
   overflow: hidden;
@@ -324,7 +328,7 @@ strong {
 .card_project:hover {
   margin-top: 0px;
   border-bottom: 10px solid #8d8d8d;
-  background-color: #e3e3e5;
+  /* background-color: #e3e3e5; */
 }
 .card_project:hover .thumbnail {
   -webkit-filter: grayscale(0%);
@@ -363,7 +367,7 @@ strong {
 }
 @media (max-width: 570px) {
   .card_project {
-    width: 75vw;
+    width: 85vw;
     height: 300px;
   }
 }
@@ -431,6 +435,11 @@ strong {
   font-size: 0.7em;
 }
 
+@media (max-width: 570px) {
+  .work_card {
+    font-size: 0.9em;
+  }
+}
 .card_activity_wrapper {
   margin: 20px 0;
   padding: 0 20px;
@@ -571,6 +580,12 @@ strong {
   margin-top: 30px;
 }
 
+@media (max-width: 570px) {
+  .modal {
+    width: 100vw;
+    font-size: 0.8em;
+  }
+}
 .shift-card-move {
   transition: transform 0.4s;
 }

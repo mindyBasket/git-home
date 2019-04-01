@@ -11,15 +11,13 @@ $PROJ_CARD_BORDER: #cecece;
 
 .card_project{
 	position:relative;
-	background-color: $light_mediumBase;
+	/* background-color: $light_mediumBase; */
+	background-color: white;
 	width: $CARD_WIDTH;
 	height: $CARD_HEIGHT;
 	font-size: 0.9em;
 
 	border-bottom: 2px solid $light_darkBase;
-	border-top: 1px solid $PROJ_CARD_BORDER;
-	border-left: 1px solid $PROJ_CARD_BORDER;
-	border-right: 1px solid $PROJ_CARD_BORDER;
 
 	overflow: hidden;
 	margin-top: 8px; /* $space_around_card - border */
@@ -33,13 +31,13 @@ $PROJ_CARD_BORDER: #cecece;
 	transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
 
 	.thumbnail{
-		background-color: #c7c7c7;
+		/* background-color: #c7c7c7;*/
 		height: fit-content;
-		overflow: hidden;
+		padding: 8px;
 		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 		  filter: grayscale(100%);
-
-		opacity: 0.5;
+		overflow: hidden;
+		opacity: 0.3;
 		  
 		transition-property: filter, opacity;
 		transition-duration: 0.7s;
@@ -65,10 +63,11 @@ $PROJ_CARD_BORDER: #cecece;
 			border-radius: 5px;
 			padding: 5px 8px;
 			margin: 0px 5px 5px 0;
-			background-color: #226ca917;
+			background-color: #2239a917;
 
-			color: #195493;
+			color: #192793;
 			font-size: 0.8em;
+			font-weight: bold;
 		}
 	}
 
@@ -96,7 +95,7 @@ $PROJ_CARD_BORDER: #cecece;
 .card_project:hover{
 	margin-top: 0px;
 	border-bottom: 10px solid $light_darkBase;
-	background-color: #e3e3e5;
+	/* background-color: #e3e3e5; */
 
 	.thumbnail{
 		-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
@@ -143,7 +142,7 @@ $width-expand-dur: 0.2s;
 
 @media (max-width: 570px) {
 	.card_project{
-		width: 75vw;
+		width: 85vw;
 		height: 300px;
 	}
 }
