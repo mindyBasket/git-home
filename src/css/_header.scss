@@ -86,6 +86,7 @@
     position: fixed;
     top:0; 
     right:-50px;
+    width: 40vw;
     height: 100vh;
     background-color: white;
     padding: 15px 20px 0px 20px;
@@ -113,9 +114,9 @@
 }
 
 
-@media (max-width: 1100px) {
+@media (min-width: 570px) {
 	.visible_mobile{
-        display: none;
+        display: none !important;
     }
 }
 /*

@@ -33,3 +33,16 @@
     }
 }
 
+@media (max-width: 570px) {
+	
+    .card_activity{
+        background-color: transparent;
+        padding: 30px 10px;
+        width: 100%;
+
+        border-bottom: 1px solid #c8c7e5;
+    }
+    .content .card_activity:last-of-type{
+        border-bottom: 0px solid;
+    }
+}

@@ -173,6 +173,10 @@
 @media (max-width: 570px) {
 	.modal{
         width: 100vw;
-        font-size:.8em;
-	}
+        
+    }
+    
+    .lightbox.active .modal{
+        margin-top: 0px;
+    }
 }
