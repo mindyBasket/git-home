@@ -112,7 +112,7 @@ Vue.component('work-cards', {
           v-bind:style="{ opacity: decoration_opacity }"
         ></div>
         <div class="content_right">
-          <div class="card_head flex_row">
+          <div class="card_head">
             <div class="role">
               <div class="role_name">
                 {{workobj.role}}
