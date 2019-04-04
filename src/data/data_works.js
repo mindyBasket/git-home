@@ -9,8 +9,8 @@ var workExperienceData = {
       description: `
         <ul>
           <li><strong>Full stack developer</strong>: Collaborated in teams to build various 
-          products including educational programming tools for robotics and scalable curriculum
-          delivery solutions for our clients.</li>
+          products including programming tool for retail robotic toys, and scalable curriculum
+          delivery website for our clients.</li>
           </li>
           <li><strong>Agile developement</strong></li>
           <li><strong>DevOps</strong>: Maintained and added automation to 

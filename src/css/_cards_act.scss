@@ -22,5 +22,14 @@
         font-family: monospace;
         font-size: 1.5em;
     }
+
+    a{
+        font-weight: bold;
+        color: $light_mediumKey;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
 }
 

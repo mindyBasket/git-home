@@ -32,8 +32,9 @@ Vue.component('activity-card', {
     >
       <div class="card_activity">
         <div class="title">{{ act.title }}</div>
-        <div class="summary">
-          {{ act.description }}
+        <div 
+          class="summary"
+          v-html="act.description">
         </div>
       </div>
 			
