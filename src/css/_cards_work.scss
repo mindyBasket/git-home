@@ -37,7 +37,6 @@
         .role{
             flex-grow: 1;
             padding: 0 10px 0 0;
-            
             .role_name{
                 text-transform: uppercase;
                 font-weight: bold;
@@ -91,7 +90,6 @@
 
 @media (max-width: 570px) {
 	.work_card{
-        font-size: 0.9em;
         width: $CONTENT_WIDTH_MOBILE;
 
         .content_right{
