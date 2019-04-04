@@ -6,9 +6,36 @@
     .big_title{
         font-size: 3.2em;
         font-weight: bold;
+        color: #5a68ec;
+
+        text-decoration: none;
+    }
+    a.big_title:hover{
+        text-decoration: underline;
+    }
+
+    h2.stick{
+        margin-top: 4px;
+        color: #5a68ec;
     }
 
     h1{
         font-size: 1.5em;
     }
+}
+
+
+@media (max-width: 570px) {
+
+    #intro{
+        .big_title{
+            font-size: 2.5em;
+        }
+    
+        h2{
+            font-size: 1.5em;
+        }
+    }
+
+    
 }
