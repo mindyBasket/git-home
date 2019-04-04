@@ -149,11 +149,10 @@ $width-expand-dur: 0.2s;
 	
 	}
 }
-
 @media (max-width: 570px) {
 	.card_project{
 		width: 85vw;
-		font-size:0.9em;
-
+		/*font-size:0.9em;*/
+		height: auto;
 	}
 }

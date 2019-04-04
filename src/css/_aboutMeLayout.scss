@@ -52,3 +52,10 @@ $SKILLITEM_WIDTH: 23%;
     padding-top: 0;
     margin-bottom: 80px;
 }
+
+
+@media (max-width: 570px) {
+    .me_description{
+        padding: 0px 15px;
+    }
+}

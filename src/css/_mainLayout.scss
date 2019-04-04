@@ -89,7 +89,7 @@ strong{
 
 	.section_title_wrapper{
 		font-size: 1.5em;
-		margin-top: 50px;
+		margin: 50px 0 0 20px;
 
 		.line{
 			display:inline-block;
@@ -143,4 +143,20 @@ strong{
 
 	background-color: $light_extraDarkKey;
 	color: $light_text2;
+}
+
+
+@media (max-width: 570px) {
+	.content{
+		font-size:0.9em;
+	}
+	.block{
+		.content{
+			width: $CONTENT_WIDTH_MOBILE;
+
+			.section_title_wrapper{
+				margin:50px 20px 0px 20px;
+			}
+		}
+	}
 }
