@@ -29,7 +29,7 @@
       'detached': rootstate.headerDetached,
     }"
   >
-    <div class="group">
+    <div class="group flex_row">
       <a class="logo" href="#intro">Mindy Jang</a>
       <a class="resume visible_normal">Resume</a>
     </div>

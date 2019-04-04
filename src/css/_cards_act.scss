@@ -42,7 +42,7 @@
 
         border-bottom: 1px solid #c8c7e5;
     }
-    .content .card_activity:last-of-type{
+    .content .card_activity_wrapper:last-of-type .card_activity{
         border-bottom: 0px solid;
     }
 }
