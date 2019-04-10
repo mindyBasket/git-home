@@ -2,7 +2,7 @@ var skillData = {
 
   data: [
     {
-      title: "Languages",
+      title: `<span class="fas fa-code"></span> Languages`,
       skillList: [
         "Javascript (es6)",
         "TypeScript",
@@ -12,7 +12,7 @@ var skillData = {
       ]
     },
     {
-      title: "Front-end",
+      title: `<span class="fas fa-desktop"></span> Front-end`,
       skillList: [
         "React.js",
         "Flux",
@@ -22,7 +22,7 @@ var skillData = {
       ]
     },
     {
-      title: "Back-end",
+      title: `<span class="fas fa-database"></span> Back-end`,
       part: 1,
       skillList: [
         "Django",
@@ -42,7 +42,7 @@ var skillData = {
       ]
     },
     {
-      title: "Tools",
+      title: `<span class="fas fa-tools"></span> Tools`,
       skillList: [
         "Git",
         "Agile",
@@ -52,7 +52,7 @@ var skillData = {
       ]
     },
     {
-      title: "AWS",
+      title: `<span class="fab fa-aws"></span> AWS`,
       skillList: [
         "S3",
         "Lambda",
@@ -60,15 +60,7 @@ var skillData = {
       ]
     },
     {
-      title: "Robotics",
-      skillList: [
-        "ROS",
-        "Rviz",
-        "Gazebo",
-      ]
-    },
-    {
-      title: "Graphics",
+      title: `<span class="fas fa-palette"></span> Graphics`,
       skillList: [
         "Photoshop",        
         "Premiere",
@@ -78,7 +70,7 @@ var skillData = {
       ]
     },
     {
-      title: "Verbal Language",
+      title: `<span class="fas fa-laugh"></span> Verbal Language`,
       skillList: [
         "English",        
         "Korean",

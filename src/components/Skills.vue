@@ -60,9 +60,10 @@
       'is_part2': checkIfPart(skillobj, 2)
     }"
   >
-    <div class="subskill_title ">
-      {{skillobj.title}}
-    </div>
+    <div 
+      class="subskill_title"
+      v-html="skillobj.title"
+    />
     <ul class="subskill_content">
       <li 
         v-for="(skill, ind) in skillobj.skillList"
