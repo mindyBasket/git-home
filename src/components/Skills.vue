@@ -14,7 +14,7 @@
 	    }
     },
     computed: {
-      something: function (){
+      skillDisplaySize: function (){
         return "TODO";
       },
     },
@@ -24,19 +24,13 @@
     },
 
   	methods: {
-	  	toggleCard: function(){
-
-        this.isActive = !this.isActive; 
-        this.isOpened = true;
-
-        if ("longSummaryData" in this.proj) {
-          // content data sent here is stored in Store.contentData
-          store.openModal(this.proj.title, this.proj);
-        } else {
-          //store.openModal(this.proj.title, this.proj.longSummary);
-          console.warn("longSummaryData not found in the project object!");
+	  	getDisplayName: function(skillNameData){
+        // it can be an array
+        if(Array.isArray(skillNameData)){
+          return skillNameData[0];
         }
-	  	}
+        return skillNameData;
+      }
 	  },
   }
 </script>
@@ -54,7 +48,7 @@
         v-bind:index="ind"
         v-bind:key="`${skill.title}_${ind}`"
       >
-        {{skill}}
+        {{getDisplayName(skill)}}
       </li>
     </ul>
   </div>
