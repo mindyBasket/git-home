@@ -800,6 +800,9 @@ strong {
   .modal {
     width: 100vw;
   }
+  .modal .image_header {
+    height: 200px;
+  }
 
   .lightbox.active .modal {
     margin-top: 0px;
