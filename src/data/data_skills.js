@@ -23,6 +23,7 @@ var skillData = {
     },
     {
       title: "Back-end",
+      part: 1,
       skillList: [
         "Django",
         "Ruby on Rails",
@@ -31,7 +32,8 @@ var skillData = {
       ]
     },
     {
-      title: "Back-end",
+      title: "Back-end-2",
+      part: 2,
       skillList: [
         "RESTful framework",
         "MySQL",

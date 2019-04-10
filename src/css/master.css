@@ -306,6 +306,9 @@ strong {
 #key_skills {
   border: 4px solid #f1f1f1;
   border-radius: 10px;
+  /* Some skills are divided into part 1 and 2 due to their length. 
+     They are rendered separately, but styled as if they are one container.
+  */
 }
 #key_skills .skill_title {
   padding: 15px 35px;
@@ -319,7 +322,6 @@ strong {
   /*color: $light_mediumKey;*/
 }
 #key_skills .subskill_group {
-  flex-grow: 1;
   margin: 10px 5px;
   width: 23%;
 }
@@ -329,7 +331,6 @@ strong {
   color: #464e79;
 }
 #key_skills .subskill_group .subskill_content {
-  flex-shrink: 0;
   height: fit-content;
   margin: 0px;
   padding: 6px 10px;
@@ -344,6 +345,15 @@ strong {
 #key_skills .subskill_group .subskill_content li.is_small {
   font-size: 0.7em;
 }
+#key_skills .subskill_group.is_part1 {
+  margin-right: 0;
+}
+#key_skills .subskill_group.is_part2 {
+  margin-left: 0px;
+}
+#key_skills .subskill_group.is_part2 .subskill_title {
+  color: transparent;
+}
 
 .me_description {
   padding: 0px 35px;
@@ -354,9 +364,13 @@ strong {
   margin-bottom: 80px;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 850px) {
   #key_skills .subskill_group {
     width: 30%;
+  }
+  #key_skills .subskill_group.is_part1,
+#key_skills .subskill_group.is_part2 {
+    width: 40%;
   }
 }
 @media (max-width: 570px) {
@@ -368,6 +382,10 @@ strong {
     padding: 0;
   }
   #key_skills .subskill_group {
+    width: 45%;
+  }
+  #key_skills .subskill_group.is_part1,
+#key_skills .subskill_group.is_part2 {
     width: 45%;
   }
 }

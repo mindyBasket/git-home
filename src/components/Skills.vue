@@ -32,6 +32,20 @@
           return false;
         }
       },
+
+      /**
+       * Some skills are divided into part 1 and 2 due to their length. 
+       * They are rendered separately, but styled as if they are one container.
+       */
+      checkIfPart: function (skillobj, partNum){
+        if ('part' in skillobj){
+          if(skillobj.part==partNum){
+            return true;
+          } else {
+            return false;
+          }
+        }
+      },
     },
     
   }
@@ -39,7 +53,13 @@
 
 
 <template>
-  <div class="subskill_group flex_column">
+  <div 
+    class="subskill_group flex_column"
+    v-bind:class = "{
+      'is_part1': checkIfPart(skillobj, 1),
+      'is_part2': checkIfPart(skillobj, 2)
+    }"
+  >
     <div class="subskill_title ">
       {{skillobj.title}}
     </div>
@@ -47,7 +67,7 @@
       <li 
         v-for="(skill, ind) in skillobj.skillList"
         v-bind:class = "{
-         'is_small': skillIsSmall(skill)
+          'is_small': skillIsSmall(skill)
         }"
         v-bind:skillobj="skill"
         v-bind:index="ind"

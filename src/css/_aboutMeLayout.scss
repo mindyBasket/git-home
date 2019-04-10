@@ -18,7 +18,6 @@ $SKILLITEM_WIDTH: 23%;
     }
 
     .subskill_group{
-        flex-grow: 1;
         margin: 10px 5px;
         width: 23%;
 
@@ -29,7 +28,6 @@ $SKILLITEM_WIDTH: 23%;
         }
 
         .subskill_content{
-            flex-shrink: 0;
             height: fit-content;
             margin: 0px; 
             padding: 6px 10px;
@@ -46,7 +44,21 @@ $SKILLITEM_WIDTH: 23%;
             font-size: 0.7em;
         }
     }
+
+    /* Some skills are divided into part 1 and 2 due to their length. 
+       They are rendered separately, but styled as if they are one container.
+    */
     
+    .subskill_group.is_part1{
+        margin-right:0;
+    }
+    .subskill_group.is_part2{
+        margin-left: 0px;
+
+        .subskill_title {
+            color: transparent;
+        }
+    }
 }
 
 .me_description{
@@ -60,10 +72,14 @@ $SKILLITEM_WIDTH: 23%;
 
 
 
-@media (max-width: 880px) {
+@media (max-width: 850px) {
 	#key_skills{
         .subskill_group{
             width: 30%;
+        }
+        .subskill_group.is_part1,
+        .subskill_group.is_part2{
+            width: 40%;
         }
     }
 }
@@ -79,6 +95,10 @@ $SKILLITEM_WIDTH: 23%;
             padding: 0;
         }
         .subskill_group{
+            width: 45%;
+        }
+        .subskill_group.is_part1,
+        .subskill_group.is_part2{
             width: 45%;
         }
     }
