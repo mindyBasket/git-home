@@ -321,24 +321,25 @@ strong {
 #key_skills .subskill_group {
   flex-grow: 1;
   margin: 10px 5px;
+  width: 23%;
 }
 #key_skills .subskill_group .subskill_title {
   background-color: #dad9e9;
-  padding: 10px;
+  padding: 6px 15px;
   color: #464e79;
 }
 #key_skills .subskill_group .subskill_content {
   flex-shrink: 0;
   height: fit-content;
   margin: 0px;
-  padding: 10px 15px;
+  padding: 6px 10px;
   background-color: #f1f1f1;
   border-bottom: 2px solid #dbdbdb;
 }
 #key_skills .subskill_group .subskill_content li {
   list-style-type: none;
   padding: 5px;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 #key_skills .subskill_group .subskill_content li.is_small {
   font-size: 0.7em;
@@ -353,9 +354,21 @@ strong {
   margin-bottom: 80px;
 }
 
+@media (max-width: 880px) {
+  #key_skills .subskill_group {
+    width: 30%;
+  }
+}
 @media (max-width: 570px) {
   .me_description {
     padding: 0px 15px;
+  }
+
+  #key_skills .skill_list {
+    padding: 0;
+  }
+  #key_skills .subskill_group {
+    width: 45%;
   }
 }
 .cardlist {
