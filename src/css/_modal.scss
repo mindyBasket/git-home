@@ -173,6 +173,13 @@
 @media (max-width: 570px) {
 	.modal{
         width: 100vw;
+
+        .modal_unit{
+            padding: 18px 5px 18px 5px;
+        }
+        .modal_unit.title{
+            padding: 18px 25px 18px 25px;
+        }
         .image_header{
             height: 200px;
         }

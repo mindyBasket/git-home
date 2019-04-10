@@ -120,7 +120,7 @@
           ></a>
         </div>  
       </div>
-      <div class="modal_unit content">
+      <div class="modal_unit content_unit">
         <!-- Rendering from longSummaryData. Check Store.js -->
         <div class="flex_row">
           <p

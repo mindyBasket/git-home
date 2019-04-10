@@ -800,6 +800,12 @@ strong {
   .modal {
     width: 100vw;
   }
+  .modal .modal_unit {
+    padding: 18px 5px 18px 5px;
+  }
+  .modal .modal_unit.title {
+    padding: 18px 25px 18px 25px;
+  }
   .modal .image_header {
     height: 200px;
   }
