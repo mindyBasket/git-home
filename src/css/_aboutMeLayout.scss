@@ -14,34 +14,33 @@ $SKILLITEM_WIDTH: 23%;
         justify-content: center;
         padding: 15px 35px;
         margin: 0;
-        color: $light_mediumKey;
+        /*color: $light_mediumKey;*/
+    }
 
-        li{
-            list-style-type: none;
+    .subskill_group{
+        flex-grow: 1;
+        margin: 10px 5px;
+
+        .subskill_title{
+            background-color: #dad9e9;
+            padding: 10px;
+            color: $light_text1;
+        }
+
+        .subskill_content{
             flex-shrink: 0;
-            width: $SKILLITEM_WIDTH; 
             height: fit-content;
-            margin: 5px;
+            margin: 0px; padding: 10px 15px;
             background-color: $light_lightBase;
-            border-bottom:2px solid #dbdbdb;
-            
+            border-bottom: 2px solid #dbdbdb;
+        }
 
-            text-align: center;
-            
-            transition-property: height;
-            transition-duration: 0.5s;
-
-            .subskill_title{
-                background-color: #dad9e9;
-                padding: 10px;
-                color: $light_text1;
-            }
-
-            .subskill_content{
-                padding: 10px;
-            }
+        .subskill_content li{
+            list-style-type: none;
+            padding: 5px;
         }
     }
+    
 }
 
 .me_description{

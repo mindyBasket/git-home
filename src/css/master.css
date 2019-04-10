@@ -316,27 +316,28 @@ strong {
   justify-content: center;
   padding: 15px 35px;
   margin: 0;
-  color: #6568ff;
+  /*color: $light_mediumKey;*/
 }
-#key_skills .skill_list li {
-  list-style-type: none;
-  flex-shrink: 0;
-  width: 23%;
-  height: fit-content;
-  margin: 5px;
-  background-color: #f1f1f1;
-  border-bottom: 2px solid #dbdbdb;
-  text-align: center;
-  transition-property: height;
-  transition-duration: 0.5s;
+#key_skills .subskill_group {
+  flex-grow: 1;
+  margin: 10px 5px;
 }
-#key_skills .skill_list li .subskill_title {
+#key_skills .subskill_group .subskill_title {
   background-color: #dad9e9;
   padding: 10px;
   color: #464e79;
 }
-#key_skills .skill_list li .subskill_content {
-  padding: 10px;
+#key_skills .subskill_group .subskill_content {
+  flex-shrink: 0;
+  height: fit-content;
+  margin: 0px;
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  border-bottom: 2px solid #dbdbdb;
+}
+#key_skills .subskill_group .subskill_content li {
+  list-style-type: none;
+  padding: 5px;
 }
 
 .me_description {

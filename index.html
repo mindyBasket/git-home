@@ -90,28 +90,16 @@
 										<span class="title_icon fas fa-star"></span>
 										Skills overview
 								</span>
-								<span>
-									Collapse all | Expand all
-								</span>
 							</div>
 
-							<ul class="skill_list flex_row">
-								<li class="flex_column">
-									<div class="subskill_title">
-										Languages
-									</div>
-									<div class="subskill_content">
-											Javascript (ES6)<br/>Typescript<br/>Python<br/>C++
-									</div>
-								</li>
-								<li>React.js<br/>Node.js<br/>Vue.js<br/>Sass<br/>Flux</li>
-								<li>Django<br/>Ruby on Rails<br/>RESTful frameworks</li>
-								<li>Shell script</br>Heroku<br/>Webpack<br/>Grunt</li>
-								<li>Agile<br/>Scrum</li>
-								<li>AWS S3<br/>EC2<br/>Lambda</li>
-								<li>ROS<br/>Rviz<br/>Gazebo<br/>Jupyter</li>
-								<li>Photoshop<br/>Iillustrator<br/>Animate</li>
-							</ul>
+							<div class="skill_list flex_row">
+								<skill-card
+									v-for="(skill, ind) in skillData.data"
+									v-bind:skillobj="skill"
+									v-bind:index="ind"
+									v-bind:key="skill.title"
+								/>	
+							</div>
 						</div>
 
 					</div>

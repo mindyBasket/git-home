@@ -4,6 +4,7 @@ import Vue from 'vue';
 import projectData from './data/data_projects';
 import workExperienceData from './data/data_works';
 import activityData from './data/data_activities';
+import skillData from './data/data_skills';
 
 // Components
 import * as Projects from './components/Projects';
@@ -14,6 +15,7 @@ import * as Activities from './components/Activities';
 import Projectpopup from './components/Projectpopup.vue';
 import Titlebox from './components/Titlebox.vue';
 import Headermenu from './components/Headermenu.vue';
+import Skills from './components/Skills.vue';
 
 const ESCAPE_HEIGHT = 70; //px
 
@@ -24,11 +26,13 @@ var vm = new Vue({
     projectData: projectData,
     workExperienceData: workExperienceData,
     activityData: activityData,
+    skillData: skillData,
     rootState: store.state,
   },
   components: { 
     Titlebox,
     Headermenu,
+    "skill-card": Skills,
   },
   mounted: function(){
     const mainBody = document.querySelector('#main_body');
