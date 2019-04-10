@@ -15,10 +15,10 @@ var skillData = {
       title: "Front-end",
       skillList: [
         "React.js",
-        "Vue.js",
+        "Flux",
         "Sass",
         "Haml",
-        ["Pug", 1]
+        ["Vue.js", 1],
       ]
     },
     {
@@ -27,19 +27,24 @@ var skillData = {
         "Django",
         "Ruby on Rails",
         "Node.js",
-        "Flux",
+        "PHP",
+      ]
+    },
+    {
+      title: "Back-end",
+      skillList: [
         "RESTful framework",
         "MySQL",
+        ["Tornado", 1],
         ["PostGres", 1],
-        ["MongoDB", 1]
       ]
     },
     {
       title: "Tools",
       skillList: [
+        "Git",
         "Agile",
         "Webpack",
-        "Git",
         "Jupyter",
         ["Grunt", 1],
       ]
@@ -75,7 +80,6 @@ var skillData = {
       skillList: [
         "English",        
         "Korean",
-        ["German", 1],
       ]
     },
   ]
