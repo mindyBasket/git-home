@@ -40,7 +40,7 @@ var skillData = {
         "Agile",
         "Webpack",
         "Git",
-        "Jupyter"
+        "Jupyter",
         ["Grunt", 1],
       ]
     },

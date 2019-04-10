@@ -338,6 +338,10 @@ strong {
 #key_skills .subskill_group .subskill_content li {
   list-style-type: none;
   padding: 5px;
+  font-size: 1.1em;
+}
+#key_skills .subskill_group .subskill_content li.is_small {
+  font-size: 0.7em;
 }
 
 .me_description {

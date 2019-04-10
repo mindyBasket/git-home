@@ -13,16 +13,10 @@
           skillTitle: "",
 	    }
     },
-    computed: {
-      skillDisplaySize: function (){
-        return "TODO";
-      },
-    },
     mounted(){
       // Update title, for reference
       // this.projTitle =  this.proj.title.replace(/ /g,'');
     },
-
   	methods: {
 	  	getDisplayName: function(skillNameData){
         // it can be an array
@@ -30,8 +24,16 @@
           return skillNameData[0];
         }
         return skillNameData;
-      }
-	  },
+      },
+      skillIsSmall: function(skillNameData){
+        if(Array.isArray(skillNameData)){
+            return skillNameData[1];
+        } else {
+          return false;
+        }
+      },
+    },
+    
   }
 </script>
 
@@ -44,6 +46,9 @@
     <ul class="subskill_content">
       <li 
         v-for="(skill, ind) in skillobj.skillList"
+        v-bind:class = "{
+         'is_small': skillIsSmall(skill)
+        }"
         v-bind:skillobj="skill"
         v-bind:index="ind"
         v-bind:key="`${skill.title}_${ind}`"

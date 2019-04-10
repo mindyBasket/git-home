@@ -38,6 +38,10 @@ $SKILLITEM_WIDTH: 23%;
         .subskill_content li{
             list-style-type: none;
             padding: 5px;
+            font-size: 1.1em;
+        }
+        .subskill_content li.is_small{
+            font-size: 0.7em;
         }
     }
     
