@@ -183,7 +183,7 @@ strong {
   flex-grow: 1;
 }
 
-.btn_large {
+.btn {
   display: inline-block;
   padding: 13px 18px;
   background-color: #8095ff;
@@ -191,8 +191,13 @@ strong {
   text-decoration: none;
   color: white;
 }
-.btn_large .icon {
+.btn .icon {
   font-size: 1.3em;
+}
+
+.btn.large {
+  padding: 20px 27px;
+  font-size: 1.2em;
 }
 
 .portfolio_wrapper {
@@ -271,6 +276,7 @@ strong {
   justify-content: flex-end;
   background-color: #323870;
   color: #b4bdff;
+  font-size: 0.8em;
 }
 
 @media (max-width: 570px) {
