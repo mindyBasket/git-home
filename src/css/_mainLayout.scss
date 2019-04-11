@@ -57,6 +57,23 @@ strong{
 	flex-grow: 1;
 }
 
+.btn_large{
+	display:inline-block;
+
+	padding: 13px 18px;
+	background-color: $light_lighterKey;
+	border-radius: 10px;
+
+	text-decoration: none;
+	color: white;
+
+	.icon{
+		font-size: 1.3em;
+	}
+}
+
+
+
 
 
 

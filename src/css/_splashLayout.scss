@@ -6,8 +6,7 @@
     .big_title{
         font-size: 3.2em;
         font-weight: bold;
-        color: #5a68ec;
-
+        color: #464e79;
         text-decoration: none;
     }
     a.big_title:hover{
@@ -16,11 +15,18 @@
 
     h2.stick{
         margin-top: 4px;
-        color: #5a68ec;
     }
 
     h1{
         font-size: 1.5em;
+    }
+
+    .softer_color{
+        color: #7e7aa8;
+    }
+
+    .button_container{
+        display:inline-block;
     }
 }
 
@@ -34,6 +40,20 @@
     
         h2{
             font-size: 1.5em;
+        }
+
+        #career_summary{
+            font-size: 1.2em;
+        }
+
+        #career_message{
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .button_container{
+            width: 100%;
+            padding-top: 12px;
         }
     }
 
