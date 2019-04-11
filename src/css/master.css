@@ -295,6 +295,7 @@ strong {
   background-image: url("img/splash_bg.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position-y: -130px;
 }
 #intro .big_title {
   font-size: 3.2em;
@@ -318,7 +319,25 @@ strong {
   display: inline-block;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 1200px) {
+  #intro {
+    background-position-y: -90px;
+  }
+}
+@media (max-width: 1000px) {
+  #intro {
+    background-position-y: -60px;
+  }
+}
+@media (max-width: 800px) {
+  #intro {
+    background-position-y: -30px;
+  }
+}
+@media (max-width: 550px) {
+  #intro {
+    background-position-y: 0px;
+  }
   #intro .big_title {
     font-size: 2.5em;
   }
