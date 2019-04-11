@@ -81,6 +81,16 @@
     }"
   >
     <div 
+      class="modal_control visible_mobile"
+      v-on:click="onModalClick($event)"
+    >
+      <i 
+        class="fas fa-arrow-circle-left"
+        v-on:click="closeModal()"
+      >
+      </i>
+    </div>
+    <div 
       class="modal"
       v-on:click="onModalClick($event)">
       <div 
