@@ -57,7 +57,7 @@ strong{
 	flex-grow: 1;
 }
 
-.btn_large{
+.btn{
 	display:inline-block;
 
 	padding: 13px 18px;
@@ -72,8 +72,10 @@ strong{
 	}
 }
 
-
-
+.btn.large{
+	padding: 20px 27px;
+	font-size: 1.2em;
+}
 
 
 
@@ -163,6 +165,8 @@ strong{
 
 	background-color: #323870;
 	color: $light_text2;
+	
+	font-size: 0.8em;
 }
 
 
