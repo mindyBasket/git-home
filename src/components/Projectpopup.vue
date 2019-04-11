@@ -84,11 +84,14 @@
       class="modal_control visible_mobile"
       v-on:click="onModalClick($event)"
     >
-      <i 
-        class="fas fa-arrow-circle-left"
-        v-on:click="closeModal()"
-      >
-      </i>
+      <div class="modal_control_content flex_row">
+        <!-- using nested content div because you can't apply flex_row to visible_mobile -->
+        <i 
+          class="fas fa-arrow-circle-left"
+          v-on:click="closeModal()"
+        ></i>
+      </div>
+      
     </div>
     <div 
       class="modal"
