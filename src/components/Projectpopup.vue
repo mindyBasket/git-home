@@ -108,7 +108,7 @@
           <img v-bind:src="imgPath" /> 
         </span>
         <div 
-          class="close_btn"
+          class="close_btn visible_normal"
           v-on:click="closeModal()"
         >
         </div>
