@@ -28,7 +28,7 @@
       imgPathArr: function () {
         const getImagePath = (extMap, ind) => {
           if (extMap == null || extMap[ind] == null) {
-            return `dist/img/${this.projId}/img${ind}.png`;
+            return `dist/img/${this.projId}/img${ind}.jpg`;
           } else {
             return `dist/img/${this.projId}/img${ind}.${extMap[ind]}`;
           }
