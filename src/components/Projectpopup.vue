@@ -130,6 +130,9 @@
       v-on:click="onModalClick($event)">
       <div 
         class="image_header flex_row"
+        v-bind:class = "{
+          'is_empty': imgPathArr.length <= 0
+        }"
         ref="image_header"
       >
         <span 

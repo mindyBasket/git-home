@@ -139,6 +139,10 @@ $MOBILE_HEADER_HEIGHT: 50px;
     .image_header.grabbed{
         cursor: grabbing;
     }
+    .image_header.is_empty{
+        height: 8px;
+        background-color: $light_lightBase;
+    }
 
     .title{
         background-color: $light_lightBase;
