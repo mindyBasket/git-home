@@ -829,6 +829,7 @@ p.tight {
   margin-bottom: 40px;
 }
 .modal .image_header {
+  cursor: grab;
   height: 280px;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -844,6 +845,9 @@ p.tight {
 .modal .image_header img {
   height: 100%;
   width: auto;
+}
+.modal .image_header.grabbed {
+  cursor: grabbing;
 }
 .modal .title {
   background-color: #f1f1f1;

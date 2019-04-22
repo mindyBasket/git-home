@@ -19,6 +19,8 @@
 
       screenshotSlider.addEventListener('mousedown', (e) => {
         this.mIsDown = true;
+        screenshotSlider.classList.add('grabbed'); // cursor appear "grabbing"
+
         slideStartX = e.pageX - screenshotSlider.offsetLeft;
         scrollLeft = screenshotSlider.scrollLeft;
       });
@@ -27,11 +29,17 @@
         if(!this.mIsDown) return;
         
         const x = e.pageX - screenshotSlider.offsetLeft;
-        const moveX = (x - slideStartX) * 3; //scroll-fast
+        const moveX = (x - slideStartX) * 1.7;
         screenshotSlider.scrollLeft = scrollLeft - moveX;
       });
-      screenshotSlider.addEventListener('mouseleave', () => { this.mIsDown = false; });
-      screenshotSlider.addEventListener('mouseup', () => { this.mIsDown = false; });
+      screenshotSlider.addEventListener('mouseleave', () => { 
+        this.mIsDown = false; 
+        screenshotSlider.classList.remove('grabbed'); // cursor appear "released"
+      });
+      screenshotSlider.addEventListener('mouseup', () => { 
+        this.mIsDown = false; 
+        screenshotSlider.classList.remove('grabbed'); // cursor appear "released"
+      });
       
     },
     computed: {
