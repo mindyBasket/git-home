@@ -148,6 +148,7 @@ p.tight{
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
+	background-color: #f1eff9;
 
 	height: 100vh;
 }
@@ -157,7 +158,8 @@ p.tight{
 }
 
 .block#workexp{
-	background-color: $light_mediumBase;
+	/* background-color: $light_mediumBase; */
+	background-color: #e4e4f1;
 }
 
 #contact{
