@@ -775,7 +775,7 @@ p.tight {
 
 .modal {
   position: relative;
-  cursor: default;
+  cursor: auto;
   align-self: center;
   background-color: white;
   margin: -10px auto 50px auto;
