@@ -28,7 +28,7 @@ var skillData = {
         "Django",
         "Ruby on Rails",
         "Node.js",
-        "PHP",
+        ["PHP", 1],
       ]
     },
     {
@@ -48,6 +48,7 @@ var skillData = {
         "Agile",
         "Webpack",
         "Jupyter",
+        ["Jest", 1],
         ["Grunt", 1],
       ]
     },

@@ -16,26 +16,32 @@ var activityData = {
        </ul>`
     },
     {
-      title: "Machine Learning Projects",
+      title: "Machine Learning in Robotics",
       year: ["2017", "2018"],
-      description: `I completed an online course at Udacity to learn Machine Learning in context of robotics.
-      It required completion of 6 projects, which tested my knowledge on robotics and machine learning 
-      concepts (CNN, Rtab-mapping, and RL), as well as and tools used for simulating and testing it (ROS, Rviz, Gazebo).
+      description: `An assortment of projects showcasing Machine Learning in context of robotics.
+      Done for an online course at Udacity, which tested my knowledge on concepts such as 
+      <strong>Neural networks, Semantic segmentation, SLAM, and RL</strong>.  
+      Used <strong>TensorFlow/Keras and PyTorch</strong> in <strong>Jupyter</strong> to build and train models. 
+      Simulated robots and its environment using <strong>ROS and Gazebo</strong>. 
+      <br/>
+      <br/>
       Notable projects: 
       <ul>
-        <li>A notable project is hand-sign recognition model that I trained to 
-      recognize 6 different hand signs. Used PyTorch and Jupyter to build. </li>
-     
-        <li>blahblah</li>
+        <li>Trained a model to recognize 6 different hand signs.</li>
+        <li>A target-chasing robot using a model trained to perform 
+        semantic segmentation to find a target figure. Pixel location of the target figured is extracted from a camera feed
+        in order to control motors.</li> 
+        <li>Simulated a home-service robot by using RTAB-mapping to map a simulated room, and then 
+        used AMCL to guide a robot to a target location.</li>
       </ul>
-       
-      .`
+      `
     },
     {
       title: "Programming Judge",
       year: ["2014", "Present"],
-      description: `I am active as a <strong>programming judge</strong> in various local and national
-      robotics competitions such as First Lego League and VEX Robotics Competition.`
+      description: `Active as a <strong>programming judge</strong> to interview young minds 
+      and/or to catch cheaters in various local and national
+      robotics competitions such as First Lego League and VEX Robotics Competition. `
     },
   ]
 }
