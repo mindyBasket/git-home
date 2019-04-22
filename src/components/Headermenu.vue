@@ -4,7 +4,8 @@
   // ex. "Headerghost", "Lightbox"
   module.exports = {
     props: {
-      rootstate: Object
+      rootstate: Object,
+      resumehref: String,
     },
     data: function () {
       return {
@@ -31,7 +32,13 @@
   >
     <div class="group flex_row">
       <a class="logo" href="#intro">Mindy Jang</a>
-      <a class="resume visible_normal">Resume</a>
+      <a
+        v-bind:href="resumehref" 
+        class="resume visible_normal"
+        target="_blank"
+      >
+        Resume
+      </a>
     </div>
     
     <div class="group visible_normal flex_row">
@@ -75,7 +82,14 @@
       <a v-on:click= "toggleMenu" href="#projects">Projects</a>
       <a v-on:click= "toggleMenu" href="#activities">Activities</a>
       <a v-on:click= "toggleMenu" href="#contact">Contact</a>
-      <a v-on:click= "toggleMenu" class="resume">Resume</a>
+      <a 
+        v-on:click="toggleMenu" 
+        v-bind:href="resumehref" 
+        class="resume"
+        target="_blank"
+      >
+        Resume
+      </a>
     </div>
 
   </div>

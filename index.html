@@ -27,7 +27,11 @@
 
 		<div class='portfolio_wrapper' id="main_body">
 
-			<Headermenu v-bind:rootstate="rootState"></Headermenu>
+			<Headermenu 
+				v-bind:rootstate="rootState"
+				v-bind:resumehref="resumeHref"
+			>
+			</Headermenu>
 
 			<div class="flushed_block" id="intro">
 				<div class="content">
@@ -63,7 +67,11 @@
 								<a href="mailto:meehyunjang@gmail.com" class="btn">
 									<span class="icon far fa-envelope"></span> Get in touch!
 								</a>
-								<a href="#" class="btn visible_mobile">
+								<a 
+									class="btn visible_mobile"
+									v-bind:href="resumeHref" 
+									target="_blank"
+								>
 									<span class="icon far fa-file"></span> Resume
 								</a>
 							</div>

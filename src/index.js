@@ -23,6 +23,7 @@ const ESCAPE_HEIGHT = 70; //px
 var vm = new Vue({
   el: '#main_body',
   data: {
+    resumeHref: "https://www.dropbox.com/s/ydrdekyt6f3zql7/mindyJang_resume_2019.docx?dl=0",
     projectData: projectData,
     workExperienceData: workExperienceData,
     activityData: activityData,
