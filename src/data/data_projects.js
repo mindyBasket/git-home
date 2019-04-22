@@ -140,7 +140,7 @@ var projectData = {
       ,
       {
         id:"mindybox",
-        imgCount: 1,
+        imgCount: 2,
   			title: "MindyBox v1",
         shortSummary: "Personal portfolio site version 1",
         external_links: ["","https://github.com/blacksandbox/mindybox-v1"],
