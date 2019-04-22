@@ -8,7 +8,31 @@
         // NO!: isActive: store.state.lightboxIsActive,
         // NO!: isActive: rootState.lightboxIsActive,
         // NO!: isActive: state.lightboxIsActive,
+        mIsDown: false,
+        slideStartX: 0,
+
       }
+    },
+    mounted: function () {
+      // Allow horizontal scroll by dragging on image header
+      const screenshotSlider = this.$refs['image_header'];
+
+      screenshotSlider.addEventListener('mousedown', (e) => {
+        this.mIsDown = true;
+        slideStartX = e.pageX - screenshotSlider.offsetLeft;
+        scrollLeft = screenshotSlider.scrollLeft;
+      });
+      screenshotSlider.addEventListener('mousemove', (e) => {
+        e.preventDefault();
+        if(!this.mIsDown) return;
+        
+        const x = e.pageX - screenshotSlider.offsetLeft;
+        const moveX = (x - slideStartX) * 3; //scroll-fast
+        screenshotSlider.scrollLeft = scrollLeft - moveX;
+      });
+      screenshotSlider.addEventListener('mouseleave', () => { this.mIsDown = false; });
+      screenshotSlider.addEventListener('mouseup', () => { this.mIsDown = false; });
+      
     },
     computed: {
       // a computed getter
@@ -98,7 +122,7 @@
       v-on:click="onModalClick($event)">
       <div 
         class="image_header flex_row"
-        v-if="this.imgPathArr.length > 0"
+        ref="image_header"
       >
         <span 
           class="image_item"
