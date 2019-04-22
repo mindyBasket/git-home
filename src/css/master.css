@@ -45,6 +45,17 @@ $light_darkBase: #8d8d8d; */
   text-decoration: none;
   background-color: #ffffff29;
 }
+#portfolio_header a.menu_resume {
+  width: fit-content;
+  border: 1px solid #6568ff;
+  border-radius: 5px;
+  padding: 7px 12px;
+  margin-left: 10px;
+  color: #6568ff;
+}
+#portfolio_header a.menu_resume:hover {
+  background-color: #6568ff12;
+}
 #portfolio_header .group:first-of-type {
   margin-left: 20px;
 }
@@ -72,6 +83,7 @@ $light_darkBase: #8d8d8d; */
 }
 
 #toggle_menu {
+  align-items: flex-end;
   pointer-events: none;
   position: fixed;
   top: 0;
@@ -108,7 +120,7 @@ $light_darkBase: #8d8d8d; */
 @media (max-width: 800px) {
 	.card_project{
 		width: 44vw;
-	
+
 	}
 }*/
 @media (max-width: 570px) {

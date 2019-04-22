@@ -85,7 +85,7 @@
       <a 
         v-on:click="toggleMenu" 
         v-bind:href="resumehref" 
-        class="resume"
+        class="menu_resume"
         target="_blank"
       >
         Resume
