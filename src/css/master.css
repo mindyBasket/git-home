@@ -200,6 +200,16 @@ strong {
   font-size: 1.2em;
 }
 
+.btn.large.static {
+  background-color: transparent;
+  padding: 20px 27px;
+  font-size: 1.2em;
+}
+
+p.tight {
+  margin: 0 0 5px 0;
+}
+
 .portfolio_wrapper {
   width: 100%;
   height: 100%;
