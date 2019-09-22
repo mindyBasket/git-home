@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "webpack --config webpack.config.dev.js",
-    "start": "py -m http.server 3000"
+    "start": "py -m http.server 3000",
+    "sassWatch": "sass --watch src/css/input.scss src/css/master.css"
   },
   "repository": {
     "type": "git",
