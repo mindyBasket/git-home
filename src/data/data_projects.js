@@ -2,11 +2,11 @@ var projectData = {
 
   	projects: [
   		{
-        id: "robomatter_current",
-  			imgCount: 0,
-  			title: "Educational Robotics Programming Editor",
+        id: "vexcode_blocks",
+  			imgCount: 3,
+  			title: "VEXcode Blocks",
         shortSummary: "Ongoing project",
-        external_links: [],
+        external_links: ["https://www.vexrobotics.com/vexcode-blocks"],
   			tags: [
         "ReactJS",  
         "TypeScript",
@@ -17,25 +17,29 @@ var projectData = {
         ],
         longSummaryData: {
           projectDescription: `
-            <span class="color red">
-              (Due to an agreement with my company, only a limited amount of detail can be shared at this time.)
-            </span>
-            <br/>
-            <br/>
-            Formed a team of 3 engineers to implement a code editor in context of robotics, targeting
-            very young audience. We are using agile practices to work under aggressive timeline, rapidly producing
-            minimally viable products each increment.
+            I worked in a team of 3 engineers to build a block-based robot code for a young audience. 
+            Using agile practices, we delivered a code editor that can connect to the associated robot hardware, 
+            configure, write code, and run it. This app is classroom-friendly, 
+            so students and teachers will find useful built-in features such as tutorials, templates, and command references.
+
+            This project was completed under urgent circumstances, making the delivery timeline aggressive.
           `,
           roleHighlights: `
             <ul>
-              <li>Collaborated to built a working prototype with key features in 2 weeks, and reaching a minimally 
-              viable product with all core features in a month.</li>  
-              <li>Using <strong>ReactJS</strong> and <strong>Typescript</strong></li>
-              <li>Strategized modularizing tasks to delivery faster without quality loss.</li>
-              <li>Collaborated to build the app to be available for major platforms, 
-              both desktop and mobile, while keeping the same code base.</li>
+              <li>Collaborated to built a working prototype with key features in 2 weeks, then delivering the final product in 6 months.</li> 
+              <li>Adopted <strong>agile practices</strong> to deliver increments faster without compromising quality.</li>
+              <li>Responsible for the majority of the front-end using <strong>ReactJS</strong> and <strong>Typescript</strong>, 
+              to build data-driven, modularized and maintainable code.</li>
+              <li>Strategized on testing, maintaining, and precompiling data to ensure continuous deployment.</li>
             </ul>
           `,
+          notableChallenges: `
+            <ul>
+              <li>Achieving <strong>cross-platform compatibility</strong>: currently available for Windows, macOS, Android, iOS, and Chrome OS.</li>
+              <li>Creating a system and workflow to standardize, automate, and import <strong>various form of content data</strong> coming from media developers,
+               educators, and translators.</li>
+            </ul>
+          `
         },
         longSummary: "CONTENT MOVED TO longSummaryData",
   		}
