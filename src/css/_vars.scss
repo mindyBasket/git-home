@@ -8,6 +8,29 @@ $light_darkBase: #8d8d8d;
 $light_mediumBase: #ffd3c9;
 $light_darkBase: #8d8d8d; */
 
+/* KEY COLOR GROUP */
+// Variation of key color so that they become properly darkened and lightened
+$KEY_COLOR: #6568ff;
+$KEY_COLOR_LIGHT: adjust-hue($KEY_COLOR, 0%);
+$KEY_COLOR_HEAVY: desaturate($KEY_COLOR, 65%);
+
+/* BASE COLOR SWATCHES */
+// Use these on your components
+$KEY_35: lighten($KEY_COLOR_LIGHT, 15%);
+$KEY_40: lighten($KEY_COLOR_LIGHT, 10%);
+$KEY_45: lighten($KEY_COLOR_LIGHT, 5%);
+$KEY_50: $KEY_COLOR;
+$KEY_80: darken($KEY_COLOR_HEAVY, 25%);
+
+/* BASE COLOR GROUP */
+// Variation of base color so that they become properly darkened and lightened
+$BASE_DESAT: #ccc;
+
+/* COMPONENTS */
+
+$KEY_TEXT_50: $KEY_35;
+$HEADER_TEXT: $KEY_TEXT_50;
+
 
 $light_extralightKey: #f1f1ff;
 $light_lightKey: #7978b1;

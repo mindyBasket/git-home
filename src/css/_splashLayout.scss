@@ -3,12 +3,13 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: -130px;
+    color: lighten($KEY_TEXT_50, 5%);
 
     .big_title{
         font-size: 3.2em;
         font-weight: bold;
-        color: #464e79;
         text-decoration: none;
+        color: lighten($KEY_TEXT_50, 12%);
     }
     a.big_title:hover{
         text-decoration: underline;
@@ -23,7 +24,7 @@
     }
 
     .softer_color{
-        color: #7e7aa8;
+        color: $KEY_TEXT_50;
     }
 
     .button_container{

@@ -61,7 +61,7 @@ strong{
 	display:inline-block;
 
 	padding: 13px 18px;
-	background-color: $light_lighterKey;
+	background-color: $KEY_45;
 	border-radius: 10px;
 
 	text-decoration: none;
@@ -69,6 +69,10 @@ strong{
 
 	.icon{
 		font-size: 1.3em;
+	}
+
+	&:hover{
+		background-color: lighten($KEY_45, 3%);
 	}
 }
 
@@ -148,7 +152,8 @@ p.tight{
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: #f1eff9;
+	// background-color: #f1eff9;
+	background-color: $KEY_80;
 
 	height: 100vh;
 }
@@ -161,6 +166,7 @@ p.tight{
 	/* background-color: $light_mediumBase; */
 	background-color: #e4e4f1;
 }
+
 
 #contact{
 	background-color: $light_extraDarkKey;
