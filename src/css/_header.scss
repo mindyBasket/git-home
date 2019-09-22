@@ -130,7 +130,7 @@
 }
 
 
-@media (min-width: 570px) {
+@media (min-width: $MOBILE_WINDOW_WIDTH) {
 	.visible_mobile{
         display: none !important;
     }
@@ -142,7 +142,7 @@
 	
 	}
 }*/
-@media (max-width: 570px) {
+@media (max-width: $MOBILE_WINDOW_WIDTH) {
 	.visible_normal{
         display: none !important;
     }

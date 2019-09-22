@@ -186,7 +186,7 @@ p.tight{
 }
 
 
-@media (max-width: 570px) {
+@media (max-width: $MOBILE_WINDOW_WIDTH) {
 	.content{
 		font-size:0.9em;
 	}

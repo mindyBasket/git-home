@@ -122,10 +122,12 @@ $MOBILE_HEADER_HEIGHT: 50px;
         height: 280px;
         overflow-x: scroll;
         overflow-y: hidden;
+        padding: 10px 0;
 
         .image_item{
-            width: fit-content;
-            border-left: 5px solid #2e2e2e;
+            // Note: I had this as "fit-content" because and it was set 
+            // as each image's original width before scale, which is too big.
+            width: 80%; 
             text-align: center;
         }
         .image_item:first-of-type{
@@ -134,6 +136,10 @@ $MOBILE_HEADER_HEIGHT: 50px;
         img {
             height: 100%;
             width: auto;
+            -webkit-box-shadow: 2px 2px 9px -1px rgba(0,0,0,0.18);
+            -moz-box-shadow: 2px 2px 9px -1px rgba(0,0,0,0.18);
+            box-shadow: 2px 2px 9px -1px rgba(0,0,0,0.18);
+
         }
     }
     .image_header.grabbed{
@@ -204,7 +210,7 @@ $MOBILE_HEADER_HEIGHT: 50px;
 	}
 }
 
-@media (max-width: 570px) {
+@media (max-width: $MOBILE_WINDOW_WIDTH) {
 	.modal{
         width: 100vw;
 
@@ -219,7 +225,7 @@ $MOBILE_HEADER_HEIGHT: 50px;
             padding: 18px 25px 18px 25px;
         }
         .image_header{
-            height: 200px;
+            height: 250px;
         }
     }
     

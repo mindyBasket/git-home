@@ -150,7 +150,7 @@ $width-expand-dur: 0.2s;
 	
 	}
 }
-@media (max-width: 570px) {
+@media (max-width: $MOBILE_WINDOW_WIDTH) {
 	.card_project{
 		width: 85vw;
 		/*font-size:0.9em;*/
