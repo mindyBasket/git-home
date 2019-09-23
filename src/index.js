@@ -23,7 +23,7 @@ const ESCAPE_HEIGHT = 70; //px
 var vm = new Vue({
   el: '#main_body',
   data: {
-    resumeHref: "https://www.dropbox.com/s/cbkvu5sfl3v381i/mindyJang_2019.docx.docx?dl=0",
+    resumeHref: "https://www.dropbox.com/s/9u5e45uykqxro98/mindyJang_2019_nomark.docx.docx?dl=0",
     projectData: projectData,
     workExperienceData: workExperienceData,
     activityData: activityData,
