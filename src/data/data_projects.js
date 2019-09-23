@@ -19,9 +19,9 @@ var projectData = {
           projectDescription: `
             I worked in a team of 3 engineers to build a block-based robot code for a young audience. 
             Using agile practices, we delivered a code editor that can connect to the associated robot hardware, 
-            configure, write code, and run it. This app is classroom-friendly, 
-            so students and teachers will find useful built-in features such as tutorials, templates, and command references.
-
+            configure, write code, and run it. Built-in features such as tutorials and command references makes it classroom-friendly.
+            <br/>
+            <br/>
             This project was completed under urgent circumstances, making the delivery timeline aggressive.
           `,
           roleHighlights: `
@@ -35,7 +35,7 @@ var projectData = {
           `,
           notableChallenges: `
             <ul>
-              <li>Achieving <strong>cross-platform compatibility</strong>: currently available for Windows, macOS, Android, iOS, and Chrome OS.</li>
+              <li>Achieving <strong>cross-platform compatibility</strong> with a single codebase: currently available for Windows, macOS, Android, iOS, and Chrome OS.</li>
               <li>Creating a system and workflow to standardize, automate, and import <strong>various form of content data</strong> coming from media developers,
                educators, and translators.</li>
             </ul>
@@ -60,23 +60,22 @@ var projectData = {
         ],
         longSummaryData: {
           projectDescription: `
-          Inspired by single-page task managing apps, this app creates a story telling, animated medium 
-          called "flipbook", which is half-way between a storyboard, and a movie. 
-          The idea is to create a scenamatic, interactive story using much lighter resource. 
+          This app creates experimental storytelling, animation-medium called "flipbook," 
+          which is half-way between a storyboard and a movie. 
+          The idea is to create a cinematic, interactive story using much lighter resource.
           <br/><br/>
-          Currently this app is available with invite only, but a demo is available to public.
+          Currently, this app is available with invite-only, but a demo is available to the public.
           <br/><br/> 
-          New features will be continuously added, and in the next iteration, the app's UI will appear closer
-          a video editor for more intuitive editing.
+          This is an ongoing project with new features planned. In the next iteration,
+          the app's UI will appear closer to a video editor for more intuitive editing.
           `,
           featureHighlights: `
             <ul>
-              <li>Front-end is <strong>ReactJS</strong>, and back-end is <strong>Django</strong>.
-               Taught my self ReactJS as I go.</li>
+              <li>Front-end is <strong>ReactJS</strong>, and back-end is <strong>Django</strong>.</li>
               <li>Uses <strong>RESTful APIs</strong> to create a smooth single page app experience.</li>
               <li>Features an <strong>alternative video UI</strong> for viewing an instance of a "Flipbook".</li>
               <li>Does all <strong>video processing on cloud</strong> using a powerful 
-              API-triggered <strong>Lambda</strong> function written in python.</li>
+              API-triggered <strong>Lambda</strong> function.</li>
               <li>Visitors can <strong>demo</strong> the app through a copy of disposable instance.</li>
               <li>Deployed on <strong>Heroku</strong>.</li>
             </ul>
@@ -109,19 +108,18 @@ var projectData = {
         ],
         longSummaryData: {
           projectDescription: `
-          Joined in a team of 3 to build a solution for deliverying STEM curriculum content that is
-          store in a 3rd party service. The challenge was that the service compiled all contents 
-          into a format that does not match our client's need. It was not very accessible, and had an 
-          incompatible distribution method. 
-          </br>
-          </br>
-          We built a custom content delivery environment using PHP, MySQL, Javascript,
-          and shell scripts to make it possible to deploy, maintain and scale.
+          Joined in a team of 3 to build a STEM curriculum platform, which provides engaging, short, modularized 
+          lessons and activities designed to integrate into classrooms easily.
+          <br/>
+          <br/>
+          In this project, We also built a pipeline which closed the gap between web developers and content developers
+           so that smooth nightly integration and deployment is possible despite
+            that content developer worked in a completely separate CDN.
           `,
           roleHighlights: `
             <ul>
-              <li>Collaborated to build a <strong>content delivery site</strong> that is deployed in
-               multiple versions using a single code base.</li>
+              <li>Collaborated to build a content delivery platform using <strong>PHP, MySQL, and Javascript</strong>.</li>
+              <li>Deployed and maintained multiple versions/flavors of content using a single code base.</li>
               <li>Helped building the <strong>deployment pipeline</strong> to schedule and automate using Octopus Deploy.</li>
               <li>Implemented scripts to <strong>precompile and throttle</strong> in order to manage resources and reduce traffic 
                as the amount of contents increased rapidly.</li>
@@ -134,8 +132,9 @@ var projectData = {
             <ul>
               <li>Deploying a heavy archive that is <strong>rapidly expanding</strong> and changing  
               (1 GB to 5 GB in a span of few weeks)</li>
-              <li>Rapidly changing requirements and requests from our clients.</li>
               <li>Adding and exposing <strong>custom behaviors</strong> such as in a framework not intended to be customized.</li>
+              <li>The content developers created and stored in a <strong>3rd party CDN</strong> that compiled all STEM content 
+              in a format incompatible for our clients.</li>
             </ul>
           `
         },
@@ -155,7 +154,7 @@ var projectData = {
         longSummaryData: {
           projectDescription: `
           A lightweight static website to showcase my skill and background. 
-          A project that also served in helping me learn <strong>Vue.js</strong>. Some inspiration taken from Trello.
+          A project that also served in helping me learn <strong>Vue.js</strong>.
           `,
         },
         longSummary: "use longSummaryData",
@@ -190,14 +189,14 @@ var projectData = {
             <ul>
               <li>Contributed adding various types of custom "Object" blocks that render game objects.
               They were built to have its own constructor (to spawn sprites), methods and properties to demonstrate 
-              <strong>object oriented programming</strong>.</li>
-              <li>Designed and Implemented <strong>UI</strong> to have a themed appearence.</li>
+              <strong>object-oriented programming</strong>.</li>
+              <li>Designed and Implemented <strong>UI</strong> to have a themed appearance.</li>
               <li>Create example programs used for the curriculum, including a fully playable shooting game.</li>
             </ul>
           `,
           notableChallenges: `
             <ul>
-              <li>Adding object oriented programming which Blockly is not built to support.</li>
+              <li>Adding object-oriented programming which Blockly is not built to support.</li>
             </ul>
           `
         },
@@ -222,27 +221,21 @@ var projectData = {
         longSummaryData: {
           projectDescription: `
             CS2N is a learning portal for students and educators pursuing computer science and robotics discipline.
-            I entered the project to overhaul the existing badge/achivement system to have an extra depth.
-            This game-ifies learning farther, allowing more incentives and motivations for students to 
+            I entered the project to overhaul the existing badge/achievement system to have an extra depth.
+            This "game-ifies" learning farther, allowing more incentives and motivations for students to 
             complete educational activities.   
           `,
           roleHighlights: `
             <ul>
-              <li>Architected a system to add <strong>tiers</strong> to the badges/achievements, 
+              <li>Reworked the relational mapping to add <strong>tiers</strong> to the badges/achievements, 
               where higher-tier badge can be unlocked by a specified combination of one or more lower-badges.</li>
+              <li>Responsible for adding a parser for logic expressions used for badge trigger rules.</li>
               <li>Built <strong>interface for admins</strong> to create and edit new triggers for the new types of badges.</li>
               <li>Built <strong>user profile</strong> interface for users to access, track, and share their 
-              badges and their progresses.</li>
-              <li>Created the a family of <strong>badge graphics</strong>.</li>
+              badges and their progress.</li>
+              <li>Created a family of <strong>badge graphics</strong>.</li>
             </ul>
           `,
-          notableChallenges: `
-            <ul>
-              <li><strong>Increased complexity</strong> of badge trigger introduced other complications, 
-              such as nested parentheses in the trigger expressions. 
-              I implemented a new <strong>recursive parser</strong> to deal with the new expressions.</li>
-            </ul>
-          `
         },
   			longSummary: "CONTENT MOVED TO longSummaryData"
   		}
@@ -263,25 +256,21 @@ var projectData = {
         ],
         longSummaryData: {
           projectDescription: `
-            I attended a class at CMU as a visiting student to fortify my software developement practices.
-            Juggling work and class work, I completed the course with a very successful result. 
-            <br/>
-            <br/>
-            The term project is a chat client written in Python. Due to the requirements,
-            the chat app could not use any web server for demonstation. As a proof of concept, 
-            SocketIO was used connect to another device using an IP address. 
-            <br/>
-            <br/>
-            However, Tornado was incoporated into the app structure to prepare for future conversion into 
-            a web app.
+          Chat-py is a chat client written in Python. Due to some restrictions, 
+          it could not use an actual web server for demonstration. As proof of concept, 
+          SocketIO was used to connect to another device using an IP address.
+          <br/>
+          <br/>
+          This is a project I completed in a class at CMU as a visiting student, 
+          which I attended to fortify my professional software development practices.
           `,
           links: {
             youtube: 'https://youtu.be/sMrIwomA1H0',
           },
           featureHighlights: `
             <ul>
-              <li>Built using an <strong>asynchronous websocket</strong> library, 
-              so that you can connect as many friend into one chat room.</li>
+              <li>Built using an <strong>asynchronous WebSocket</strong> library, 
+              so that you can connect as many friends into one chat room.</li>
               <li><strong>Share and save images</strong> with your friend.</li>
               <li>Send <strong>animated GIFs</strong> that will play on the chat client. Great
               for sharing funny reaction images. It will <strong>pause automatically</strong> when scrolled
@@ -295,7 +284,7 @@ var projectData = {
           notableChallenges: `
             <ul>
               <li>Buffering animated GIF images.</li>
-              <li>Animation editor that you can fit into a chat box.</li>
+              <li>Building an animation editor that you can fit into a chatbox.</li>
             </ul>
           `
         },
@@ -318,26 +307,25 @@ var projectData = {
           projectDescription: `
             I collaborated with a robotics education specialist to produce a collection of 
             curriculum modules for introductory to
-            intermediate level of robotics programming. The family of modules cover multiple programming
-            languages and hardwares, such as <strong>LabView</strong>, <strong>RobotC</strong>,
+            intermediate level of robotics programming. This family of modules covers multiple 
+            programming languages and hardware, such as <strong>LabView</strong>, <strong>RobotC</strong>,
              and <strong>LEGO EV3-Mindstorm</strong>.       
           `,
           roleHighlights: `
             <ul>
               <li>Architected <strong>data-driven static web modules</strong> for content delivery.</li>
-              <li>Built many types of reusable, <strong>modularized widgets</strong> that checks answers and math. 
-                  The widgets are used by me and other developers to create <strong>interactive quizzes</strong>
-                  and activities.</li>
+              <liBuilt many types of reusable, <strong>modularized widgets</strong> that check answers and math. 
+              The widgets are used by other developers and me to create <strong>interactive quizzes and activities</strong>.</li>
               <li>Optimize products for <strong>cross-browser compatibility</strong>.</li>
               <li>Produced core lesson <strong>videos</strong>.</li>
-              <li>Created <strong>graphic assets</strong> that became to define the pioneering style 
-              of the product family, and was adopted into curriculum modules that followed after.</li>
+              <li>Created graphic assets that became the pioneering style of the product family, 
+              and was adopted into curriculum modules that followed after.</li>
             </ul>
           `,
           notableChallenges: `
             <ul>
               <li>Because the target environment is <strong>school</strong>, the product could not 
-              assume the target environment has internet, modern browsers, or latest OS.</li>
+              assume the target environment has internet, modern browsers, or the latest OS.</li>
             </ul>
           `
         },
