@@ -4,7 +4,7 @@ var activityData = {
     {
       title: "Global Game Jam",
       year: ["2016", "Present"],
-      description: `Participated in Global Game Jams in Pittsburgh with a <strong>duel role</strong>
+      description: `Participated in Global Game Jams in Pittsburgh with a <strong>dual role</strong>
        of a graphic artist and a programmer. I worked in a team to have rigorous game dev session 
        for 48 hours to complete a game, won:
        <ul>
@@ -20,15 +20,15 @@ var activityData = {
       year: ["2017", "2018"],
       description: `An assortment of projects showcasing Machine Learning in context of robotics.
       Done for an online course at Udacity, which tested my knowledge on concepts such as 
-      <strong>Neural networks, Semantic segmentation, SLAM, and RL</strong>.  
-      Used <strong>TensorFlow/Keras and PyTorch</strong> in <strong>Jupyter</strong> to build and train models. 
-      Simulated robots and its environment using <strong>ROS and Gazebo</strong>. 
+      <strong>Neural networks, Semantic segmentation, SLAM, and RL</strong>
+      — used <strong>TensorFlow/Keras and PyTorch</strong> in <strong>Jupyter</strong> to build and train models. 
+      Simulated robots and their environment using <strong>ROS and Gazebo</strong>. 
       <br/>
       <br/>
       Notable projects: 
       <ul>
-        <li>Trained a model to recognize 6 different hand signs.</li>
-        <li>A target-chasing robot using a model trained to perform 
+        <li>Trained a model to recognize six different hand signs.</li>
+        <li>Created a target-chasing robot using a model trained to perform 
         semantic segmentation to find a target figure. Pixel location of the target figured is extracted from a camera feed
         in order to control motors.</li> 
         <li>Simulated a home-service robot by using RTAB-mapping to map a simulated room, and then 
