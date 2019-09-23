@@ -8,11 +8,10 @@ var workExperienceData = {
       year: ["2016", "Present"],
       description: `
         <ul>
-          <li><strong>Full stack developer</strong>: Collaborated in teams to build various 
-          products including programming tool for retail robotic toys, and scalable curriculum
-          delivery website for our clients.</li>
+          <li><strong>Full-stack developer</strong>: Collaborated in teams to build products such as
+           programming tools for retail robotic toys, and scalable curriculum delivery website for our clients.</li>
           </li>
-          <li><strong>Agile developement</strong></li>
+          <li><strong>Agile development</strong></li>
           <li><strong>DevOps</strong>: Maintained and added automation to 
           reduce deployment time from ~2 hours to ~20 min.</li>
           <li><strong>Curriculum content development:</strong> Brainstormed and created engaging, 
@@ -37,12 +36,12 @@ var workExperienceData = {
           <li><strong>Badging/achievement system:</strong> Implemented
           a new badge/achievement system for the learning portal so that it has much more intricate and 
           flexible triggers.</li>
-          <li><strong>Robotics Curriculum web products:</strong> Collaborated with a Robotics education specialist to 
+          <li><strong>Robotics Curriculum web products:</strong> Collaborated with a robotics education specialist to 
           architect a series of interactive, web-based curriculum modules to 
           facilitate effective learning.</li>
           <li><strong>Graphics and Video Production:</strong> Responsible for defining the graphic style used across
-           the curriculum series. Produced lesson videos, and graphic assets.</li>
-          <li><strong>Professional developement TA</strong></li>
+           the curriculum series. Produced lesson videos and graphic assets.</li>
+          <li><strong>Professional development  TA</strong></li>
         </ul>
       `,
       tags: [
@@ -58,11 +57,11 @@ var workExperienceData = {
       year: ["2010", "2012"],
       description: `
         <ul>
-          <li><strong>UI and Graphics:</strong> Created UI and graphic assets for the interactive 
-          tutoring content. These interactives were used for the research focusing on teaching mathematical concepts.</li>
-          <li><strong>Research Assistant: </strong>Worked with educators and phD students to test and collect data to 
+          <li><strong>UI and Graphics:</strong> Created UI and graphic assets for interactive 
+          tutoring content. These interactives were used for research focusing on teaching mathematical concepts.</li>
+          <li><strong>Research Assistant: </strong>Worked with educators and PhD students to test and collect data to 
           produce quantified results.</li>
-          <li><strong>Software testing: </strong>for internal softwares.</li>
+          <li><strong>Software testing: </strong>for internal software.</li>
         </ul>
       `,
       tags: [
