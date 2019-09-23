@@ -45,6 +45,7 @@ $light_darkBase: #8d8d8d; */
   border: 1px solid #989aff;
   padding: 7px 12px;
   margin-left: 10px;
+  margin-top: 5px;
 }
 #portfolio_header a.resume:hover {
   text-decoration: none;
@@ -210,6 +211,7 @@ strong {
 }
 .btn .icon {
   font-size: 1.3em;
+  padding-right: 10px;
 }
 .btn:hover {
   background-color: #8e90ff;

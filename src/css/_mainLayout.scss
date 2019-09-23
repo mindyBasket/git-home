@@ -69,11 +69,14 @@ strong{
 
 	.icon{
 		font-size: 1.3em;
+		padding-right: 10px;
 	}
 
 	&:hover{
 		background-color: lighten($KEY_45, 3%);
 	}
+
+	
 }
 
 .btn.large{
