@@ -49,7 +49,7 @@ var projectData = {
   			imgCount: 3,
   			title: "Flipbook with Lambda",
         shortSummary: "Cloud based animation editor",
-        external_links: ["https://playflipbook.herokuapp.com/","https://github.com/blacksandbox/paper-cumulus"],
+        external_links: ["", "https://github.com/blacksandbox"],
   			tags: [
   				"ReactJS",
           "Django",
@@ -146,7 +146,7 @@ var projectData = {
         imgCount: 2,
   			title: "MindyBox v1",
         shortSummary: "Personal portfolio site version 1",
-        external_links: ["","https://github.com/blacksandbox/mindybox-v1"],
+        external_links: ["","https://github.com/blacksandbox"],
   			tags: [
           "Vue.js",
           "Sass",
